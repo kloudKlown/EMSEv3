@@ -1,0 +1,65 @@
+\subsection*{\textbf{RQ3: Does log churn impact 'Resolution Time' of bug fixes? }}
+
+
+\subsubsection*{\textbf{Motivation}}
+
+In the previous research question we look at how logs are leveraged during bug fixes and if logs are useful during a bug fix. However, prior research has shown that resolution time is correlated to the number of developers and the number of comments in a issue report~\cite{RTpredictions}. In this RQ we explore if the log churn can increase the explanatory of the previous model and we study how each metric impacts the resolution time of bug fixes.
+
+\subsubsection*{\textbf{Approach}}
+
+We use logistic regression model, to study the explanatory power of our log churn metrics on resolution time. From previous studies we know that the number of developers and the number of  comments are effective in explaining resolution time~\cite {RTpredictions}. Therefore, we include these metrics along with our log churn metrics to increase the explanatory power of the model.
+
+The overview of models is shown in figure 3. We start with baseline model and calculate the deviance explained to measure its explanatory power. We then add our log churn metrics to the baseline and compare the deviance explained by the newer model with baseline model. A higher percentage of deviance explained generally indicates a better model fit and higher explanatory power for the independent variables.
+
+
+To understand the effect of each metric on the model we follow a similar approach used in prior research~\cite{shihab,mocku}. To measure the effect we set all the metrics in the model to their means and find the predicted probabilities. Then we increase the metric of which we want to measure by 10\% of its mean value, while keeping the other metrics at their means. We then calculate the percentage of difference caused be increasing one of metrics by 10\% of its mean. A positive effect means a higher value of the factor increases the likelihood, whereas a negative effect means that a higher value of the factor decreases the likelihood of the dependent variable.
+
+We would like to point out that our purpose is not to predict the resolution time of bug fixes but to study the explanatory power of log leverage during bug fixes.
+
+\subsubsection*{\textbf{Results}} We found that log churn metrics better explain the resolution time of bug fixes. From table 8 we see that \textsl{New Log} is statistically significant in two subject systems and increase the fit of the model. 
+
+%\begin{table}
+%		\protect\caption{Summary of metrics}
+%		\hphantom{}
+%		
+%		\centering{}%
+%\begin{tabular}{|>{\centering}p{1.7cm}|>{\centering}p{1.7cm}|>{\centering}p{1.7cm}|>{\centering}p{1.7cm}|}
+%	\hline 
+%	Projects  & Hadoop & Hbase & Qpid\tabularnewline
+%	\hline 
+%	\hline 
+%	Base & 0.162 & 0.210 & 0.102\tabularnewline
+%	\hline 
+%	Base + New Log & 0.166 (+2.4\%){*}{*} & 0.212 (+1.0\%){*}{*} & 0.105 (+2.74)\tabularnewline
+%	\hline 
+%	Base + 	Deleted Log & 0.162 (0\%) & 0.210(0\%) & 0.102 (0\%)\tabularnewline
+%	\hline 
+%	Base + 	Modified Log & 0.162 (0\%){*} & 0.210 (0\%) & 0.105 (+2.7\%)\tabularnewline
+%	\hline 
+%	
+%
+%\end{tabular}
+%\end{table}
+%
+
+
+
+
+\begin{table}
+	\protect\caption{Summary of metrics}
+	\hphantom{}
+	
+	\centering{}%
+	\begin{tabular}{|>{\centering}p{1.7cm}|>{\centering}p{1.7cm}|>{\centering}p{1.7cm}|>{\centering}p{1.7cm}|}
+	\hline 
+	Projects  & Hadoop & Hbase & Qpid\tabularnewline
+	\hline 
+	\hline 
+	New Log & \textbf{-1.05} {*}{*} & \textbf{-1.26 }{*}{*} & 1.46 \tabularnewline
+	\hline 
+	Deleted Log & -1 & -1.11 & 	0.84\tabularnewline
+	\hline 
+	Modified Log & \textbf{-0.6} {*} & -0.6 & 1.25\tabularnewline
+	\hline 
+\end{tabular}
+\end{table}

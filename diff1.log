@@ -1,0 +1,616 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.24)  13 JUN 2015 18:26
+entering extended mode
+**diff1.tex
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\ICMSE-EMSE\diff1.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files (x86)\Latex\tex\latex\ieeetran\IEEEtran.cls"
+Document Class: IEEEtran 2014/09/17 V1.8a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 458.
+
+("C:\Program Files (x86)\Latex\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen105
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+) ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\ICMSE-EMSE\setup.tex"
+("C:\Program Files (x86)\Latex\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen125
+)
+("C:\Program Files (x86)\Latex\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\Latex\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files (x86)\Latex\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\Latex\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\Latex\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\Latex\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\Latex\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\Latex\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count94
+))
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
+("C:\Program Files (x86)\Latex\tex\latex\base\alltt.sty"
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+("C:\Program Files (x86)\Latex\tex\latex\ltxmisc\relsize.sty"
+Package: relsize 2003/07/04 ver 3.1
+)
+("C:\Program Files (x86)\Latex\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen128
+\lightrulewidth=\dimen129
+\cmidrulewidth=\dimen130
+\belowrulesep=\dimen131
+\belowbottomsep=\dimen132
+\aboverulesep=\dimen133
+\abovetopsep=\dimen134
+\cmidrulesep=\dimen135
+\cmidrulekern=\dimen136
+\defaultaddspace=\dimen137
+\@cmidla=\count95
+\@cmidlb=\count96
+\@aboverulesep=\dimen138
+\@belowrulesep=\dimen139
+\@thisruleclass=\count97
+\@lastruleclass=\count98
+\@thisrulewidth=\dimen140
+)
+("C:\Program Files (x86)\Latex\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\Latex\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\Latex\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen141
+))
+("C:\Program Files (x86)\Latex\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen142
+)
+("C:\Program Files (x86)\Latex\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count99
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count100
+\leftroot@=\count101
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count102
+\DOTSCASE@=\count103
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count104
+\c@MaxMatrixCols=\count105
+\dotsspace@=\muskip10
+\c@parentequation=\count106
+\dspbrk@lvl=\count107
+\tag@help=\toks17
+\row@=\count108
+\column@=\count109
+\maxfields@=\count110
+\andhelp@=\toks18
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks19
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files (x86)\Latex\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks21
+\verbatim@line=\toks22
+\verbatim@in@stream=\read1
+)
+("C:\Program Files (x86)\Latex\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\Latex\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files (x86)\Latex\tex\latex\colortbl\colortbl.sty"
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+("C:\Program Files (x86)\Latex\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen150
+\extrarowheight=\dimen151
+\NC@list=\toks23
+\extratabsurround=\skip47
+\backup@length=\skip48
+)
+\everycr=\toks24
+\minrowclearance=\skip49
+)
+\rownum=\count111
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\ICMSE-EMSE\subfig.sty"
+Style Option: `subfig' v1.2 <28 Jan 92> (M.O.)
+\c@subfigure=\count112
+) ("C:\Program Files (x86)\Latex\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files (x86)\Latex\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Program Files (x86)\Latex\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count113
+\float@exts=\toks25
+\float@box=\box30
+\@float@everytoks=\toks26
+\@floatcapt=\box31
+)
+("C:\Program Files (x86)\Latex\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Program Files (x86)\Latex\tex\latex\fancybox\fancybox.sty"
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box32
+\shadowsize=\dimen152
+\@Sbox=\box33
+\do@VerbBox=\toks27
+\the@fancyput=\toks28
+\this@fancyput=\toks29
+\EndVerbatimTokens=\toks30
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read2
+) ("C:\Program Files (x86)\Latex\tex\latex\listings\listings.sty"
+\lst@mode=\count114
+\lst@gtempboxa=\box34
+\lst@token=\toks31
+\lst@length=\count115
+\lst@currlwidth=\dimen153
+\lst@column=\count116
+\lst@pos=\count117
+\lst@lostspace=\dimen154
+\lst@width=\dimen155
+\lst@newlines=\count118
+\lst@lineno=\count119
+\lst@maxwidth=\dimen156
+
+("C:\Program Files (x86)\Latex\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count120
+\lst@skipnumbers=\count121
+\lst@framebox=\box35
+)
+("C:\Program Files (x86)\Latex\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+("C:\Program Files (x86)\Latex\tex\latex\framed\framed.sty"
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip50
+\fb@frw=\dimen157
+\fb@frh=\dimen158
+\FrameRule=\dimen159
+\FrameSep=\dimen160
+)
+("C:\Program Files (x86)\Latex\tex\latex\tools\hhline.sty"
+Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
+)
+("C:\Program Files (x86)\Latex\tex\latex\psnfss\pifont.sty"
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+("C:\Program Files (x86)\Latex\tex\latex\psnfss\upzd.fd"
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+("C:\Program Files (x86)\Latex\tex\latex\psnfss\upsy.fd"
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\qdx=\dimen161
+\qda=\dimen162
+\qdb=\dimen163
+)
+("C:\Program Files (x86)\Latex\tex\latex\ulem\ulem.sty"
+\UL@box=\box36
+\UL@hyphenbox=\box37
+\UL@skip=\skip51
+\UL@hook=\toks32
+\UL@height=\dimen164
+\UL@pe=\count122
+\UL@pixel=\dimen165
+\ULC@box=\box38
+Package: ulem 2012/05/18
+\ULdepth=\dimen166
+)
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\ICMSE-EMSE\diff1.aux"
+
+LaTeX Warning: Label `tab:logmetric' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 344.
+LaTeX Font Info:    ... okay on input line 344.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 344.
+LaTeX Font Info:    ... okay on input line 344.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 344.
+LaTeX Font Info:    ... okay on input line 344.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 344.
+LaTeX Font Info:    ... okay on input line 344.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 344.
+LaTeX Font Info:    ... okay on input line 344.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 344.
+LaTeX Font Info:    ... okay on input line 344.
+
+-- Lines per column: 56 (exact).
+("C:\Program Files (x86)\Latex\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count123
+\scratchdimen=\dimen167
+\scratchbox=\box39
+\nofMPsegments=\count124
+\nofMParguments=\count125
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count126
+\MPscratchDim=\dimen168
+\MPnumerator=\count127
+\makeMPintoPDFobject=\count128
+\everyMPtoPDFconversion=\toks34
+)
+\c@lstlisting=\count129
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 397.
+
+ ("C:\Program Files (x86)\Latex\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 397.
+LaTeX Font Info:    Try loading font information for U+msa on input line 459.
+
+("C:\Program Files (x86)\Latex\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 459.
+
+("C:\Program Files (x86)\Latex\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 459.
+
+
+LaTeX Warning: Citation `Marksyer' on page 1 undefined on input line 467.
+
+
+LaTeX Warning: Citation `Marksyer' on page 1 undefined on input line 467.
+
+<MethdologyICESEM.pdf, id=1, 550.055pt x 85.31876pt>
+File: MethdologyICESEM.pdf Graphic file (type pdf)
+
+<use MethdologyICESEM.pdf>
+Package pdftex.def Info: MethdologyICESEM.pdf used on input line 537.
+(pdftex.def)             Requested size: 550.05365pt x 85.31853pt.
+
+Overfull \hbox (34.05365pt too wide) in paragraph at lines 537--538
+ [][] 
+ []
+
+[1{C:/Users/Suhas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+Underfull \hbox (badness 2293) in paragraph at lines 622--623
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+[2 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/ICMSE-EMSE/MethdologyI
+CESEM.pdf>]
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 710.
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 713--713
+[] \OT1/ptm/m/it/10 LOG.debug(`` pub-lic Asymp-toticTest-Case(String''+
+ []
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 713.
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 763.
+
+[3]
+
+LaTeX Warning: Citation `gehan1965generalized' on page 4 undefined on input lin
+e 848.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--870
+
+ []
+
+[4]
+Underfull \hbox (badness 2970) in paragraph at lines 906--907
+[]\OT1/ptm/b/n/10 Logs are mod-i-fied more in bug fix-ing com-mits
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 906--907
+\OT1/ptm/b/n/10 than non-bug fix-ing com-mits\OT1/ptm/m/n/10 . Ta-ble III[] sho
+ws that
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 1042.
+
+<model.pdf, id=34, 220.825pt x 85.31876pt>
+File: model.pdf Graphic file (type pdf)
+ <use model.pdf>
+Package pdftex.def Info: model.pdf used on input line 1222.
+(pdftex.def)             Requested size: 250.38434pt x 96.74362pt.
+ [6 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/ICMSE-EMSE/model.pdf>
+]
+<HadoopBoxPlot.pdf, id=42, 395.4775pt x 471.7625pt>
+File: HadoopBoxPlot.pdf Graphic file (type pdf)
+ <use HadoopBoxPlot.pdf>
+Package pdftex.def Info: HadoopBoxPlot.pdf used on input line 1244.
+(pdftex.def)             Requested size: 129.0pt x 153.88248pt.
+
+<HBaseBoxPlot.pdf, id=43, 395.4775pt x 471.7625pt>
+File: HBaseBoxPlot.pdf Graphic file (type pdf)
+ <use HBaseBoxPlot.pdf>
+Package pdftex.def Info: HBaseBoxPlot.pdf used on input line 1246.
+(pdftex.def)             Requested size: 129.0pt x 153.88248pt.
+
+<QpidBoxPlot.pdf, id=44, 395.4775pt x 471.7625pt>
+File: QpidBoxPlot.pdf Graphic file (type pdf)
+ <use QpidBoxPlot.pdf>
+Package pdftex.def Info: QpidBoxPlot.pdf used on input line 1247.
+(pdftex.def)             Requested size: 129.0pt x 153.88248pt.
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 1285.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/ICMSE-EMSE/HadoopBoxPl
+ot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/ICMSE-EMSE/HBaseB
+oxPlot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/ICMSE-EMSE/Qp
+idBoxPlot.pdf>]
+Overfull \hbox (121.5071pt too wide) in paragraph at lines 1424--1425
+[]|   []
+ []
+
+
+Overfull \hbox (253.41588pt too wide) in paragraph at lines 1433--1434
+[]|   []
+ []
+
+[9] ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\ICMSE-EMSE\diff1.bbl
+" [10]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+
+Underfull \vbox (badness 2205) has occurred while \output is active []
+
+)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[11] ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\ICMSE-EMSE\diff1.au
+x")
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5432 strings out of 493921
+ 76706 string characters out of 3146880
+ 187171 words of memory out of 3000000
+ 8617 multiletter control sequences out of 15000+200000
+ 49077 words of font info for 96 fonts, out of 3000000 for 9000
+ 844 hyphenation exceptions out of 8191
+ 43i,14n,35p,1821b,304s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/Latex/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fil
+es (x86)/Latex/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86
+)/Latex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/Latex
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/Latex/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/Latex/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsf
+onts/cm/cmr7.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pr
+ogram Files (x86)/Latex/fonts/type1/public/amsfonts/latxfont/lasy6.pfb><C:/Prog
+ram Files (x86)/Latex/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb><C:/Pro
+gram Files (x86)/Latex/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)
+/Latex/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/Latex/fonts/ty
+pe1/urw/times/utmr8a.pfb><C:/Program Files (x86)/Latex/fonts/type1/urw/times/ut
+mr8a.pfb><C:/Program Files (x86)/Latex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on diff1.pdf (11 pages, 597441 bytes).
+PDF statistics:
+ 129 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+

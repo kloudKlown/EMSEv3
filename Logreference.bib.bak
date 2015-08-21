@@ -1,0 +1,821 @@
+% This file was created with JabRef 2.10.
+% Encoding: Cp1252
+
+@article{shadish2009combining,
+	title={Combining estimates of effect size},
+	author={Shadish, William R and Haddock, C Keith},
+	journal={The handbook of research synthesis and meta-analysis},
+	volume={2},
+	pages={257--277},
+	year={2009},
+	publisher={Russell Sage Foundation New York}
+}
+
+@article{seaman1999qualitative,
+	title={Qualitative methods in empirical studies of software engineering},
+	author={Seaman, Carolyn B.},
+	journal={Software Engineering, IEEE Transactions on},
+	volume={25},
+	number={4},
+	pages={557--572},
+	year={1999},
+	publisher={IEEE}
+}
+@article{ihaka1996r,
+	title={R: a language for data analysis and graphics},
+	author={Ihaka, Ross and Gentleman, Robert},
+	journal={Journal of computational and graphical statistics},
+	volume={5},
+	number={3},
+	pages={299--314},
+	year={1996},
+	publisher={Taylor \& Francis}
+}
+
+@inproceedings{mocku,
+	title={Organizational volatility and its effects on software defects},
+	author={Mockus, Audris},
+	booktitle={ACM SIGSOFT '10 : Proceedings of the 18th  international symposium on Foundations of software engineering},
+	pages={117--126},
+	year={2010},
+	organization={ACM}
+}
+@inproceedings{shihab,
+	title={High-impact defects: a study of breakage and surprise defects},
+	author={Shihab, Emad and Mockus, Audris and Kamei, Yasutaka and Adams, Bram and Hassan, Ahmed E},
+	booktitle={ACM SIGSOFT '11 : Proceedings of the 19th symposium and the 13th European conference on Foundations of software engineering},
+	pages={300--310},
+	year={2011},
+	organization={ACM}
+}
+@inproceedings{RTpredictions,
+	title={On predicting the time taken to correct bug reports in open source projects},
+	author={Anbalagan, Prasanth and Vouk, Mladen},
+	booktitle={ ICSM 2009: Proceedings of IEEE International Conference on the Software Maintenance, },
+	pages={523--526},
+	year={2009},
+	organization={IEEE}
+}
+
+@Proceedings{Loglist,
+  Title                    = {List of Open Source Logging Libraries . http://java-source.net/opensource/Logging},
+
+  Crossref                 = {http://java-source.net/opensource/logging},
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.17},
+  Url                      = {http://java-source.net/opensource/logging}
+}
+
+@Article{cohend,
+  Author                   = {Effect Size : http://www.sussex.ac.uk/Users/grahamh/RM1web/WilcoxonHandoout2011.pdf},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.20}
+}
+
+@Article{pvalues,
+  Author                   = {P-Values : http://www.stat.ualberta.ca/~hooper/teaching/misc/Pvalue.pdf},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.19}
+}
+
+@Article{Ttest,
+  Author                   = {T-test :http://www.socialresearchmethods.net/kb/statt.php},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.20}
+}
+
+@Article{wilcox,
+  Author                   = {Wilcoxon Test : http://www.sussex.ac.uk/Users/grahamh/RM1web/WilcoxonHandoout2011.pdf},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.20}
+}
+
+@Article{levenshtein,
+  Author                   = {Levenshtein definition : http://xlinux.nist.gov/dads/HTML/Levenshtein.html},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.19}
+}
+
+@InProceedings{Splunk,
+  Title                    = {Analyzing Log Analysis: An Empirical Study of User Log Mining},
+  Author                   = {S. Alspaugh and Beidi Chen and Jessica Lin and Archana Ganapathi and Marti Hearst and Randy Katz},
+  Booktitle                = {28th Large Installation System Administration Conference (LISA14)},
+  Year                     = {2014},
+
+  Address                  = {Seattle, WA},
+  Month                    = Nov,
+  Pages                    = {62--77},
+  Publisher                = {USENIX Association},
+
+  ISBN                     = {978-1-931971-17-1},
+  Url                      = {https://www.usenix.org/conference/lisa14/conference-program/presentation/alspaugh}
+}
+
+@InProceedings{Beschastnikh11fse,
+  Title                    = {Leveraging existing instrumentation to automatically infer invariant-constrained models},
+  Author                   = {Ivan Beschastnikh and Yuriy Brun and Sigurd Schneider and Michael
+ Sloan and Michael D. Ernst},
+  Booktitle                = {ESEC/FSE '11: Proceedings of the 8th Joint Meeting of the European Software
+ Engineering Conference and ACM SIGSOFT Symposium on the Foundations of
+ Software Engineering },
+  Year                     = {2011},
+
+  Address                  = {Szeged, Hungary},
+  Month                    = {September},
+  Note                     = {},
+  Pages                    = {267--277}
+}
+
+@InProceedings{Bitperformance,
+  Title                    = {Optimizing Data Analysis with a Semi-structured Time Series Database},
+  Author                   = {Bitincka, Ledion and Ganapathi, Archana and Sorkin, Stephen and Zhang, Steve},
+  Booktitle                = {SLAML'10: Proceedings of the 2010 Workshop on Managing Systems via Log Analysis and Machine Learning Techniques},
+  Year                     = {},
+
+  Address                  = {},
+  Pages                    = {7--7},
+  Publisher                = {USENIX Association},
+  Series                   = {},
+
+  Acmid                    = {1929002},
+  Location                 = {Vancouver, BC, Canada},
+  Numpages                 = {1},
+  Url                      = {}
+}
+
+@InProceedings{BruntinkCorrectingmistakes,
+  Title                    = {Simple Crosscutting Concerns Are Not So Simple: Analysing Variability in Large-scale Idioms-based Implementations},
+  Author                   = {Bruntink, Magiel and van Deursen, Arie and D'Hondt, Maja and Tourw{\'e}, Tom},
+  Booktitle                = {Proceedings of the 6th International Conference on Aspect-oriented Software Development},
+  Year                     = {2007},
+
+  Address                  = {New York, NY, USA},
+  Pages                    = {199--211},
+  Publisher                = {ACM},
+  Series                   = {AOSD '07},
+
+  Acmid                    = {1218586},
+  Doi                      = {10.1145/1218563.1218586},
+  ISBN                     = {1-59593-615-7},
+  Keywords                 = {@reverse engineering, aspect-oriented programming, cross-cutting concerns, formal concept analysis, idioms, reengineering, restructuring, variability},
+  Location                 = {Vancouver, British Columbia, Canada},
+  Numpages                 = {13},
+  Url                      = {http://doi.acm.org/10.1145/1218563.1218586}
+}
+
+@Conference{KNagarajperformance,
+  Title                    = {Structured comparative
+analysis of systems logs to diagnose performance
+problems.},
+  Author                   = {K-Nagaraj C-Killian and J. Neville.},
+  Booktitle                = {In Proc. of the 9th USENIX Conference on Networked Systems Design and Implementation (NSDI 12)},
+  Year                     = {2012},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.18}
+}
+
+@Conference{Fu1,
+  Title                    = {Where Do Developers Log? An Empirical Study on Logging Practices in Industry},
+  Author                   = {Qiang Fu and Jieming Zhu and Wenlu Hu and Jian-Guang Louand Rui Ding and Qingwei
+Lin and Dongmei Zhang and Tao Xie},
+  Booktitle                = {ICSE Companion '14: Proceedings of the 36th International Conference on Software Engineering,  },
+  Year                     = {},
+  Month                    = {},
+  Pages                    = {Pages 24-33},
+  Publisher                = {},
+
+  Journal                  = {ICSE Companion 2014 Companion Proceedings of the 36th International Conference on Software Engineering},
+  Owner                    = {Suhas}
+}
+
+@Conference{LogAnalysis1,
+  Title                    = {Advances and challenges in log analysis},
+  Author                   = {A. J. Oliner A. Ganapathi and W. Xu. 2012. .},
+  Booktitle                = {Communications of ACM (CACM),},
+  Pages                    = {55(2):55-61},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.17}
+}
+
+
+@inproceedings{JiangICSM2009,
+	title={Automated performance analysis of load tests},
+	author={Jiang, Zhen Ming and Hassan, Ahmed E and Hamann, Gilbert and Flora, Parminder},
+	booktitle={ICSM '09: Proceedings of the IEEE International Conference on Software Maintenance},
+	pages={125--134},
+	year={2009},
+	organization={IEEE}
+}
+
+
+@Article{Effectsize,
+  Title                    = {A systematic review of effect size in software engineering experiments},
+  Author                   = {Vigdis By Kampenes and Tore Dyb{\aa} and Jo E. Hannay and Dag I. K. Sj{\o}berg},
+  Journal                  = {Information and Software Technology},
+  Year                     = {2007},
+
+  Month                    = {Nov},
+  Number                   = {11-12},
+  Pages                    = {1073-1086},
+  Volume                   = {49}
+}
+
+
+
+
+@Book{Levenshtein2,
+	Title                    = {Binary codes capable of correcting deletions, insertions, and reversals},
+	Author                   = {Vladimir I. Levenshtein},
+	Year                     = {1966},
+	
+	Owner                    = {Suhas},
+	Timestamp                = {2015.03.27}
+}
+
+@Misc{Logstash,
+	Url                    = {http://logstash.net},
+	
+	Author                   = {logstash},
+	
+	Owner                    = {Suhas},
+	Timestamp                = {2015.03.01}
+}
+@article{gehan1965generalized,
+	title={A generalized Wilcoxon test for comparing arbitrarily singly-censored samples},
+	author={Gehan, Edmund A},
+	journal={Biometrika},
+	volume={52},
+	number={1-2},
+	pages={203--223},
+	year={1965},
+	publisher={Biometrika Trust}
+}
+
+@article{orwin1983fail,
+	title={A fail-safe N for effect size in meta-analysis},
+	author={Orwin, Robert G},
+	journal={Journal of educational statistics},
+	pages={157--159},
+	year={1983},
+	publisher={JSTOR}
+}
+
+@article{gehan1965generalized,
+	title={A generalized Wilcoxon test for comparing arbitrarily singly-censored samples},
+	author={Gehan, Edmund A},
+	journal={Biometrika},
+	volume={52},
+	number={1-2},
+	pages={203--223},
+	year={1965},
+	publisher={Biometrika Trust}
+}
+
+@article{rosenthal1994parametric,
+	title={Parametric measures of effect size},
+	author={Rosenthal, Robert and Cooper, H and Hedges, LV},
+	journal={The handbook of research synthesis},
+	pages={231--244},
+	year={1994}
+}
+
+
+
+@inproceedings{Yuan:2010:SED:1736020.1736038,
+ author = {Yuan, Ding and Mai, Haohui and Xiong, Weiwei and Tan, Lin and Zhou, Yuanyuan and Pasupathy, Shankar},
+ title = {SherLog: Error Diagnosis by Connecting Clues from Run-time Logs},
+ booktitle = {ASPLOS '10: Proceedings of the 15th Edition of ASPLOS on Architectural Support for Programming Languages and Operating Systems},
+ series = {},
+ year = {2010},
+ isbn = {978-1-60558-839-1},
+ location = {Pittsburgh, Pennsylvania, USA},
+ pages = {143--154},
+ numpages = {12},
+ url = {},
+ doi = {10.1145/1736020.1736038},
+ acmid = {1736038},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {failure diagnostics, log, static analysis},
+}
+
+@inproceedings{IanIcesm,
+	title={Understanding Log Lines Using Development Knowledge},
+	author={Shang, Weiyi and Nagappan, Meiyappan and Hassan, Ahmed E and Jiang, Zhen Ming},
+	booktitle={ICSME '14: Proceedings of the International Conference on Software Maintenance and Evolution, },
+	pages={21--30},
+	year={2014},
+	organization={IEEE}
+}
+
+
+@Misc{Logstash,
+  Title                    = {http://logstash.net},
+
+  Author                   = {logstash},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2015.03.01}
+}
+@inproceedings{Beschastnikh:2014:IMC:2568225.2568246,
+ author = {Beschastnikh, Ivan and Brun, Yuriy and Ernst, Michael D. and Krishnamurthy, Arvind},
+ title = {Inferring Models of Concurrent Systems from Logs of Their Behavior with CSight},
+ booktitle = {ICSE '14: Proceedings of the 36th International Conference on Software Engineering},
+ series = {},
+ year = {2014},
+ isbn = {978-1-4503-2756-5},
+ location = {Hyderabad, India},
+ pages = {468--479},
+ numpages = {12},
+ url = {},
+ doi = {10.1145/2568225.2568246},
+ acmid = {2568246},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {CSight, Model inference, concurrency, distributed systems, log analysis},
+}
+
+
+@inproceedings{Beschastnikh:2011:LEI:2025113.2025151,
+ author = {Beschastnikh, Ivan and Brun, Yuriy and Schneider, Sigurd and Sloan, Michael and Ernst, Michael D.},
+ title = {Leveraging Existing Instrumentation to Automatically Infer Invariant-constrained Models},
+ booktitle = {Proceedings of the 19th ACM SIGSOFT Symposium and the 13th European Conference on Foundations of Software Engineering},
+ series = {ESEC/FSE '11},
+ year = {2011},
+ isbn = {978-1-4503-0443-6},
+ location = {Szeged, Hungary},
+ pages = {267--277},
+ numpages = {11},
+ url = {},
+ doi = {10.1145/2025113.2025151},
+ acmid = {2025151},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {log analysis, model inference, synoptic, temporal invariant mining},
+} 
+
+@article {SMR:SMR1579,
+author = {Shang, Weiyi and Jiang, Zhen Ming and Adams, Bram and Hassan, Ahmed E. and Godfrey, Michael W. and Nasser, Mohamed and Flora, Parminder},
+title = {An exploratory study of the evolution of communicated information about the execution of large software systems},
+journal = {Journal of Software: Evolution and Process},
+volume = {26},
+number = {1},
+issn = {2047-7481},
+url = {},
+doi = {10.1002/smr.1579},
+pages = {3--26},
+keywords = {reverse engineering, software evolution, communicated information, execution log analysis},
+year = {2014},
+}
+
+
+@inproceedings{Jiang:2009:UCP:1525908.1525912,
+ author = {Jiang, Weihang and Hu, Chongfeng and Pasupathy, Shankar and Kanevsky, Arkady and Li, Zhenmin and Zhou, Yuanyuan},
+ title = {Understanding Customer Problem Troubleshooting from Storage System Logs},
+ booktitle = {FAST '09: Proceedings of the 7th Conference on File and Storage Technologies},
+ series = {},
+ year = {2009},
+ location = {San Francisco, California},
+ pages = {43--56},
+ numpages = {14},
+ url = {},
+ acmid = {1525912},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+
+@article{Jiang:2008:AAA:1400155.1400158,
+ author = {Jiang, Zhen Ming and Hassan, Ahmed E. and Hamann, Gilbert and Flora, Parminder},
+ title = {An Automated Approach for Abstracting Execution Logs to Execution Events},
+ journal = {Journal of Software Maintenance Evolution},
+ issue_date = {July 2008},
+ volume = {20},
+ number = {4},
+ month = jul,
+ year = {2008},
+ issn = {1532-060X},
+ pages = {249--267},
+ numpages = {19},
+ url = {},
+ doi = {10.1002/smr.v20:4},
+ acmid = {1400158},
+ publisher = {John Wiley \& Sons, Inc.},
+ address = {New York, NY, USA},
+ keywords = {clone detection, dynamic analysis, execution logs},
+} 
+
+
+
+@INPROCEEDINGS{JiangICSM2008, 
+author={Zhen Ming Jiang and Hassan, A.E. and Hamann, G. and Flora, P.}, 
+booktitle={ICSM '08: Proceedings of theIEEE International Conference on  Software Maintenance}, 
+title={Automatic identification of load testing problems}, 
+year={2008}, 
+month={Sept}, 
+pages={307-316}, 
+keywords={program testing;public domain software;software engineering;automatic identification;enterprise software;load testing;open source software;Application software;Automatic testing;Measurement;Monitoring;Open source software;Performance evaluation;Software testing;System testing;Telecommunication traffic;Vehicle crash testing}, 
+doi={10.1109/ICSM.2008.4658079}, 
+ISSN={1063-6773},}
+
+@InProceedings{Automatic,
+  Title                    = {Automatic detection of performance deviations in the load testing of Large Scale Systems},
+  Author                   = {Malik, H. and Hemmati, H. and Hassan, A.E.},
+  Booktitle                = {Software Engineering (ICSE), 2013 35th International Conference on},
+  Year                     = {2013},
+  Month                    = {May},
+  Pages                    = {1012-1021},
+
+  Doi                      = {10.1109/ICSE.2013.6606651},
+  Keywords                 = {input-output programs;program testing;public domain software;regression analysis;software performance evaluation;unsupervised learning;CPU utilization;LSS;SLA violations;automatic performance deviation detection;deviation prediction;disk I-O;large scale systems;load testing;logistic regression model;machine learning;memory consumption;network traffic;open source benchmark application;performance counters;root-cause analysis;run-time system properties;search-based technique;service level agreements;wrapper-based supervised approach;Control charts;Large-scale systems;Logistics;Monitoring;Principal component analysis;Radiation detectors;Testing;Machine Learning;Performance;Signature}
+}
+
+@InProceedings{Nagappanmodulebug,
+  Title                    = {Using Software Dependencies and Churn Metrics to Predict Field Failures: An Empirical Case Study},
+  Author                   = {Nagappan, Nachiappan and Ball, Thomas},
+  Booktitle                = {Proceedings of the First International Symposium on Empirical Software Engineering and Measurement},
+  Year                     = {2007},
+
+  Address                  = {Washington, DC, USA},
+  Pages                    = {364--373},
+  Publisher                = {IEEE Computer Society},
+  Series                   = {ESEM '07},
+
+  Acmid                    = {1302955},
+  Doi                      = {10.1109/ESEM.2007.87},
+  ISBN                     = {0-7695-2886-4},
+  Numpages                 = {10},
+  Url                      = {http://dx.doi.org/10.1109/ESEM.2007.87}
+}
+
+@InProceedings{NagappanBugpredictions,
+  Title                    = {Use of Relative Code Churn Measures to Predict System Defect Density},
+  Author                   = {Nagappan, Nachiappan and Ball, Thomas},
+  Booktitle                = {Proceedings of the 27th International Conference on Software Engineering},
+  Year                     = {2005},
+
+  Address                  = {New York, NY, USA},
+  Pages                    = {284--292},
+  Publisher                = {ACM},
+  Series                   = {ICSE '05},
+
+  Acmid                    = {1062514},
+  Doi                      = {10.1145/1062455.1062514},
+  ISBN                     = {1-58113-963-2},
+  Keywords                 = {defect density, fault-proneness, multiple regression, principal component analysis, relative code churn},
+  Location                 = {St. Louis, MO, USA},
+  Numpages                 = {9},
+  Url                      = {http://doi.acm.org/10.1145/1062455.1062514}
+}
+
+@InProceedings{NagappanBugModule2,
+  Title                    = {Mining Metrics to Predict Component Failures},
+  Author                   = {Nagappan, Nachiappan and Ball, Thomas and Zeller, Andreas},
+  Booktitle                = {Proceedings of the 28th International Conference on Software Engineering},
+  Year                     = {2006},
+
+  Address                  = {New York, NY, USA},
+  Pages                    = {452--461},
+  Publisher                = {ACM},
+  Series                   = {ICSE '06},
+
+  Acmid                    = {1134349},
+  Doi                      = {10.1145/1134285.1134349},
+  ISBN                     = {1-59593-375-1},
+  Keywords                 = {bug database, complexity metrics, empirical study, principal component analysis, regression model},
+  Location                 = {Shanghai, China},
+  Numpages                 = {10},
+  Url                      = {http://doi.acm.org/10.1145/1134285.1134349}
+}
+
+@Conference{SharmaModelling,
+  Title                    = {Modeling and synthesizing task placement constraints in Google compute clusters.},
+  Author                   = {B. Sharma V. Chudnovsky J. L. Hellerstein R. Rifaat and
+C. R. Das},
+  Booktitle                = {In Proc. of the 2nd ACM Symposium on Cloud Computing},
+  Year                     = {2011},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.18}
+}
+
+@Conference{IanGap,
+  Title                    = {Bridging the divide between software developers and operators using logs},
+  Author                   = {Weiyi Shang},
+  Booktitle                = {ICSE '12 :Proceedings of the 34th International Conference on Software Engineering },
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.18}
+}
+
+@Article{IanWCRE,
+  Title                    = {An exploratory study of the evolution of communicated information about the execution of large software systems},
+  Author                   = {Shang, Weiyi and Jiang, Zhen Ming and Adams, Bram and Hassan, Ahmed E. and Godfrey, Michael W. and Nasser, Mohamed and Flora, Parminder},
+  Journal                  = {Journal of Software: Evolution and Process},
+  Year                     = {2014},
+  Number                   = {1},
+  Pages                    = {3--26},
+  Volume                   = {26},
+
+  Doi                      = {10.1002/smr.1579},
+  ISSN                     = {2047-7481},
+  Keywords                 = {reverse engineering, software evolution, communicated information, execution log analysis},
+  Url                      = {}
+}
+
+@InProceedings{IanContextinformation,
+  Title                    = {Assisting Developers of Big Data Analytics Applications when Deploying on Hadoop Clouds},
+  Author                   = {Shang, Weiyi and Jiang, Zhen Ming and Hemmati, Hadi and Adams, Bram and Hassan, Ahmed E. and Martin, Patrick},
+  Booktitle                = {ICSE'13: Proceedings of the 2013 International Conference on Software Engineering},
+  Year                     = {2013},
+
+  Address                  = {Piscataway, NJ, USA},
+  Pages                    = {402--411},
+  Publisher                = {IEEE Press},
+  Series                   = {ICSE '13},
+
+  Acmid                    = {2486842},
+  ISBN                     = {978-1-4673-3076-3},
+  Location                 = {San Francisco, CA, USA},
+  Numpages                 = {10},
+  Url                      = {}
+}
+@inproceedings{Yuan:2014:STP:2685048.2685068,
+ author = {Yuan, Ding and Luo, Yu and Zhuang, Xin and Rodrigues, Guilherme Renna and Zhao, Xu and Zhang, Yongle and Jain, Pranay U. and Stumm, Michael},
+ title = {Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-intensive Systems},
+ booktitle = {OSDI'14: Proceedings of the 11th USENIX Conference on Operating Systems Design and Implementation},
+ series = {},
+ year = {2014},
+ isbn = {978-1-931971-16-4},
+ location = {Broomfield, CO},
+ pages = {249--265},
+ numpages = {17},
+ url = {},
+ acmid = {2685068},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+}
+@inproceedings{Jiang:2010:ICS:1850000.1850068,
+ author = {Jiang, Zhen Ming and Avritzer, Alberto and Shihab, Emad and Hassan, Ahmed E. and Flora, Parminder},
+ title = {An Industrial Case Study on Speeding Up User Acceptance Testing by Mining Execution Logs},
+ booktitle = {SSIRI '10: Proceedings of the 4th International Conference on Secure Software Integration and Reliability Improvement },
+ series = {},
+ year = {},
+ isbn = {978-0-7695-4086-3},
+ pages = {131--140, 2010},
+ numpages = {10},
+ url = {},
+ doi = {10.1109/SSIRI.2010.15},
+ acmid = {1850068},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {Reliability, Execution logs, Mining Repositories},
+}
+
+
+@Article{EMSEIAN,
+  Title                    = {Studying the relationship between logging characteristics and the code quality of platform software},
+  Author                   = {Shang, Weiyi and Nagappan, Meiyappan and Hassan, Ahmed E.},
+  Journal                  = {Empirical Software Engineering},
+  Year                     = {2015},
+  Number                   = {1},
+  Pages                    = {1-27},
+  Volume                   = {20},
+
+  Doi                      = {10.1007/s10664-013-9274-8},
+  ISSN                     = {1382-3256},
+  Keywords                 = {Mining software repositories; Software logs; Software quality},
+  Language                 = {English},
+  Publisher                = {Springer US},
+  Url                      = {}
+}
+
+@InProceedings{Marksyer,
+  Title                    = {Leveraging Performance Counters and Execution Logs to Diagnose Memory-Related Performance Issues},
+  Author                   = {Syer, M.D. and Zhen Ming Jiang and Nagappan, M. and Hassan, A.E. and Nasser, M. and Flora, P.},
+  Booktitle                = {ICSM '13: Proceedings of the 29th IEEE International Conference on Software Maintenance}
+  Year                     = {},
+  Month                    = {Sept},
+  Pages                    = {110-119},
+
+  Doi                      = {10.1109/ICSM.2013.22},
+  ISSN                     = {1063-6773},
+  Keywords                 = {}
+}
+
+
+@InProceedings{TanSalsa,
+  Title                    = {SALSA: Analyzing Logs As State Machines},
+  Author                   = {Tan, Jiaqi and Pan, Xinghao and Kavulya, Soila and Gandhi, Rajeev and Narasimhan, Priya},
+  Booktitle                = {WASL'08: Proceedings of the 1st USENIX Conference on Analysis of System Logs},
+  Year                     = {2008},
+
+  Address                  = {},
+  Pages                    = {6--6},
+  Publisher                = {USENIX Association},
+  Series                   = {},
+
+  Acmid                    = {1855892},
+  Location                 = {San Diego, California},
+  Numpages                 = {1},
+  Url                      = {}
+}
+
+@Conference{QFuanomaly,
+  Title                    = {Execution anomaly detection in distributed systems through unstructured
+log analysis.},
+  Author                   = {Q. Fu J.G. Lou Y. Wang and J. Li.},
+  Booktitle                = {ICDM 09: In Proceedings of 9th IEEE International Conference on Data Mining},
+  Year                     = {},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.18}
+}
+
+@Misc{Xpolog,
+  Url                    = {http://www.xpolog.com/.},
+
+  Author                   = {Xpolog}
+}
+
+@TechReport{Xu:EECS-2009-103,
+  Title                    = {Large-Scale System Problems Detection by Mining Console Logs},
+  Author                   = {Xu, Wei and Huang, Ling and Fox, Armando and Patterson, David A. and Jordan, Michael},
+  Institution              = {EECS Department, University of California, Berkeley},
+  Year                     = {2009},
+  Month                    = {Jul},
+  Number                   = {UCB/EECS-2009-103},
+
+  Abstract                 = {Surprisingly, console logs rarely help operators detect
+problems in large-scale datacenter services, for they often
+consist of the voluminous intermixing of messages
+from many software components written by independent
+developers. We propose a general methodology to mine
+this rich source of information to automatically detect
+system runtime problems. We first parse console logs
+by combining source code analysis with information retrieval
+to create composite features. We then analyze
+these features using machine learning to detect operational
+problems. We show that our method enables analyses
+that are impossible with previous methods because of
+its superior ability to create sophisticated features. We
+also show how to distill the results of our analysis to
+an operator-friendly one-page decision tree showing the
+critical messages associated with the detected problems.
+We validate our approach using the Darkstar online game
+server and the Hadoop File System, where we detect numerous
+real problems with high accuracy and few false
+positives. In the Hadoop case, we are able to analyze 24
+million lines of console logs in 3 minutes. Our methodology
+works on textual console logs of any size and requires
+no changes to the service software, no human input,
+and no knowledge of the software’s internals.},
+  Url                      = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-103.html}
+}
+
+@InProceedings{XUanomalies,
+  Title                    = {Online System Problem Detection by Mining Patterns of Console Logs},
+  Author                   = {Xu, Wei and Huang, Ling and Fox, Armando and Patterson, David and Jordan, Michael},
+  Booktitle                = {ICDM '09: Proceedings of the 9th IEEE International Conference on Data Mining },
+  Year                     = {},
+
+  Address                  = {},
+  Pages                    = {588--597},
+  Publisher                = {},
+  Series                   = {},
+
+  Acmid                    = {1677125},
+  Doi                      = {10.1109/ICDM.2009.19},
+  ISBN                     = {978-0-7695-3895-2},
+  Keywords                 = {console logs, system management, monitoring, problem detection, logs, pattern mining},
+  Numpages                 = {10},
+  Url                      = {}
+}
+
+@InProceedings{ConsoleLogs,
+  Title                    = {Detecting Large-scale System Problems by Mining Console Logs},
+  Author                   = {Xu, Wei and Huang, Ling and Fox, Armando and Patterson, David and Jordan, Michael I.},
+  Booktitle                = {ACM SIGOPS '09: Proceedings of the 22nd Symposium on Operating Systems Principles},
+  Year                     = {},
+
+  Address                  = {New York, NY, USA},
+  Pages                    = {117--132},
+  Publisher                = {},
+  Series                   = {},
+
+  Acmid                    = {1629587},
+  Doi                      = {10.1145/1629575.1629587},
+  ISBN                     = {978-1-60558-752-3},
+  Keywords                 = {console log analysis, monitoring, pca, problem detection, source code analysis, statistical learning, tracing},
+  Location                 = {Big Sky, Montana, USA},
+  Numpages                 = {16},
+  Url                      = {}
+}
+
+@InProceedings{Characterizinglogs,
+  Title                    = {Characterizing Logging Practices in Open-source Software},
+  Author                   = {Yuan, Ding and Park, Soyeon and Zhou, Yuanyuan},
+  Booktitle                = {ICSE '12: Proceedings of the 34th International Conference on Software Engineering},
+  Year                     = {2012},
+
+  Address                  = {},
+  Pages                    = {102--112},
+  Publisher                = {IEEE Press},
+  Series                   = {},
+
+  Acmid                    = {2337236},
+  ISBN                     = {978-1-4673-1067-3},
+  Location                 = {Zurich, Switzerland},
+  Numpages                 = {11},
+  Url                      = {}
+}
+
+@Article{Yuan,
+  Title                    = {Improving Software Diagnosability via Log Enhancement},
+  Author                   = {Yuan, Ding and Zheng, Jing and Park, Soyeon and Zhou, Yuanyuan and Savage, Stefan},
+  Journal                  = {ACM Transactions on Computer Systems},
+  Year                     = {2012},
+
+  Month                    = feb,
+  Number                   = {},
+  Pages                    = {4:1--4:28},
+  Volume                   = {30},
+
+  Acmid                    = {2110360},
+  Address                  = {New York, NY, USA},
+  Articleno                = {4},
+  Doi                      = {10.1145/2110356.2110360},
+  ISSN                     = {0734-2071},
+  Issue_date               = {February 2012},
+  Keywords                 = {Log, debugging, failure diagnostics, program analysis, software diagnosability},
+  Numpages                 = {28},
+  Publisher                = {ACM},
+  Url                      = {}
+}
+
+
+@inproceedings{JGLouMining,
+	title={Mining Invariants from Console Logs for System Problem Detection.},
+	author={Lou, Jian-Guang and Fu, Qiang and Yang, Shengqi and Xu, Ye and Li, Jiang},
+	booktitle={USENIX Annual Technical Conference},
+	year={2010}
+}
+
+@InProceedings{Zimmermanneclipe,
+  Title                    = {Predicting Defects for Eclipse},
+  Author                   = {Zimmermann, Thomas and Premraj, Rahul and Zeller, Andreas},
+  Booktitle                = {Proceedings of the Third International Workshop on Predictor Models in Software Engineering},
+  Year                     = {2007},
+
+  Address                  = {Washington, DC, USA},
+  Pages                    = {9--},
+  Publisher                = {IEEE Computer Society},
+  Series                   = {PROMISE '07},
+
+  Acmid                    = {1269057},
+  Doi                      = {10.1109/PROMISE.2007.10},
+  ISBN                     = {0-7695-2954-2},
+  Url                      = {http://dx.doi.org/10.1109/PROMISE.2007.10}
+}
+
+@Misc{CohensD,
+  Title                    = {Cohens D - http://www.statpt.com/appliedgen/cohend.pdf}
+}
+
+@Proceedings{Httpclient,
+  Title                    = {JIRA issue for HTTPCLIENT https://issues.apache.org/jira/browse/HTTPCLIENT-416},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.17}
+}
+
+@Proceedings{PDFBox,
+  Title                    = {Jira issue for PDFBox : https://issues.apache.org/jira/browse/PDFBOX-693},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.17}
+}
+
+@Misc{Wilcoxon,
+  Title                    = {Wilcoxon Test - http://www.ime.unicamp.br/~dias/Ch10.wilcoxon.pdf},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2015.02.21}
+}
+
+@Proceedings{Khosh,
+  Title                    = {T. M. Khoshgoftaar, E. B. Allen, N. Goel, A. Nandi, and J. McMullan. Detection
+of software modules with high debug code churn in a very large legacy system. In
+Proceedings of ISSRE},
+  Year                     = {1996, page 364. IEEE CS Press, 1996.},
+
+  Owner                    = {Suhas},
+  Timestamp                = {2014.12.23}
+}
+

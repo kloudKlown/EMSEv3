@@ -1,0 +1,290 @@
+ %%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+ %
+ % This is a general template file for the LaTeX package SVJour3
+ % for Springer journals.          Springer Heidelberg 2010/09/16
+ %
+ % Copy it to a new file with a new name and use it as the basis
+ % for your article. Delete % signs as needed.
+ %
+ % This template includes a few options for different layouts and
+ % content for various journals. Please consult a previous issue of
+ % your journal as needed.
+ %
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %
+ % First comes an example EPS file -- just ignore it and
+ % proceed on the \documentclass line
+ %% your LaTeX will extract the file if required
+ %\begin{filecontents*}{example.eps}
+ %%!PS-Adobe-3.0 EPSF-3.0
+ %%%BoundingBox: 19 19 221 221
+ %%%CreationDate: Mon Sep 29 1997
+ %%%Creator: programmed by hand (JK)
+ %%%EndComments
+ %
+ %\end{filecontents*}
+ %
+ \RequirePackage{fix-cm}
+ %
+ %\documentclass{svjour3}                     % onecolumn (standard format)
+ %\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
+ \documentclass[smallextended]{svjour3}       % onecolumn (second format)
+ %\documentclass[twocolumn]{svjour3}          % twocolumn
+ %
+ \smartqed  % flush right qed marks, e.g. at end of proof
+ %
+ \input{setup}
+ \usepackage{graphicx}
+ %
+ % \usepackage{mathptmx}      % use Times fonts if available on your TeX system
+ %
+ % insert here the call for the packages your document requires
+ %\usepackage{latexsym}
+ % etc.
+ %
+ % please place your own definitions here and don't use \def but
+ % \newcommand{}{}
+ %
+ % Insert the name of "your journal" with
+ % \journalname{myjournal}
+ %
+
+\begin{document}
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+% Do not put math or special symbols in the title.
+\title{An Empirical Study On Log Changes During Bug Fixes in Platform Systems}
+
+\author{First Author         \and
+	Second Author %etc.
+}
+
+%\authorrunning{Short form of author list} % if too long for running head
+
+\institute{Suhas. Kabinna \at
+	first address \\
+	Tel.: +123-45-678910\\
+	Fax: +123-45-678910\\
+	\email{fauthor@example.com}           %  \\
+	%             \emph{Present address:} of F. Author  %  if needed
+	\and
+	S. Author \at
+	second address
+}
+
+\date{Received: date / Accepted: date}
+% The correct dates will be entered by the editor
+
+
+
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+\begin{abstract}
+	\input{Abstract}
+\end{abstract}
+
+% no keywords
+
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+
+
+
+
+
+
+
+\section{Introduction}
+
+\input{Introduction}
+
+\section{A Manual Study on Leveraging Logs During Bug Fixes}
+\label{sec:Manual}
+\input{Manualstudy}
+
+\section{Methodology}
+\label{sec:Methodology}
+\input{Methodology}
+
+\section{Study Results}
+\label{sec:Study}
+\input{RQ1}
+\input{RQ2}
+%\input{RQ3}
+
+
+
+
+\section{Related Work}
+\label{sec:Related}
+\input{Relatedwork}
+
+
+
+\section{Limitations and Threats to Validity}
+\label{sec:Limit}
+\input{Threats}
+\section{Conclusion and Future Work}
+\label{sec:Conclusion}
+\input{Conclusion}
+
+% An example of a floating figure using the graphicx package.
+% Note that \label must occur AFTER (or within) \caption.
+% For figures, \caption should occur after the \includegraphics.
+% Note that IEEEtran v1.7 and later has special internal code that
+% is designed to preserve the operation of \label within \caption
+% even when the captionsoff option is in effect. However, because
+% of issues like this, it may be the safest practice to put all your
+% \label just after \caption rather than within \caption{}.
+%
+% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
+% option should be used if it is desired that the figures are to be
+% displayed while in draft mode.
+%
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=2.5in]{myfigure}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+%\caption{Simulation results for the network.}
+%\label{fig_sim}
+%\end{figure}
+
+% Note that IEEE typically puts floats only at the top, even when this
+% results in a large percentage of a column being occupied by floats.
+
+
+% An example of a double column floating figure using two subfigures.
+% (The subfig.sty package must be loaded for this to work.)
+% The subfigure \label commands are set within each subfloat command,
+% and the \label for the overall figure must come after \caption.
+% \hfil is used as a separator to get equal spacing.
+% Watch out that the combined width of all the subfigures on a 
+% line do not exceed the text width or a line break will occur.
+%
+%\begin{figure*}[!t]
+%\centering
+%\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
+%\label{fig_first_case}}
+%\hfil
+%\subfloat[Case II]{\includegraphics[width=2.5in]{box}%
+%\label{fig_second_case}}
+%\caption{Simulation results for the network.}
+%\label{fig_sim}
+%\end{figure*}
+%
+% Note that often IEEE papers with subfigures do not employ subfigure
+% captions (using the optional argument to \subfloat[]), but instead will
+% reference/describe all of them (a), (b), etc., within the main caption.
+% Be aware that for subfig.sty to generate the (a), (b), etc., subfigure
+% labels, the optional argument to \subfloat must be present. If a
+% subcaption is not desired, just leave its contents blank,
+% e.g., \subfloat[].
+
+
+% An example of a floating table. Note that, for IEEE style tables, the
+% \caption command should come BEFORE the table and, given that table
+% captions serve much like titles, are usually capitalized except for words
+% such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to
+% and up, which are usually not capitalized unless they are the first or
+% last word of the caption. Table text will default to \footnotesize as
+% IEEE normally uses this smaller font for tables.
+% The \label must come after \caption as always.
+%
+%\begin{table}[!t]
+%% increase table row spacing, adjust to taste
+%\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+% \extrarowheight as needed to properly center the text within the cells
+%\caption{An Example of a Table}
+%\label{table_example}
+%\centering
+%% Some packages, such as MDW tools, offer better commands for making tables
+%% than the plain LaTeX2e tabular which is used here.
+%\begin{tabular}{|c||c|}
+%\hline
+%One & Two\\
+%\hline
+%Three & Four\\
+%\hline
+%\end{tabular}
+%\end{table}
+
+
+% Note that the IEEE does not put floats in the very first column
+% - or typically anywhere on the first page for that matter. Also,
+% in-text middle ("here") positioning is typically not used, but it
+% is allowed and encouraged for Computer Society conferences (but
+% not Computer Society journals). Most IEEE journals/conferences use
+% top floats exclusively. 
+% Note that, LaTeX2e, unlike IEEE journals/conferences, places
+% footnotes above bottom floats. This can be corrected via the
+% \fnbelowfloat command of the stfloats package.
+
+
+
+
+
+% conference papers do not normally have an appendix
+
+
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{Logreference}
+
+
+
+
+
+
+
+
+% that's all folks
+\end{document}
+
+

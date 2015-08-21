@@ -1,0 +1,34 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: ICSMEMain.aux
+White space in argument---line 78 of file ICSMEMain.aux
+ : \citation{Beschastnikh:2011:LEI:2025113.2025151,
+ :                                                  Beschastnikh:2014:IMC:2568225.2568246}
+I'm skipping whatever remains of this command
+White space in argument---line 85 of file ICSMEMain.aux
+ : \citation{Jiang:2008:AAA:1400155.1400158,JiangICSM2008,
+ :                                                         JiangICSM2009,Jiang:2010:ICS:1850000.1850068}
+I'm skipping whatever remains of this command
+White space in argument---line 93 of file ICSMEMain.aux
+ : \citation{EMSEIAN,
+ :                    SMR:SMR1579}
+I'm skipping whatever remains of this command
+The style file: IEEEtran.bst
+Database file #1: Logreference.bib
+Repeated entry---line 340 of file Logreference.bib
+ : @misc{Logstash
+ :               ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "gehan1965generalized"
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty year in XUanomalies
+Warning--empty year in ConsoleLogs
+Warning--empty year in Bitperformance
+Warning--missing publisher in Levenshtein2
+Warning--empty year in QFuanomaly
+Warning--empty year in Jiang:2010:ICS:1850000.1850068
+Warning--empty year in Fu1
+Warning--empty year in IanGap
+
+Done.
+(There were 4 error messages)

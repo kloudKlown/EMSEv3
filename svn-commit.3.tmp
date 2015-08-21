@@ -1,0 +1,28 @@
+
+--This line, and those below, will be ignored--
+
+M    HBaseBoxPlot.pdf
+M    HadoopBoxPlot.pdf
+A    ICSMEMain.aux
+A    ICSMEMain.bbl
+A    ICSMEMain.blg
+A    ICSMEMain.log
+AM   ICSMEMain.pdf
+AM   ICSMEMain.synctex.gz
+A    ICSMEMain.tex
+M    Introduction.tex
+M    Logreference.bib
+M    MethdologyICESEM.pdf
+M    Methodology.tex
+M    QpidBoxPlot.pdf
+M    RQ1.tex
+M    RQ2.tex
+AM   Rplot02.pdf
+M    bare_conf.aux
+M    bare_conf.bbl
+M    bare_conf.blg
+M    bare_conf.log
+M    bare_conf.pdf
+M    bare_conf.synctex.gz
+AM   model.pdf
+A    svn-commit.tmp.save.1

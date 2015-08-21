@@ -1,0 +1,33 @@
+To further understand how developers change logs in bug fixes, we finally conduct a qualitative analysis. We collected all the bug fixes with log churn for our studied systems. We selected a 5\% random sample (266 for \textsl{HBase}, 268 for \textsl{Hadoop} and 83 for \textsl{Qpid}) from all the commits. For the sampled commits, we analyze the code changes made in Git and the corresponding JIRA issue reports to find different patterns of log use in bug fixes. We follow an iterative process, similar to prior research~\cite{seaman1999qualitative}, until we cannot find any new types of patterns. We find three reasons of changing logs during bug fixes as shown in Table~\ref{tba:LogUsage}. We find that these three reasons can co-occur within a single commit. 
+
+% The code changes are analyzed to identify common patters of log usage during debugging and JIRA issue reports are analyzed to understand the extent of log usage by developers.
+\begin{table}[tbh]
+	\protect\caption{Log change reasons during bug fix}
+	\label{tba:LogUsage}	
+	\begin{centering}
+		\begin{tabular}{|>{\centering}p{2.5cm}|>{\centering}p{1.3cm}|>{\centering}p{1.3cm}|>{\centering}p{1.3cm}|}
+			\hline 
+			Projects & Hadoop & HBase & Qpid\tabularnewline
+			\hline 
+			\hline 
+			Bug diagnosis & 157 & 175 & 49\tabularnewline
+			\hline 
+			Future bugs prevention & 156 & 170 & 42\tabularnewline
+			\hline 
+			Code quality assurance during bug fixes & 93 & 78 & 18\tabularnewline
+			\hline 
+		\end{tabular}
+		\par\end{centering}
+	
+\end{table}
+\begin{itemize}
+	
+
+\item \subsubsection*{Bug diagnosis} Developers use logs to detect runtime defects. Developers change log to print extra or different information into logs during the execution of the system. We categorize a log change as bug diagnosis only when there is log change has added and deleted code prior to it (code block is changed). For example, to fix HADOOP-2725 \footnote{https://issues.apache.org/jira/browse/HADOOP-2725} we observe that developers notice a discrepancy when a 100TB file is copied across two clusters. To help in debugging we observe that developers modify the log variable which outputs the sizes of the files into human readable format instead of bytes. These log changes are committed along with bug fix, as it clarifies the log and helps in easy understanding. %These findings are consistent with prior findings where majority of log changes are made during debugging~\cite{EMSEIAN}.
+
+\item \subsubsection*{Future bugs prevention} After fixing a bug, developers may insert log into the code. Such logs monitor the execution of the system to track for similar bugs in the future. We categorize a log change as future bug prevention, when prior to the log change there is addition of new blocks (i.e., if, if-else, try-catch and exception) with code deletion. For example in HADOOP-2890 \footnote{https://issues.apache.org/jira/browse/HADOOP-2890} we see that developers leverage logs to identify the reason behind blocks getting corrupted. In the commit, we observe that the developers fix this bug by adding new checks to verify where the block gets corrupted and they add\textsl{try catch} block with new logs to catch these exceptions. The log will notify developers with useful information to diagnose the bug if a similar bug appears.
+
+\item \subsubsection*{Code quality assurance during bug fixes} Sometime, developers need to introduce a large amounts of code to fix a bug with no code deletion. The introduction of new code, may introduce new bugs into the system. To ensure the quality of these bug fixes, developers insert logs into the bug-fixing code. For example in HBASE-3787 \footnote{https://issues.apache.org/jira/browse/3787}, where developers encounter a non-idempotent increment which causes an error in the application. This fix involves over 13 developers and 112 discussions over the two years. The developers add several new files and functions during the bug fix and new logs to assure the code quality of the fix. 
+
+\end{itemize}
+%Our manual analysis results confirms that developers often change logs during bug fixes.

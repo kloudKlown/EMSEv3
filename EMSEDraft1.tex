@@ -1,0 +1,165 @@
+ %%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+ %
+ % This is a general template file for the LaTeX package SVJour3
+ % for Springer journals.          Springer Heidelberg 2010/09/16
+ %
+ % Copy it to a new file with a new name and use it as the basis
+ % for your article. Delete % signs as needed.
+ %
+ % This template includes a few options for different layouts and
+ % content for various journals. Please consult a previous issue of
+ % your journal as needed.
+ %
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %
+ % First comes an example EPS file -- just ignore it and
+ % proceed on the \documentclass line
+ %% your LaTeX will extract the file if required
+ %\begin{filecontents*}{example.eps}
+ %%!PS-Adobe-3.0 EPSF-3.0
+ %%%BoundingBox: 19 19 221 221
+ %%%CreationDate: Mon Sep 29 1997
+ %%%Creator: programmed by hand (JK)
+ %%%EndComments
+ %
+ %\end{filecontents*}
+ %
+ 
+ \RequirePackage{fix-cm}
+ %
+ %\documentclass{svjour3}                     % onecolumn (standard format)
+ %\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
+ \documentclass[smallextended]{svjour3}       % onecolumn (second format)
+ %\documentclass[twocolumn]{svjour3}          % twocolumn
+ %
+% \smartqed  % flush right qed marks, e.g. at end of proof
+ %
+% \usepackage{subfig}
+ \input{setup}
+%\usepackage[caption=false]{subfig}
+
+ %
+ % \usepackage{mathptmx}      % use Times fonts if available on your TeX system
+ %
+ % insert here the call for the packages your document requires
+ %\usepackage{latexsym}
+ % etc.
+ %
+ % please place your own definitions here and don't use \def but
+ % \newcommand{}{}
+ %
+ % Insert the name of "your journal" with
+ % \journalname{myjournal}
+ %
+
+\begin{document}
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+% Do not put math or special symbols in the title.
+\title{An Empirical Study on changes to Logs During Bug Fixes}
+
+\author{Suhas Kabinna         \and
+	Weiyi Shang \and
+	Ahmed E. Hassan
+}
+
+%\authorrunning{Short form of author list} % if too long for running head
+
+\institute{Suhas. Kabinna, 	Weiyi. Shang and Ahmed E.Hassan \at
+	Software Analysis and Intelligence Lab (SAIL) \\
+	Queen's University \\
+	Kingston, Ontario \\
+	\email{ \{kabinna,swy,ahmed\}@cs.queensu.ca}           %  \\
+	%             \emph{Present address:} of F. Author  %  if needed
+}
+
+\date{Received: date / Accepted: date}
+% The correct dates will be entered by the editor
+
+
+
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+\begin{abstract}
+	\input{Abstract}
+\end{abstract}
+
+% no keywords
+
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+
+
+
+
+
+
+
+\section{Introduction}
+
+\input{Introduction}
+
+
+
+\section{Methodology}
+\label{sec:Methodology}
+\input{Methodology}
+
+\section{Study Results}
+\label{sec:Study}
+\input{RQ1}
+\input{RQ2}
+\input{RQ3}
+
+%\section{Discussion of results}
+%\label{sec:Manual}
+%\input{Manualstudy}
+
+
+\section{Related Work}
+\label{sec:Related}
+\input{Relatedwork}
+
+
+
+\section{Limitations and Threats to Validity}
+\label{sec:Limit}
+\input{Threats}
+\section{Conclusion and Future Work}
+\label{sec:Conclusion}
+\input{Conclusion}
+
+
+\bibliographystyle{spmpsci}
+
+\bibliography{Logreference}
+
+
+
+
+
+
+
+
+% that's all folks
+\end{document}
+
+

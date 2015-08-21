@@ -1,0 +1,1086 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.24)  18 AUG 2015 15:22
+entering extended mode
+**diff.tex
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\diff.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files (x86)\Latex\tex\latex\base\fix-cm.sty"
+Package: fix-cm 2014/09/29 v1.1s fixes to LaTeX
+
+("C:\Program Files (x86)\Latex\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+))
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\svjour3.cls"
+Document Class: svjour3 2010/11/25 v3.3 
+LaTeX document class for Springer journals
+Class Springer-SVJour3 Info: extra/valid Springer sub-package (-> *.clo) 
+(Springer-SVJour3)           not found in option list of \documentclass
+(Springer-SVJour3)           - autoactivating "global" style.
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\svglov3.clo"
+File: svglov3.clo 2009/12/18 v3.2 style option for standardised journals
+
+SVJour Class option: svglov3.clo for standardised journals
+)
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 151.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 152.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 153.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 154.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 155.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 156.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
+\logodepth=\dimen102
+\headerboxheight=\dimen103
+\betweenumberspace=\dimen104
+\aftertext=\dimen105
+\headlineindent=\dimen106
+\c@inst=\count79
+\c@auth=\count80
+\instindent=\dimen107
+\authrun=\box26
+\authorrunning=\toks14
+\titrun=\box27
+\titlerunning=\toks15
+\combirun=\box28
+\c@lastpage=\count81
+\rubricwidth=\dimen108
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\spthmsep=\dimen109
+\c@theorem=\count87
+\c@case=\count88
+\c@conjecture=\count89
+\c@corollary=\count90
+\c@definition=\count91
+\c@example=\count92
+\c@exercise=\count93
+\c@lemma=\count94
+\c@note=\count95
+\c@problem=\count96
+\c@property=\count97
+\c@proposition=\count98
+\c@question=\count99
+\c@solution=\count100
+\c@remark=\count101
+\c@figure=\count102
+\c@table=\count103
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\figcapgap=\dimen110
+\tabcapgap=\dimen111
+\figgap=\dimen112
+\bibindent=\dimen113
+\@tempcntc=\count104
+) ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\setup.tex"
+("C:\Program Files (x86)\Latex\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen114
+)
+("C:\Program Files (x86)\Latex\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\Latex\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Program Files (x86)\Latex\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\Latex\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\Latex\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\Latex\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\Latex\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\Latex\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
+))
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
+("C:\Program Files (x86)\Latex\tex\latex\base\alltt.sty"
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+("C:\Program Files (x86)\Latex\tex\latex\ltxmisc\relsize.sty"
+Package: relsize 2003/07/04 ver 3.1
+
+
+Package relsize Warning: Failed to get list of font sizes.
+(relsize)                Falling back to old definition. on input line 81.
+
+) ("C:\Program Files (x86)\Latex\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen117
+\lightrulewidth=\dimen118
+\cmidrulewidth=\dimen119
+\belowrulesep=\dimen120
+\belowbottomsep=\dimen121
+\aboverulesep=\dimen122
+\abovetopsep=\dimen123
+\cmidrulesep=\dimen124
+\cmidrulekern=\dimen125
+\defaultaddspace=\dimen126
+\@cmidla=\count106
+\@cmidlb=\count107
+\@aboverulesep=\dimen127
+\@belowrulesep=\dimen128
+\@thisruleclass=\count108
+\@lastruleclass=\count109
+\@thisrulewidth=\dimen129
+)
+("C:\Program Files (x86)\Latex\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\Latex\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\Latex\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen130
+))
+("C:\Program Files (x86)\Latex\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen131
+)
+("C:\Program Files (x86)\Latex\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count110
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count111
+\leftroot@=\count112
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count113
+\DOTSCASE@=\count114
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen132
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+
+
+Package amsmath Warning: Unable to redefine math accent \vec.
+
+\macc@depth=\count115
+\c@MaxMatrixCols=\count116
+\dotsspace@=\muskip10
+\c@parentequation=\count117
+\dspbrk@lvl=\count118
+\tag@help=\toks18
+\row@=\count119
+\column@=\count120
+\maxfields@=\count121
+\andhelp@=\toks19
+\eqnshift@=\dimen133
+\alignsep@=\dimen134
+\tagshift@=\dimen135
+\tagwidth@=\dimen136
+\totwidth@=\dimen137
+\lineht@=\dimen138
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+) ("C:\Program Files (x86)\Latex\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks22
+\verbatim@line=\toks23
+\verbatim@in@stream=\read1
+)
+("C:\Program Files (x86)\Latex\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\Latex\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files (x86)\Latex\tex\latex\colortbl\colortbl.sty"
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+("C:\Program Files (x86)\Latex\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen139
+\extrarowheight=\dimen140
+\NC@list=\toks24
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+\everycr=\toks25
+\minrowclearance=\skip48
+)
+\rownum=\count122
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("C:\Program Files (x86)\Latex\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files (x86)\Latex\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen141
+\captionmargin@=\dimen142
+\captionwidth=\dimen143
+\caption@tempdima=\dimen144
+\caption@indent=\dimen145
+\caption@parindent=\dimen146
+\caption@hangindent=\dimen147
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\captionstyle \ifx \@ca
+ptype \fig@type \vskip \figcapgap \fi \setbox \@tempboxa \hbox {{\floatlegendst
+yle #1\floatcounterend }\capstrut #2}\ifdim \wd \@tempboxa >\hsize {\floatlegen
+dstyle #1\floatcounterend }\capstrut #2\par \else \hbox to\hsize {\leftlegendgl
+ue \unhbox \@tempboxa \hfil }\fi \ifx \@captype \fig@type \else \vskip \tabcapg
+ap \fi .
+\c@ContinuedFloat=\count123
+) ("C:\Program Files (x86)\Latex\tex\latex\caption\subcaption.sty"
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count124
+\c@subtable=\count125
+)
+("C:\Program Files (x86)\Latex\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files (x86)\Latex\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Program Files (x86)\Latex\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count126
+\float@exts=\toks26
+\float@box=\box31
+\@float@everytoks=\toks27
+\@floatcapt=\box32
+)
+("C:\Program Files (x86)\Latex\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Program Files (x86)\Latex\tex\latex\fancybox\fancybox.sty"
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box33
+\shadowsize=\dimen148
+\@Sbox=\box34
+\do@VerbBox=\toks28
+\the@fancyput=\toks29
+\this@fancyput=\toks30
+\EndVerbatimTokens=\toks31
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read2
+) ("C:\Program Files (x86)\Latex\tex\latex\listings\listings.sty"
+\lst@mode=\count127
+\lst@gtempboxa=\box35
+\lst@token=\toks32
+\lst@length=\count128
+\lst@currlwidth=\dimen149
+\lst@column=\count129
+\lst@pos=\count130
+\lst@lostspace=\dimen150
+\lst@width=\dimen151
+\lst@newlines=\count131
+\lst@lineno=\count132
+\lst@maxwidth=\dimen152
+
+("C:\Program Files (x86)\Latex\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count133
+\lst@skipnumbers=\count134
+\lst@framebox=\box36
+)
+("C:\Program Files (x86)\Latex\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+("C:\Program Files (x86)\Latex\tex\latex\framed\framed.sty"
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip49
+\fb@frw=\dimen153
+\fb@frh=\dimen154
+\FrameRule=\dimen155
+\FrameSep=\dimen156
+)
+("C:\Program Files (x86)\Latex\tex\latex\tools\hhline.sty"
+Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
+)
+("C:\Program Files (x86)\Latex\tex\latex\psnfss\pifont.sty"
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+("C:\Program Files (x86)\Latex\tex\latex\psnfss\upzd.fd"
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+("C:\Program Files (x86)\Latex\tex\latex\psnfss\upsy.fd"
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\qdx=\dimen157
+\qda=\dimen158
+\qdb=\dimen159
+)
+("C:\Program Files (x86)\Latex\tex\latex\ulem\ulem.sty"
+\UL@box=\box37
+\UL@hyphenbox=\box38
+\UL@skip=\skip50
+\UL@hook=\toks33
+\UL@height=\dimen160
+\UL@pe=\count135
+\UL@pixel=\dimen161
+\ULC@box=\box39
+Package: ulem 2012/05/18
+\ULdepth=\dimen162
+)
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\diff.aux"
+
+LaTeX Warning: Label `tba:LogUsage' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+
+Unknown journal: specify \journalname{<name of your journal>} in preambel
+
+("C:\Program Files (x86)\Latex\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count136
+\scratchdimen=\dimen163
+\scratchbox=\box40
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen164
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks35
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \@caption).
+(caption)             \@caption = \long macro:#1[#2]#3->\par \addcontentsline {
+\csname ext@#1\endcsname }{#1}{\protect \numberline {\csname the#1\endcsname }{
+\ignorespaces #2}}\begingroup \@parboxrestore \@makecaption {\csname fnum@#1\en
+dcsname }{\ignorespaces #3}\par \endgroup .
+
+
+Package caption Warning: Forced redefinition of \caption since the
+(caption)                unsupported(!) package option `compatibility=false'
+(caption)                was given.
+See the caption package documentation for explanation.
+
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count142
+SVJour3 warning: Missing \journalname
+LaTeX Font Info:    Try loading font information for U+msa on input line 107.
+("C:\Program Files (x86)\Latex\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 107.
+
+("C:\Program Files (x86)\Latex\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 107.
+
+
+("C:\Program Files (x86)\Latex\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
+
+
+SVJour3 Warning: Title too long for running head.
+Please supply a shorter form with \titlerunning prior to \maketitle
+[1{C:/Users/Suhas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 184.
+
+
+Overfull \hbox (4.0006pt too wide) in paragraph at lines 192--193
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []   |   []   |   []   |   []
+ []
+
+
+LaTeX Warning: Citation `Characterizinglogs' on page 2 undefined on input line 
+194.
+
+
+LaTeX Warning: Citation `XUanomalies' on page 2 undefined on input line 194.
+
+
+LaTeX Warning: Citation `ConsoleLogs' on page 2 undefined on input line 194.
+
+
+LaTeX Warning: Citation `Marksyer' on page 2 undefined on input line 194.
+
+
+LaTeX Warning: Citation `Bitperformance' on page 2 undefined on input line 194.
+
+
+
+LaTeX Warning: Citation `IanWCRE' on page 2 undefined on input line 194.
+
+
+LaTeX Warning: Citation `markTesting' on page 2 undefined on input line 194.
+
+
+LaTeX Warning: Citation `Bitperformance' on page 2 undefined on input line 194.
+
+
+
+LaTeX Warning: Citation `Xpolog' on page 2 undefined on input line 194.
+
+
+LaTeX Warning: Citation `Logstash' on page 2 undefined on input line 194.
+
+
+LaTeX Warning: Citation `EMSEIAN' on page 2 undefined on input line 198.
+
+
+LaTeX Warning: Citation `EMSEIAN' on page 2 undefined on input line 221.
+
+[2]
+Overfull \hbox (1.08385pt too wide) in paragraph at lines 272--273
+|   []   |   []   |   []   |   [][]\OT1/cmr/m/n/10 . This sug-gests []|   []   
+[]there is a []|   []   |   []
+ []
+
+
+LaTeX Warning: Reference `sec:Manual' on page 3 undefined on input line 304.
+
+[3]
+Overfull \hbox (9.17078pt too wide) in paragraph at lines 358--359
+ []||   [][][]|   [][]| 
+ []
+
+
+Overfull \hbox (2.71027pt too wide) in paragraph at lines 342--363
+ [][] 
+ []
+
+
+LaTeX Warning: Citation `EMSEIAN' on page 4 undefined on input line 366.
+
+
+LaTeX Warning: Citation `JGLouMining' on page 4 undefined on input line 366.
+
+
+LaTeX Warning: Citation `ConsoleLogs' on page 4 undefined on input line 366.
+
+[4]
+
+LaTeX Warning: Citation `ihaka1996r' on page 5 undefined on input line 374.
+
+<MethdologyICESEM.pdf, id=27, 904.37875pt x 306.14375pt>
+File: MethdologyICESEM.pdf Graphic file (type pdf)
+
+<use MethdologyICESEM.pdf>
+Package pdftex.def Info: MethdologyICESEM.pdf used on input line 392.
+(pdftex.def)             Requested size: 406.96669pt x 137.7634pt.
+
+Overfull \hbox (68.96669pt too wide) in paragraph at lines 392--393
+ [][] 
+ []
+
+[5 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/MethdologyICESE
+M.pdf>]
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 440.
+
+
+Underfull \hbox (badness 7814) in paragraph at lines 447--447
+[] \OT1/cmr/m/it/10 LOG.debug(``public Asymp-toticTest-Case(String''+ name +``)
+
+ []
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 447.
+
+
+LaTeX Warning: Citation `Levenshtein2' on page 6 undefined on input line 467.
+
+
+LaTeX Warning: Citation `levenshteinratio' on page 6 undefined on input line 46
+7.
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 469.
+
+[6]
+Overfull \hbox (237.14973pt too wide) in paragraph at lines 481--481
+[][]|   [][][]|   [][] 
+ []
+
+
+LaTeX Warning: Citation `EMSEIAN' on page 7 undefined on input line 486.
+
+[7]
+Overfull \hbox (73.28824pt too wide) detected at line 510
+\OML/cmm/m/it/10 Modified [][][][][][] ratio \OT1/cmr/m/n/10 = [][][][]
+ []
+
+
+Overfull \hbox (3.99231pt too wide) detected at line 516
+\OML/cmm/m/it/10 New [][][][][][] ratio \OT1/cmr/m/n/10 = [][][][]
+ []
+
+
+Overfull \hbox (48.1593pt too wide) detected at line 522
+\OML/cmm/m/it/10 Deleted [][][][][][] ratio \OT1/cmr/m/n/10 = [][][][]
+ []
+
+
+LaTeX Warning: Citation `Characterizinglogs' on page 8 undefined on input line 
+524.
+
+
+LaTeX Warning: Citation `seaman1999qualitative' on page 8 undefined on input li
+ne 527.
+
+
+LaTeX Warning: Citation `Gehan1965' on page 8 undefined on input line 532.
+
+[8]
+
+LaTeX Warning: Citation `cohenUsage1' on page 9 undefined on input line 543.
+
+
+LaTeX Warning: Citation `cohenUsage2' on page 9 undefined on input line 543.
+
+
+LaTeX Warning: Citation `shadish2009combining' on page 9 undefined on input lin
+e 547.
+
+
+LaTeX Warning: Citation `Effectsize' on page 9 undefined on input line 547.
+
+
+Overfull \hbox (2.71027pt too wide) in paragraph at lines 588--602
+ [][] 
+ []
+
+
+Overfull \hbox (4.02846pt too wide) in paragraph at lines 608--610
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []   |   []
+ []
+
+[9]
+
+LaTeX Warning: Citation `IanWCRE' on page 10 undefined on input line 625.
+
+
+Overfull \hbox (10.15482pt too wide) in paragraph at lines 625--626
+$\OML/cmm/m/it/10 deleted logging statements ratio$ \OT1/cmr/m/n/10 be-tween []
+|   []   |   []   |   []   |   []
+ []
+
+
+LaTeX Warning: Citation `Characterizinglogs' on page 10 undefined on input line
+ 650.
+
+
+Overfull \hbox (9.90501pt too wide) in paragraph at lines 648--651
+[]|   []   |   []   |   []   |   []   |   [][][]|   []   |   []   |   []   |   
+[]
+ []
+
+
+Overfull \hbox (25.83374pt too wide) in paragraph at lines 648--651
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [][]\OT1/cmr
+/m/n/10 . Ta-ble 3[] shows that []|   []
+ []
+
+
+Overfull \hbox (3.58392pt too wide) in paragraph at lines 648--651
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []
+ []
+
+[10]
+
+LaTeX Warning: Citation `EMSEIAN' on page 11 undefined on input line 668.
+
+
+Overfull \hbox (85.93822pt too wide) in paragraph at lines 668--687
+[]|   []
+ []
+
+[11]
+Overfull \hbox (2.55957pt too wide) in paragraph at lines 699--700
+ \OT1/cmr/m/n/8 (medium)| 
+ []
+
+
+Overfull \hbox (2.10068pt too wide) in paragraph at lines 701--701
+ |   [] 
+ []
+
+
+Overfull \hbox (2.80069pt too wide) in paragraph at lines 701--701
+ [][]|   [] 
+ []
+
+
+Overfull \hbox (2.55957pt too wide) in paragraph at lines 701--702
+ \OT1/cmr/m/n/8 (medium)| 
+ []
+
+
+Overfull \hbox (2.80069pt too wide) in paragraph at lines 703--703
+ [][]|   [] 
+ []
+
+
+Overfull \hbox (2.55957pt too wide) in paragraph at lines 703--704
+ \OT1/cmr/m/n/8 (medium)| 
+ []
+
+
+Overfull \hbox (2.80069pt too wide) in paragraph at lines 705--705
+ [][]|   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--724
+[]|\OT1/cmr/m/n/8 Effect
+ []
+
+
+Overfull \hbox (2.55957pt too wide) in paragraph at lines 724--724
+ \OT1/cmr/m/n/8 (medium)| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 724--725
+[]|\OT1/cmr/m/n/8 1.40
+ []
+
+
+Overfull \hbox (2.55957pt too wide) in paragraph at lines 726--726
+ \OT1/cmr/m/n/8 (medium)| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
+[]|\OT1/cmr/m/n/8 0.949
+ []
+
+
+Overfull \hbox (2.55957pt too wide) in paragraph at lines 726--727
+\OT1/cmr/m/n/8 (medium)| 
+ []
+
+
+LaTeX Warning: Citation `IanWCRE' on page 12 undefined on input line 848.
+
+
+Overfull \hbox (22.91743pt too wide) in paragraph at lines 848--849
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Overfull \hbox (0.8296pt too wide) in paragraph at lines 848--849
+|   []   |   []   |   []   |   [][][]|   []   |   []   |   []   |   []   |   []
+   |   []   |   []   |   []
+ []
+
+[12]
+
+LaTeX Warning: Citation `Characterizinglogs' on page 13 undefined on input line
+ 852.
+
+
+Overfull \hbox (3.30615pt too wide) in paragraph at lines 860--861
+[]|   []   |   [][][]|   [][]\OT1/cmr/m/n/10 . Ta-ble 6[] shows that such re-lo
+-ca-tion of []|   []   |   []
+ []
+
+
+Overfull \hbox (1.5285pt too wide) in paragraph at lines 860--861
+[][]|   []   []\OT1/cmr/m/n/10 is sta-tis-ti-cally sig-nif-i-cantly more in []|
+   []   |   []   |   []   |   []
+ []
+
+[13] [14]
+
+LaTeX Warning: Citation `Characterizinglogs' on page 15 undefined on input line
+ 862.
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 878.
+
+
+Overfull \hbox (425.87233pt too wide) in paragraph at lines 885--885
+[][]|   [][][]|   [][] 
+ []
+
+[15]
+
+LaTeX Warning: Citation `complexity' on page 16 undefined on input line 1091.
+
+[16]
+Overfull \hbox (2.55957pt too wide) in paragraph at lines 1115--1115
+ \OT1/cmr/m/n/8 (medium)| 
+ []
+
+
+Overfull \hbox (4.49886pt too wide) in paragraph at lines 1102--1118
+ [][] 
+ []
+
+<HadoopBoxPlot.pdf, id=75, 450.68375pt x 424.58624pt>
+File: HadoopBoxPlot.pdf Graphic file (type pdf)
+ <use HadoopBoxPlot.pdf>
+Package pdftex.def Info: HadoopBoxPlot.pdf used on input line 1125.
+(pdftex.def)             Requested size: 165.62186pt x 156.03195pt.
+
+<HBaseBoxPlot.pdf, id=76, 450.68375pt x 424.58624pt>
+File: HBaseBoxPlot.pdf Graphic file (type pdf)
+ <use HBaseBoxPlot.pdf>
+Package pdftex.def Info: HBaseBoxPlot.pdf used on input line 1127.
+(pdftex.def)             Requested size: 165.62186pt x 156.03195pt.
+
+<QpidBoxPlot.pdf, id=77, 450.68375pt x 424.58624pt>
+File: QpidBoxPlot.pdf Graphic file (type pdf)
+ <use QpidBoxPlot.pdf>
+Package pdftex.def Info: QpidBoxPlot.pdf used on input line 1128.
+(pdftex.def)             Requested size: 165.62186pt x 156.03195pt.
+
+Underfull \vbox (badness 1881) has occurred while \output is active []
+
+ [17]
+Overfull \hbox (3.83566pt too wide) in paragraph at lines 1167--1168
+[]\OT1/cmr/bx/n/10 We find that bugs that are fixed with []|   []   |   []   | 
+  [][][]|   []
+ []
+
+[18 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/HadoopBoxPlot.
+pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/HBaseBoxPlot.
+pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/QpidBoxPlot.p
+df>]
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\Manualstudy.tex"
+
+LaTeX Warning: Citation `seaman1999qualitative' on page 19 undefined on input l
+ine 1.
+
+[19])
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 1175.
+
+
+LaTeX Warning: Citation `RTpredictions' on page 20 undefined on input line 1183
+.
+
+
+LaTeX Warning: Citation `anbalagan2009predicting' on page 20 undefined on input
+ line 1189.
+
+[20]
+
+LaTeX Warning: Citation `rmsPackage' on page 21 undefined on input line 1191.
+
+
+LaTeX Warning: Citation `DegreesofFreedom' on page 21 undefined on input line 1
+200.
+
+[21] <MethodologyOLS.pdf, id=109, 804.00375pt x 356.33125pt>
+File: MethodologyOLS.pdf Graphic file (type pdf)
+
+<use MethodologyOLS.pdf>
+Package pdftex.def Info: MethodologyOLS.pdf used on input line 1212.
+(pdftex.def)             Requested size: 278.83708pt x 123.57599pt.
+
+
+LaTeX Warning: Citation `ShaneOLS' on page 22 undefined on input line 1229.
+
+
+LaTeX Warning: Citation `waldtest' on page 22 undefined on input line 1230.
+
+[22 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/MethodologyOLS
+.pdf>]
+
+LaTeX Warning: Citation `rmsPackage' on page 23 undefined on input line 1250.
+
+
+Overfull \hbox (24.27347pt too wide) in paragraph at lines 1252--1254
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []   |   []   |   []
+ []
+
+<QpidSpearman.png, id=116, 602.25pt x 567.11874pt>
+File: QpidSpearman.png Graphic file (type png)
+ <use QpidSpearman.png>
+Package pdftex.def Info: QpidSpearman.png used on input line 1279.
+(pdftex.def)             Requested size: 219.02417pt x 206.2481pt.
+
+[23]
+
+LaTeX Warning: Citation `ShaneOLS' on page 24 undefined on input line 1294.
+
+<QpidDF.png, id=120, 603.25375pt x 567.11874pt>
+File: QpidDF.png Graphic file (type png)
+ <use QpidDF.png>
+Package pdftex.def Info: QpidDF.png used on input line 1300.
+(pdftex.def)             Requested size: 189.27989pt x 177.94241pt.
+ [24 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/QpidSpearman.
+png>]
+<HadoopDirectionPlot.pdf, id=125, 450.68375pt x 424.58624pt>
+File: HadoopDirectionPlot.pdf Graphic file (type pdf)
+
+<use HadoopDirectionPlot.pdf>
+Package pdftex.def Info: HadoopDirectionPlot.pdf used on input line 1319.
+(pdftex.def)             Requested size: 160.54948pt x 151.2507pt.
+
+<QpidDirectionPlot.pdf, id=126, 451.6875pt x 424.58624pt>
+File: QpidDirectionPlot.pdf Graphic file (type pdf)
+
+<use QpidDirectionPlot.pdf>
+Package pdftex.def Info: QpidDirectionPlot.pdf used on input line 1327.
+(pdftex.def)             Requested size: 160.54948pt x 150.92029pt.
+
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 1316--1330
+[]$[]$ $[]$ 
+ []
+
+<HbaseDirectionPlot.pdf, id=127, 722.7pt x 722.7pt>
+File: HbaseDirectionPlot.pdf Graphic file (type pdf)
+
+<use HbaseDirectionPlot.pdf>
+Package pdftex.def Info: HbaseDirectionPlot.pdf used on input line 1338.
+(pdftex.def)             Requested size: 233.22083pt x 233.22058pt.
+
+
+LaTeX Warning: Reference `tba:SignificantFactor' on page 25 undefined on input 
+line 1354.
+
+
+LaTeX Warning: Citation `Characterizinglogs' on page 25 undefined on input line
+ 1356.
+
+[25 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/QpidDF.png>]
+Underfull \vbox (badness 4291) has occurred while \output is active []
+
+ [26 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/HadoopDirecti
+onPlot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/QpidDi
+rectionPlot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/H
+baseDirectionPlot.pdf>]
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 1519.
+
+
+Underfull \vbox (badness 1270) has occurred while \output is active []
+
+ [27]
+Overfull \hbox (3.00063pt too wide) in paragraph at lines 1539--1562
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []   |   []   |   []
+ []
+
+[28]
+
+LaTeX Warning: Citation `IanContextinformation' on page 29 undefined on input l
+ine 1645.
+
+
+LaTeX Warning: Citation `JGLouMining' on page 29 undefined on input line 1645.
+
+
+LaTeX Warning: Citation `QFuanomaly' on page 29 undefined on input line 1645.
+
+[29]
+
+LaTeX Warning: Citation `ConsoleLogs' on page 30 undefined on input line 1647.
+
+
+LaTeX Warning: Citation `TanSalsa' on page 30 undefined on input line 1647.
+
+
+LaTeX Warning: Citation `Jiang:2009:UCP:1525908.1525912' on page 30 undefined o
+n input line 1647.
+
+
+LaTeX Warning: Citation `Beschastnikh:2011:LEI:2025113.2025151' on page 30 unde
+fined on input line 1647.
+
+
+LaTeX Warning: Citation `Yuan:2010:SED:1736020.1736038' on page 30 undefined on
+ input line 1649.
+
+
+LaTeX Warning: Citation `Jiang:2008:AAA:1400155.1400158' on page 30 undefined o
+n input line 1652.
+
+
+LaTeX Warning: Citation `JiangICSM2008' on page 30 undefined on input line 1652
+.
+
+
+LaTeX Warning: Citation `JiangICSM20092' on page 30 undefined on input line 165
+2.
+
+
+LaTeX Warning: Citation `Jiang:2010:ICS:1850000.1850068' on page 30 undefined o
+n input line 1652.
+
+
+LaTeX Warning: Citation `Jiang:2008:AAA:1400155.1400158' on page 30 undefined o
+n input line 1652.
+
+
+LaTeX Warning: Citation `JiangICSM2008' on page 30 undefined on input line 1652
+.
+
+
+LaTeX Warning: Citation `JiangICSM20092' on page 30 undefined on input line 165
+2.
+
+
+LaTeX Warning: Citation `Jiang:2010:ICS:1850000.1850068' on page 30 undefined o
+n input line 1652.
+
+
+LaTeX Warning: Citation `Characterizinglogs' on page 30 undefined on input line
+ 1714.
+
+
+LaTeX Warning: Citation `Fu1' on page 30 undefined on input line 1714.
+
+
+LaTeX Warning: Citation `IanGap' on page 30 undefined on input line 1717.
+
+
+LaTeX Warning: Citation `EMSEIAN' on page 30 undefined on input line 1717.
+
+
+LaTeX Warning: Citation `PaperIanCIIII' on page 30 undefined on input line 1717
+.
+
+
+LaTeX Warning: Citation `IanIcesm' on page 30 undefined on input line 1717.
+
+[30]
+
+LaTeX Warning: Citation `Yuan' on page 31 undefined on input line 1719.
+
+
+LaTeX Warning: Citation `zhu2015learning' on page 31 undefined on input line 17
+19.
+
+
+LaTeX Warning: Citation `EMSEIAN' on page 31 undefined on input line 1721.
+
+[31]
+
+LaTeX Warning: Citation `EMSEIAN' on page 32 undefined on input line 1851.
+
+[32] ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\diff.bbl")
+[33] ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\diff.aux")
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6400 strings out of 493921
+ 91858 string characters out of 3146880
+ 228376 words of memory out of 3000000
+ 9574 multiletter control sequences out of 15000+200000
+ 14662 words of font info for 54 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 43i,20n,38p,3010b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/
+Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program
+ Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files 
+(x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files (x86)/La
+tex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files (x86)/Latex/f
+onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/Latex/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/Latex/fonts/type1/pub
+lic/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr6.pfb
+><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Prog
+ram Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
+ (x86)/Latex/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/
+Latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Latex/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/Latex/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/Latex/fonts/type1/publ
+ic/amsfonts/latxfont/lasy6.pfb><C:/Program Files (x86)/Latex/fonts/type1/public
+/amsfonts/latxfont/lcirclew.pfb>
+Output written on diff.pdf (33 pages, 693528 bytes).
+PDF statistics:
+ 232 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+

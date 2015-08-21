@@ -1,0 +1,51 @@
+
+In this section, we present the threats to the validity to our findings.
+
+\subsection*{External Validity}
+
+
+Our case study is performed \emph{Hadoop, HBase} and \emph{Qpid}.  Even though these three studied systems have years of history and large user bases, the three studied systems are all Java based platform software. Systems in other domain may not rely on logs in bug fixes. More case studies on other software in other domains with other programming languages are needed to see whether our findings can be generalized. 
+
+
+%The other limitation is projects in which logging data is less. We
+%ran experiments on several other projects like Cassandra, Cayene,
+%Zookeeper and Lucene. In all these projects the total number of logging
+%statements were less to draw any meaningful conclusions. When we manually
+%examined the data for Cassandra and Lucene we observed many custom
+%logs which were not caught from pattern matching. As
+%stated above its almost impossible to catch all instances of these
+%custom logs in projects.
+
+
+\subsection*{Internal Validity}
+
+
+Our study is based on the data obtained from Git and JIRA for all the studied systems. The quality of the data contained in the repositories can impact the internal validity of our study.
+
+Our analysis of the relationship between changes to logs and bug resolution time cannot claim causal effects, as we are investigating correlations, rather than conducting impact studies. The explanative power of log churn metrics on the resolution time of bugs does not indicate that logs cause faster resolution of bugs. Instead, it indicates the possibility of a relation that should be studied in depth through user studies.
+
+
+\subsection*{Construct Validity}
+
+The heuristics to extract logging source code may not be able to extract every log in the source code. Even though the studied systems leverage logging libraries to generate logs at runtime, there still exist user-defined logs. By manually examining the source code, we believe that we extract most of the logs. Evaluation on the coverage of our extracted logs can address this threat.
+
+We use keywords to identify bug fixes when the JIRA issue ID is not included in the commit messages. Although such keywords are used extensively in prior research~\cite{EMSEIAN}, we may still miss identify bug fixes or branching and merging commits. 
+
+We use Levenshtein ratio and choose a threshold to identify modifications to logs. However, such threshold may not accurately identify  modifications to logs. Further sensitivity analysis on such threshold is needed to better understand the impact of the threshold to our findings.
+
+We build non-liner regression models using log churn metrics, to model the resolution time of bugs. However, the resolution time of bugs can be correlated to many factors other than just logs, such as the complexity of code fixes. To reduce such a possibility, we normalize the log churn metrics by code churn. However, other factors may also have an impact on the resolution time of bugs. Furthermore, as this is the first exploration (to our best knowledge) in modeling resolution time of bugs using log churn metrics, we are only interested in understanding the correlation between the two. Future studies should build more complex models, that consider other factors to study if there is any causation. 
+
+
+%However, the relationship between log churn and the resolution speed of bugs may not be linear. In addition, there may exist interactions between metrics. For example, the logs in debug logging level may have a higher relationship with the resolution speed of bugs. However, as the first exploration in changing of logs during bug fixes, we only use linear model to find out whether the changing logs has a relationship with the resolution speed of bugs. The resolution speed of bugs can be correlated to many factors other than just logs, such as the complexity of code fixes. To reduce such a possibility, we control the log churn related metrics by code churn. However, other factors may also have an impact on the resolution speed of bugs. Future studies should build more complex models that consider these other factors.
+
+
+Source code from different components of a system may have various characteristics. The importance of logs in bug fixes may vary in different components of the studied systems. More empirical studies on the use of logs in fixing bugs for different components of the systems are needed.
+
+
+
+%
+
+%commits which has type Branching in them and removed these
+%branching commits from our data set. But we later found some of the
+%commits are tagged under the category of UNKNOWN. When its under 'Unknown'
+%category it was impossible to know if its branching or not. 

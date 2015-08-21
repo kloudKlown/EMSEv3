@@ -1,0 +1,306 @@
+% ------------- Packages Used --------------------------------------------------
+% They help us to produce a better looking document ;-)
+% ------------------------------------------------------------------------------
+
+% Comment the following line before compiling the final version
+%\synctex
+\usepackage{multirow}
+
+\usepackage{graphicx}
+\usepackage{alltt}
+\usepackage{relsize}
+%\usepackage{xspace}
+\usepackage{booktabs}
+\usepackage{amsmath}
+%\usepackage{multirow}
+%\usepackage{array}
+\usepackage{verbatim}
+\usepackage[table]{xcolor}
+\usepackage{caption}
+\usepackage[labelformat=simple, labelsep=colon]{subcaption}{}
+\captionsetup{compatibility=false}
+
+%\usepackage[tight,footnotesize]{subfigure}
+
+%\usepackage{capt-of}
+%\usepackage{pifont}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage[latin1]{inputenc}
+%\usepackage{times}
+%\usepackage{colortbl}
+%\usepackage{boxedminipage}
+\usepackage{float}
+%\usepackage{cite}
+%\usepackage{fancyvrb}
+%\usepackage{hyperref}
+%\usepackage{balance}
+\usepackage{url}
+\usepackage{fancybox}%for \hypobox
+\usepackage{listings}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{float}
+%\usepackage{placeins}
+\usepackage{multirow}
+%\usepackage{blindtext}
+%\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+%\usepackage{placeins}
+\usepackage{multirow}
+%\usepackage{caption} 
+
+	
+%\usepackage{subcaption}
+%\usepackage{blindtext}
+%\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{framed}
+\usepackage{multirow}% http://ctan.org/pkg/multirow
+\usepackage{hhline}% http://ctan.org/pkg/hhline
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+%\usepackage{makecell}
+%\usepackage{tablefootnote}
+
+%\usepackage{textcomp}
+%\usepackage{latexsym}
+%\usepackage{amssymb}
+%\usepackage{stmaryrd}
+%\usepackage{euscript}
+%\usepackage{wasysym}
+%\usepackage{pifont}
+%\usepackage{manfnt}
+%\usepackage{undertilde}
+%\usepackage{ifsym}
+%\usepackage{tipa}
+%\usepackage{txfonts}
+%\usepackage{skak}
+%\usepackage{skull}
+%\usepackage{eurosym}
+%\usepackage{yfonts}
+%\usepackage{mathdots}
+%\usepackage{trsym}
+%\usepackage{upgreek}
+%\usepackage{chemarr}
+%\usepackage{accents}
+%\usepackage{nicefrac}
+%\usepackage{bm}
+
+
+%\usepackage{pdfsync}
+
+%   ACM Style
+%\usepackage{lcsect}
+% ------------------------------------------------------------------------------
+
+
+
+
+
+
+% ------------ Color Definitions -----------------------------------------------
+% Whatever colors we need
+% ------------------------------------------------------------------------------
+\definecolor{mygray}{rgb}{0.7,0.7,0.7}
+% ------------------------------------------------------------------------------
+
+
+
+
+
+
+% ---------- Special commands for annotating the paper's text ------------------
+\let\mymarginpar\marginparm
+\marginparwidth=1cm
+\marginparsep=5pt
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[[#1]]}}}
+\def\TODO#1{\noindent\colorbox{yellow}{\bf \textcolor{red}{TODO: #1}}}
+\newcommand{\hint}[1]{\textcolor{blue}{\textbf{#1}}}
+\def\fig#1{Figure~\ref{#1}}
+\def\tab#1{Table~\ref{#1}}
+\def\eqn#1{Equation~\ref{#1}}
+\def\sec#1{Section~\ref{#1}}
+
+\pagenumbering{arabic}
+\newcommand{\reviewer}[1]{\textcolor{DeepPink1}{{\it [Reviewer says: #1]}}}
+\newcommand{\mei}[1]{\textcolor{red}{{\it [Mei says: #1]}}}
+\newcommand{\ian}[1]{\textcolor{blue}{{\it [Ian says: #1]}}}
+\newcommand{\nic}[1]{\textcolor{WildStrawberry}{{\it [Nico says: #1]}}}
+\newcommand{\ahmed}[1]{\textcolor{green}{{\it [Ahmed says: #1]}}}
+\newcommand{\myfoot}[1]{\footnote{\scriptsize #1}}
+\newcommand{\myurl}[1]{\myfoot{\url{#1}}}
+\newcommand{\Ra}{{$\Rightarrow$}}
+\newcommand{\ra}{{$\rightarrow$}}
+\newcommand{\La}{{$\Leftarrow$}}
+\newcommand{\la}{{$\leftarrow$}}
+\newcommand{\lra}{{$\leftrightarrow$}}
+\newcommand{\LRa}{{$\Leftrightarrow$}}
+%\newcommand{\todo}{\bram{todo}}
+
+\newenvironment{myindentpar}[1]%
+{\begin{list}{}%
+         {\setlength{\leftmargin}{#1}}%
+         \item[]%
+}
+{\end{list}}
+
+% \AtBeginDocument{%
+%    \renewcommand{\figurename}{Figure}%
+%    \newcommand{\subfigureautorefname}{\figureautorefname}%for using subfig
+% %   \renewcommand{\tablename}{TABLE}%
+%    \renewcommand{\tablename}{Table}%
+%    \renewcommand{\subsectionautorefname}{Section}%
+%    \renewcommand{\sectionautorefname}{Section}%
+% }
+
+% Hypothesis box	
+% ------------------------------------------------------------------------------	
+\newcommand{\hypobox}[1]{\begin{center}%	
+	\noindent\thicklines\setlength{\fboxsep}{7pt}%	
+	\cornersize{0}\Ovalbox{\begin{minipage}{4.1in}%	
+	\vspace{-0.1cm}
+	\textit{#1}
+	\vspace{-0.1cm}
+	\end{minipage}} \end{center}}	
+% ------------------------------------------------------------------------------
+
+
+
+
+% ------------------------- SYMBOLS OF SELF NAMES OFTEN USED -------------------
+\newcommand{\APACHE}{{\small APACHE}\xspace}
+\newcommand{\BUGZILLA}{{\small BUGZILLA}\xspace}
+\newcommand{\ECLIPSE}{{\small ECLIPSE}\xspace}
+\newcommand{\ASPECTJ}{{\small ASPECTJ}\xspace}
+\newcommand{\JDT}{{\small JDT}\xspace}
+\newcommand{\GNU}{{\small GNU}\xspace}
+\newcommand{\MOZILLA}{{\small MOZILLA}\xspace}
+\newcommand{\THUNDERBIRD}{{\small THUNDERBIRD}\xspace}
+\newcommand{\JAVA}{{\small Java}\xspace}
+\newcommand{\GNOME}{{\small GNOME}\xspace}
+\newcommand{\PG}{{\small PostgreSQL}\xspace}
+\newcommand{\SIM}{{\small SimScan}\xspace}
+
+% Anything else, e.g., \NAME{MICROSOFT}
+\newcommand{\NAME}[1]{{\small #1}\xspace}
+% ------------------------------------------------------------------------------
+
+
+
+
+% ----------------------- Computer Science lol ---------------------------------
+% Variable, function, and program names
+% ------------------------------------------------------------------------------
+\newcommand{\smalltt}[1]{\ifmmode{\mbox{\smaller\texttt{#1}}}\else{\smaller\tt #1}\fi}
+\newcommand{\code}[1]{\smalltt{#1}}
+\newcommand{\var}[1]{\code{#1}}
+\newcommand{\func}[1]{\code{#1}}
+\newcommand{\proc}[1]{\code{#1}}
+\newcommand{\prog}[1]{\code{#1}}
+\newcommand{\type}[1]{\code{#1}}
+\newcommand{\progpt}[1]{\code{#1}}
+
+\newcommand{\mypar}[1]{\vspace{.1cm}\noindent \textbf{#1}}
+\newcommand{\myxpar}[1]{\vspace{.1cm}\noindent \textbf{#1}\newline}
+% ------------------------------------------------------------------------------
+
+
+
+
+
+% ----------- Things to remember -----------------------------------------------
+\newenvironment{mynote}%
+{ \medskip
+  \noindent
+  \let\emph=\textbf
+  \begin{boxedminipage}{\columnwidth}\em}%
+{ \end{boxedminipage}}
+% ------------------------------------------------------------------------------
+
+
+
+
+
+
+% -------------------- Use bars ------------------------------------------------
+% These macros are for advanced presentation of results by shaded bars only!
+% Â© Tom Zimmermann, 2008
+% ------------------------------------------------------------------------------
+\newdimen\qdx
+\newdimen\qda
+\newdimen\qdb
+\def\rrrr#1#2#3#4{\newdimen\qd\qd=#4 % length of bar for 1.0
+\qdx=\qd\multiply\qdx by 5\divide\qdx by 4
+\qda=\qd
+\qdb=\qd
+\multiply\qda by #1\divide\qda by #3\multiply\qdb by #2\divide\qdb by #3\advance\qdb by -\qda
+    \leavevmode\hbox to \qdx{\hfil\vbox{%
+    \hbox{\vrule\vbox{\hrule\hbox to 1\qd
+            {\vrule depth0pt height0.7ex width \qda\color{mygray}%
+ \vrule depth0pt height0.7ex width \qdb\hfill}\hrule}\vrule}
+    }\hfil}}
+\def\rrr#1#2#3{\rrrr{#1}{#2}{#3}{0.8cm}}
+% -------------------------------------------------------------------------
+
+
+
+
+
+
+% ------------ Graphics Hacks --------------------------------------------------
+% Use these settings if Figures tend to get their one separate pages
+% ------------------------------------------------------------------------------
+% \renewcommand{\topfraction}{0.85}
+% \renewcommand{\textfraction}{0.1}
+% \renewcommand{\floatpagefraction}{0.75}
+% ------------------------------------------------------------------------------
+
+
+
+
+
+% ------------------ Biblio Hack -----------------------------------------------
+% Use these settings if the References take too much space
+% ------------------------------------------------------------------------------
+\let\oldthebibliography=\thebibliography
+  \let\endoldthebibliography=\endthebibliography
+  \renewenvironment{thebibliography}[1]{%
+%	\vspace{-0.3cm}
+    \begin{oldthebibliography}{#1}%
+%	\vspace{-0.2cm}
+       \setlength{\parskip}{0ex}%
+       \setlength{\itemsep}{0ex}%
+%	\bibfont
+  }%
+  {%
+    \end{oldthebibliography}%
+  }
+% ------------------------------------------------------------------------------
+
+
+
+
+
+% -------------- Floats Redefined ----------------------------------------------
+% Use these settings to change the whitespace between floats and text
+% ------------------------------------------------------------------------------
+
+% \setlength\dblfloatsep{1pt}
+% \setlength\floatsep{1pt}
+% \setlength\textfloatsep{5pt}
+% \setlength\dbltextfloatsep{5pt}
+
+% \renewcommand\floatpagefraction{.9}
+% \renewcommand\topfraction{.9}
+% \renewcommand\bottomfraction{.9}
+% \renewcommand\textfraction{.1}
+% \setcounter{totalnumber}{50}
+% \setcounter{topnumber}{50}
+% \setcounter{bottomnumber}{50}
+% ------------------------------------------------------------------------------

@@ -1,0 +1,36 @@
+Platform software provides an infrastructure for a variety of applications that run on top of it. Platform software often relies on logs to monitor the applications that run over it. Such logs are generated through simple \textsl{printf} statements or through the use of logging libraries such as `Log4j', `Slf4j', and `JCL'. Each logging statement contains a static textual part that gives information about the context,  a variable part that contains knowledge about the events, and a logging verbosity level that indicates when the log should be output. An example of a log is shown below where \emph{info} is the logging level, \emph{Connected to} is the event and the variable \emph{host} contains the information about the logged event. 
+
+\hypobox{ \hspace{25pt} LOG.info( ``Connected to " + host);}
+
+ In our paper we use `log' to refer to the logging statements in the source code, and use `output log' to refer to the logs generated during system execution. We use the term `bug fix' to refer to the commits made to fix a bug, and `non-bug fix' refers to commits made during improvements, tests, new features and other tasks.
+ 
+Research has shown that logs are used by developers extensively during the development of software systems~\cite{Characterizinglogs}. Logs are leveraged for anomaly detection~\cite{XUanomalies,ConsoleLogs,Marksyer}, system monitoring~\cite{Bitperformance}, capacity planning~\cite{IanWCRE} and large-scale system testing~\cite{markTesting}. The valuable information in logs has created a new market for log maintenance platforms such as Splunk~\cite{Bitperformance}, XpoLog~\cite{Xpolog}, and Logstash~\cite{Logstash}, which assist developers in analyzing logs.
+
+Logs are extensively used to help developers fix bugs in platform software. For example, in the JIRA issue HBASE-3403\footnote{https://issues.apache.org/jira/browse/HBASE-3403}, a bug was reported when a region is orphaned when system failure occurs during a split. Developers leveraged logs to identify the point of failure. After fixing the bug, the logs were updated to prevent similar bugs from re-occurring. A recent study shows that changes to logs have a strong relationship with code quality~\cite{EMSEIAN}. However, there exists no large scale study that investigate how logs are changed during bug fixes.  This information is necessary as previous research shows that 16-32\% of logs changes are made during field debugging~\cite{EMSEIAN}, but how these changes are made is not understood. 
+
+
+In this paper, we perform an empirical study on the changes that occur to logs during bug fixes in three open source platform software, i.e., \emph{Hadoop}, \emph{HBase} and \emph{Qpid}. In particular, we sought to answer the following research questions. 
+
+\begin{description}
+\item[\textbf{RQ1:}]\textbf{Are logs changed more often during bug fixes?} 
+
+We find that logs are changed more often during bug fixes than non-bug fixes. In particular, we find that adding and modifying logs occurs more often in bug fixes than non-bug fixes (statistically significant with non-trivial effect size). We identified four types of modifications to logs, including \emph{modification to logging level}, \emph{modification to logging text}, \emph{modification of logged variable} and \emph{relocation of log}. We find that \emph{modification to logging text}, \emph{modification of logged variable} and \emph{relocation of log} occur more often in bug fixes than non-bug fixes (statistically significantly more with medium to high effect sizes). 
+
+
+
+\item[\textbf{RQ2:}]\textbf{Is there relation between log change and resolution time of bug fixes?}
+
+We find that bug fixes with log churn have higher total code churn than bug fixes with no log churn. After normalizing the code churn, bug fixes with log churn take less time to get resolved, involve fewer developers and have less discussions during the bug fixing process. This means that given two metrics of similar complexity the one with log churn is more likely to be resolved faster and involve fewer developers and less discussion. 
+
+
+
+\item[\textbf{RQ3:}]\textbf{Can log churn metrics explain the resolution time of bugs?}
+
+Using log churn metrics (e.g., new logs added, deleted logs) and traditional metrics (i.e., \# comments and \# developers) we trained regression models for the resolution time of bug fixes. We find that log churn metrics are statistically significant in the models and have negative impact on resolution time. This suggests there is a relation between log churn metrics and resolution time of bugs. The relation shows that log churn has impact on resolution time which should be studied further. 
+
+\end{description}
+
+
+The rest of this paper is organized as follows. Section~\ref{sec:Methodology} presents our methodology for extracting data for our study. Section~\ref{sec:Study} presents our case study and the answers to our three research questions. Section~\ref{sec:Related} describes the prior research that is related to our work. Section~\ref{sec:Limit}  discusses the threats to validity. Finally, Section~\ref{sec:Conclusion} concludes the paper.
+
+

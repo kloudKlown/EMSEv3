@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: ICSMEDraft2.aux
+The style file: IEEEtran.bst
+Database file #1: C:/Users/Suhas/Dropbox/Logreference.bib
+I was expecting a `,' or a `}'---line 173 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ :   Timestamp                = {2014.12.17}   
+ :                                             Software Maintenance, 2006. ICSM '06.
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 178 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ :   author                   = {Hassan, A.E.},software 
+ :                                                      Maintenance, 2006. ICSM '06.
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 246 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ :   timestamp                = {2015.03.01}                                                                       
+ :                                                                                                                 35th International Conference on
+I'm skipping whatever remains of this entry
+You're missing a field name---line 251 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ :   author                   = {Malik, H. and Hemmati, H. and Hassan, A.E.},                                      
+ :                                                                                                                 35th International Conference on
+I'm skipping whatever remains of this entry
+You're missing a field name---line 358 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ :                                                                                                                 
+ :                                                                                                                 34th International Conference on
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 427 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ :   year                     = {2015},         software 
+ :                                                       Maintenance (ICSM), 2013
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 446 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ :   owner                    = {Suhas},        software 
+ :                                                       Maintenance (ICSM), 2013
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 529 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ :   
+ :   Url                      = {}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 560 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ :  inproceedings 
+ :                Series                   = {SOSP '09},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 589 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ :   booktitle               
+ :                           2110356.211 = {0Proceedings of the 34th International Conference on Software Engineering},
+I'm skipping whatever remains of this entry
+You're missing a field name---line 608 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ : series = {ASPLOS XVI},    
+ :                           2110356.211    0
+I'm skipping whatever remains of this entry
+Repeated entry---line 694 of file C:/Users/Suhas/Dropbox/Logreference.bib
+ : @inproceedings{Seaman
+ :                      ,
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty booktitle in Characterizinglogs
+Warning--empty year in Characterizinglogs
+Warning--empty booktitle in Automatic
+Warning--empty year in Automatic
+Warning--empty year in Yuan
+Warning--empty year in IanGap
+Warning--empty booktitle in HassanPHD
+Warning--empty year in HassanPHD
+
+Done.
+(There were 12 error messages)

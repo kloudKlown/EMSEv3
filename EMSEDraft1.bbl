@@ -1,0 +1,267 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{RTpredictions}
+Anbalagan, P., Vouk, M.: On predicting the time taken to correct bug reports in
+  open source projects.
+\newblock In: ICSM 2009: Proceedings of IEEE International Conference on the
+  Software Maintenance,, pp. 523--526. IEEE (2009)
+
+\bibitem{anbalagan2009predicting}
+Anbalagan, P., Vouk, M.: On predicting the time taken to correct bug reports in
+  open source projects.
+\newblock In: Software Maintenance, 2009. ICSM 2009. IEEE International
+  Conference on, pp. 523--526. IEEE (2009)
+
+\bibitem{Beschastnikh:2011:LEI:2025113.2025151}
+Beschastnikh, I., Brun, Y., Schneider, S., Sloan, M., Ernst, M.D.: Leveraging
+  existing instrumentation to automatically infer invariant-constrained models.
+\newblock In: Proceedings of the 19th ACM SIGSOFT Symposium and the 13th
+  European Conference on Foundations of Software Engineering, ESEC/FSE '11, pp.
+  267--277. ACM, New York, NY, USA (2011).
+\newblock \doi{10.1145/2025113.2025151}
+
+\bibitem{Bitperformance}
+Bitincka, L., Ganapathi, A., Sorkin, S., Zhang, S.: Optimizing data analysis
+  with a semi-structured time series database.
+\newblock In: SLAML'10: Proceedings of the 2010 Workshop on Managing Systems
+  via Log Analysis and Machine Learning Techniques, pp. 7--7. USENIX
+  Association
+
+\bibitem{Fu1}
+Fu, Q., Zhu, J., Hu, W., Ding, J.G.L.R., Lin, Q., Zhang, D., Xie, T.: Where do
+  developers log? an empirical study on logging practices in industry.
+\newblock In: ICSE Companion '14: Proceedings of the 36th International
+  Conference on Software Engineering,, pp. Pages 24--33
+
+\bibitem{Gehan1965}
+Gehan, E.A.: A generalized wilcoxon test for comparing arbitrarily
+  singly-censored samples.
+\newblock Biometrika \textbf{52}(1-2), 203--223 (1965)
+
+\bibitem{rmsPackage}
+Harrell, F.E.: Regression modeling strategies: with applications to linear
+  models, logistic regression, and survival analysis.
+\newblock Springer Science \& Business Media (2013)
+
+\bibitem{DegreesofFreedom}
+Harrell, F.E., Lee, K.L., Califf, R.M., Pryor, D.B., Rosati, R.A.: Regression
+  modelling strategies for improved prognostic prediction.
+\newblock Statistics in medicine \textbf{3}(2), 143--152 (1984)
+
+\bibitem{ihaka1996r}
+Ihaka, R., Gentleman, R.: R: a language for data analysis and graphics.
+\newblock Journal of computational and graphical statistics \textbf{5}(3),
+  299--314 (1996)
+
+\bibitem{Jiang:2009:UCP:1525908.1525912}
+Jiang, W., Hu, C., Pasupathy, S., Kanevsky, A., Li, Z., Zhou, Y.: Understanding
+  customer problem troubleshooting from storage system logs.
+\newblock In: FAST '09: Proceedings of the 7th Conference on File and Storage
+  Technologies, pp. 43--56. USENIX Association, Berkeley, CA, USA (2009)
+
+\bibitem{Jiang:2010:ICS:1850000.1850068}
+Jiang, Z.M., Avritzer, A., Shihab, E., Hassan, A.E., Flora, P.: An industrial
+  case study on speeding up user acceptance testing by mining execution logs.
+\newblock In: SSIRI '10: Proceedings of the 4th International Conference on
+  Secure Software Integration and Reliability Improvement, pp. 131--140, 2010.
+  IEEE Computer Society, Washington, DC, USA.
+\newblock \doi{10.1109/SSIRI.2010.15}
+
+\bibitem{JiangICSM2008}
+Jiang, Z.M., Hassan, A., Hamann, G., Flora, P.: Automatic identification of
+  load testing problems.
+\newblock In: ICSM '08: Proceedings of theIEEE International Conference on
+  Software Maintenance, pp. 307--316 (2008).
+\newblock \doi{10.1109/ICSM.2008.4658079}
+
+\bibitem{Jiang:2008:AAA:1400155.1400158}
+Jiang, Z.M., Hassan, A.E., Hamann, G., Flora, P.: An automated approach for
+  abstracting execution logs to execution events.
+\newblock Journal of Software Maintenance Evolution \textbf{20}(4), 249--267
+  (2008).
+\newblock \doi{10.1002/smr.v20:4}
+
+\bibitem{JiangICSM20092}
+Jiang, Z.M., Hassan, A.E., Hamann, G., Flora, P.: Automated performance
+  analysis of load tests.
+\newblock In: ICSM '09: Proceedings of the IEEE International Conference on
+  Software Maintenance, pp. 125--134. IEEE (2009)
+
+\bibitem{cohenUsage1}
+Kampenes, V.B., Dyb{\aa}, T., Hannay, J.E., Sj{\o}berg, D.I.: A systematic
+  review of effect size in software engineering experiments.
+\newblock Information and Software Technology \textbf{49}(11), 1073--1086
+  (2007)
+
+\bibitem{Effectsize}
+Kampenes, V.B., Dyb{\aa}, T., Hannay, J.E., Sj{\o}berg, D.I.K.: A systematic
+  review of effect size in software engineering experiments.
+\newblock Information and Software Technology \textbf{49}(11-12), 1073--1086
+  (2007)
+
+\bibitem{cohenUsage2}
+Kitchenham, B., Pfleeger, S.L., Pickard, L.M., Jones, P.W., Hoaglin, D.C.,
+  El~Emam, K., Rosenberg, J., et~al.: Preliminary guidelines for empirical
+  research in software engineering.
+\newblock Software Engineering, IEEE Transactions on \textbf{28}(8), 721--734
+  (2002)
+
+\bibitem{waldtest}
+Lesnoff, M., Lancelot, R., Lancelot, M.R.: Package ?aod?
+
+\bibitem{Levenshtein2}
+Levenshtein, V.I.: Binary codes capable of correcting deletions, insertions,
+  and reversals (1966)
+
+\bibitem{Logstash}
+logstash: http://logstash.net
+
+\bibitem{JGLouMining}
+Lou, J.G., Fu, Q., Yang, S., Xu, Y., Li, J.: Mining invariants from console
+  logs for system problem detection.
+\newblock In: USENIX Annual Technical Conference (2010)
+
+\bibitem{ShaneOLS}
+McIntosh, S., Kamei, Y., Adams, B., Hassan, A.E.: An empirical study of the
+  impact of modern code review practices on software quality.
+\newblock Empirical Software Engineering p. To appear (2015)
+
+\bibitem{levenshteinratio}
+Mednis, M., Aurich, M.K.: Application of string similarity ratio and edit
+  distance in automatic metabolite reconciliation comparing reconstructions and
+  models.
+\newblock Biosystems and Information technology \textbf{1}(1), 14--18 (2012)
+
+\bibitem{seaman1999qualitative}
+Seaman, C.B.: Qualitative methods in empirical studies of software engineering.
+\newblock Software Engineering, IEEE Transactions on \textbf{25}(4), 557--572
+  (1999)
+
+\bibitem{shadish2009combining}
+Shadish, W.R., Haddock, C.K.: Combining estimates of effect size.
+\newblock The handbook of research synthesis and meta-analysis \textbf{2},
+  257--277 (2009)
+
+\bibitem{IanGap}
+Shang, W.: Bridging the divide between software developers and operators using
+  logs.
+\newblock In: ICSE '12 :Proceedings of the 34th International Conference on
+  Software Engineering
+
+\bibitem{IanWCRE}
+Shang, W., Jiang, Z.M., Adams, B., Hassan, A.E., Godfrey, M.W., Nasser, M.,
+  Flora, P.: An exploratory study of the evolution of communicated information
+  about the execution of large software systems.
+\newblock Journal of Software: Evolution and Process \textbf{26}(1), 3--26
+  (2014).
+\newblock \doi{10.1002/smr.1579}
+
+\bibitem{PaperIanCIIII}
+Shang, W., Jiang, Z.M., Adams, B., Hassan, A.E., Godfrey, M.W., Nasser, M.,
+  Flora, P.: An exploratory study of the evolution of communicated information
+  about the execution of large software systems.
+\newblock Journal of Software: Evolution and Process \textbf{26}(1), 3--26
+  (2014).
+\newblock \doi{10.1002/smr.1579}
+
+\bibitem{IanContextinformation}
+Shang, W., Jiang, Z.M., Hemmati, H., Adams, B., Hassan, A.E., Martin, P.:
+  Assisting developers of big data analytics applications when deploying on
+  hadoop clouds.
+\newblock In: ICSE'13: Proceedings of the 2013 International Conference on
+  Software Engineering, ICSE '13, pp. 402--411. IEEE Press, Piscataway, NJ, USA
+  (2013)
+
+\bibitem{EMSEIAN}
+Shang, W., Nagappan, M., Hassan, A.E.: Studying the relationship between
+  logging characteristics and the code quality of platform software.
+\newblock Empirical Software Engineering \textbf{20}(1), 1--27 (2015).
+\newblock \doi{10.1007/s10664-013-9274-8}
+
+\bibitem{IanIcesm}
+Shang, W., Nagappan, M., Hassan, A.E., Jiang, Z.M.: Understanding log lines
+  using development knowledge.
+\newblock In: ICSME '14: Proceedings of the International Conference on
+  Software Maintenance and Evolution,, pp. 21--30. IEEE (2014)
+
+\bibitem{Marksyer}
+Syer, M., Jiang, Z.M., Nagappan, M., Hassan, A., Nasser, M., Flora, P.:
+  Leveraging performance counters and execution logs to diagnose memory-related
+  performance issues.
+\newblock In: Software Maintenance (ICSM), 2013 29th IEEE International
+  Conference on, pp. 110--119 (2013).
+\newblock \doi{10.1109/ICSM.2013.22}
+
+\bibitem{markTesting}
+Syer, M.D., Jiang, Z.M., Nagappan, M., Hassan, A.E., Nasser, M., Flora, P.:
+  Continuous validation of load test suites.
+\newblock In: Proceedings of the International Conference on Performance
+  Engineering, pp. 259--270 (2014)
+
+\bibitem{TanSalsa}
+Tan, J., Pan, X., Kavulya, S., Gandhi, R., Narasimhan, P.: Salsa: Analyzing
+  logs as state machines.
+\newblock In: WASL'08: Proceedings of the 1st USENIX Conference on Analysis of
+  System Logs, pp. 6--6. USENIX Association (2008)
+
+\bibitem{QFuanomaly}
+Wang, Q.F.J.L.Y., Li., J.: Execution anomaly detection in distributed systems
+  through unstructured log analysis.
+\newblock In: ICDM 09: In Proceedings of 9th IEEE International Conference on
+  Data Mining
+
+\bibitem{complexity}
+Weyuker, E.: Evaluating software complexity measures.
+\newblock Software Engineering, IEEE Transactions on \textbf{14}(9), 1357--1365
+  (1988).
+\newblock \doi{10.1109/32.6178}
+
+\bibitem{Xpolog}
+Xpolog: \urlprefix\url{http://www.xpolog.com/.}
+
+\bibitem{XUanomalies}
+Xu, W., Huang, L., Fox, A., Patterson, D., Jordan, M.: Online system problem
+  detection by mining patterns of console logs.
+\newblock In: ICDM '09: Proceedings of the 9th IEEE International Conference on
+  Data Mining, pp. 588--597.
+\newblock \doi{10.1109/ICDM.2009.19}
+
+\bibitem{ConsoleLogs}
+Xu, W., Huang, L., Fox, A., Patterson, D., Jordan, M.I.: Detecting large-scale
+  system problems by mining console logs.
+\newblock In: ACM SIGOPS '09: Proceedings of the 22nd Symposium on Operating
+  Systems Principles, pp. 117--132. New York, NY, USA.
+\newblock \doi{10.1145/1629575.1629587}
+
+\bibitem{Yuan:2010:SED:1736020.1736038}
+Yuan, D., Mai, H., Xiong, W., Tan, L., Zhou, Y., Pasupathy, S.: Sherlog: Error
+  diagnosis by connecting clues from run-time logs.
+\newblock In: ASPLOS '10: Proceedings of the 15th Edition of ASPLOS on
+  Architectural Support for Programming Languages and Operating Systems, pp.
+  143--154. ACM, New York, NY, USA (2010).
+\newblock \doi{10.1145/1736020.1736038}
+
+\bibitem{Characterizinglogs}
+Yuan, D., Park, S., Zhou, Y.: Characterizing logging practices in open-source
+  software.
+\newblock In: ICSE '12: Proceedings of the 34th International Conference on
+  Software Engineering, pp. 102--112. IEEE Press (2012)
+
+\bibitem{Yuan}
+Yuan, D., Zheng, J., Park, S., Zhou, Y., Savage, S.: Improving software
+  diagnosability via log enhancement.
+\newblock ACM Transactions on Computer Systems \textbf{30}, 4:1--4:28 (2012).
+\newblock \doi{10.1145/2110356.2110360}
+
+\bibitem{zhu2015learning}
+Zhu, J., He, P., Fu, Q., Zhang, H., Lyu, M.R., Zhang, D.: Learning to log:
+  Helping developers make informed logging decisions.
+\newblock In: Proc. of ACM/IEEE ICSE (2015)
+
+\end{thebibliography}

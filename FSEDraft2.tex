@@ -1,0 +1,110 @@
+%% LyX 2.1.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass{sig-alternate}
+
+
+\input{setup}
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\begin{document}
+	
+	
+	
+	\title{An Empirical Study On Leveraging Logs During Bug Fixes}
+	
+	
+	
+	\numberofauthors{1}
+	
+	
+	\author{\alignauthor Suhas Kabinna, Weiyi Shang, Ahmed E. Hassan\\
+		\affaddr{School of Computing}\\
+		\affaddr{Queen's University}\\
+		\affaddr{Kingston, Ontario, Canada K7L 2N8}\\
+		\email{\{kabinna, swy, ahmed\}@queensu.ca}\\
+	}
+	
+
+
+%\additionalauthors{Additional authors: John Smith (The Th{\o}rv{\"a}ld Group, email:
+%\texttt{jsmith@affiliation.org}) and Julius P.~Kumquat (The Kumquat
+%Consortium, email: \texttt{jpkumquat@consortium.net})}
+
+
+\date{30 July 1999}
+\maketitle
+\begin{abstract}
+	\indent Logging is a practice used by software developers to record and convey
+	information during the execution of a system. Logs can be used to
+	output the behavior of the system when running, to monitor the choke
+	points of a system, and to help in debugging the system.
+	
+	Though much research has been done on the analysis of logs, most of
+	the studies looked at either characterizing logs based on their usage
+	or how to improve logs so they are more meaningful. But, there has
+	been no study so far which looks into how effective logs are in the
+	software development process and especially in debugging. 
+	
+	To answer this question in our paper we first try to find co-relation
+	between log updates and bug fixes. This is an intuitive step, because
+	when developers fix bugs they update the logs associated with the
+	bug or add new logs to help them fix bugs. We verify this claim on
+	3 large scale systems like Hadoop, HDFS and Qpid from the Apace Foundation.
+	We then find the types of changes developers make to logging statements
+	during bug fixes. Finally, we look at how long it takes for bugs to get fixed,
+	the number of developers involved in the fix and the comments associated
+	with the fixes, all with respect to bugs without logging changes.\\
+	\indent We find that in all projects logging actually helps in the debugging
+	process and three factors - time, developers and comments - are lesser
+	when bugs have log churn associated with them. This demonstrates the
+	importance logs play in bug fixes and motivates developers to log
+	more.
+\end{abstract}
+
+% A category with the (minimum) three required fields; A category including the fourth, optional field follows...
+
+
+%\category{H.4}{Information Systems Applications}{Miscellaneous}
+
+%Full ACM categories cannot be yet represented in LyX without resorting to ELT
+%\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+
+
+%\terms{}{Theory}
+
+
+%\keywords{}{ACM proceedings, \LaTeX{}, text tagging}
+
+
+\section{Introduction}
+
+\input{Introduction}
+\section{Related Work}
+
+\input{Relatedwork}
+\section{Methodology}
+\input{Methodology}
+
+\section{Study Results}
+\input{studyresults}
+
+\section{Manual Study on Bug fixes}
+\input{Manualstudy}
+\section{Limitations and Threats to Validity}
+\input{Threats}
+\section{Conclusion and Future Work}
+\input{Conclusion}
+
+\bibliographystyle{abbrv}
+\bibliography{C:/Users/Suhas/Dropbox/Logreference}
+
+
+%\balancecolumns
+
+
+
+\end{document}
