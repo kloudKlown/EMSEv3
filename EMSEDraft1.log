@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.24)  18 AUG 2015 09:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.24)  22 AUG 2015 13:57
 entering extended mode
 **EMSEDraft1.tex
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEDraft1.tex"
+
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\EMSEDraft1
+.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -19,13 +21,16 @@ Package: fix-cm 2014/09/29 v1.1s fixes to LaTeX
 ("C:\Program Files (x86)\Latex\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 ))
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\svjour3.cls"
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\svjour3.cl
+s"
 Document Class: svjour3 2010/11/25 v3.3 
 LaTeX document class for Springer journals
 Class Springer-SVJour3 Info: extra/valid Springer sub-package (-> *.clo) 
 (Springer-SVJour3)           not found in option list of \documentclass
 (Springer-SVJour3)           - autoactivating "global" style.
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\svglov3.clo"
+
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\svglov3.cl
+o"
 File: svglov3.clo 2009/12/18 v3.2 style option for standardised journals
 
 SVJour Class option: svglov3.clo for standardised journals
@@ -86,7 +91,8 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
 \figgap=\dimen112
 \bibindent=\dimen113
 \@tempcntc=\count104
-) ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\setup.tex"
+)
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\setup.tex"
 ("C:\Program Files (x86)\Latex\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen114
 )
@@ -372,7 +378,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \qda=\dimen158
 \qdb=\dimen159
 )
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEDraft1.aux")
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\EMSEDraft1
+.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
@@ -439,9 +446,10 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 88.
 
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\Abstract.tex")
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\Introduction.tex"
-
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\Abstract.t
+ex")
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\Introducti
+on.tex"
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{C:/Users/Suhas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -449,9 +457,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: \oval, \circle, or \line size unavailable on input line 3.
 
 [2])
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\Methodology.tex"
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\Methodolog
+y.tex"
 Overfull \hbox (2.71027pt too wide) in paragraph at lines 11--30
  [][] 
+ []
+
+
+Overfull \hbox (2.44511pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 have been ex-ten-sively stud-ied in prior re-search [21, 30, 39
+]. We study the changes
  []
 
 [3] <MethdologyICESEM.pdf, id=23, 904.37875pt x 306.14375pt>
@@ -478,12 +493,12 @@ Underfull \hbox (badness 7814) in paragraph at lines 77--77
 
 LaTeX Warning: \oval, \circle, or \line size unavailable on input line 77.
 
-[5 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/MethdologyICESE
-M.pdf>]
+[5 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/EMSEv3/Methdolo
+gyICESEM.pdf>]
 
 LaTeX Warning: \oval, \circle, or \line size unavailable on input line 86.
 
-) ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\RQ1.tex"
+) ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\RQ1.tex"
 [6] [7]
 Overfull \hbox (2.71027pt too wide) in paragraph at lines 87--101
  [][] 
@@ -557,7 +572,7 @@ Underfull \vbox (badness 2253) has occurred while \output is active []
 
 LaTeX Warning: \oval, \circle, or \line size unavailable on input line 237.
 
-) ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\RQ2.tex"
+) ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\RQ2.tex"
 [12]
 Overfull \hbox (2.55957pt too wide) in paragraph at lines 41--41
  \OT1/cmr/m/n/8 (medium)| 
@@ -587,89 +602,97 @@ Package pdftex.def Info: QpidBoxPlot.pdf used on input line 54.
 (pdftex.def)             Requested size: 165.62186pt x 156.03195pt.
 
 [13]
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\Manualstudy.tex"
-Underfull \vbox (badness 2005) has occurred while \output is active []
-
- [14]
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\Manualstud
+y.tex" [14]
 Underfull \vbox (badness 6995) has occurred while \output is active []
 
- [15 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/HadoopBoxPlot
-.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/HBaseBoxPlot
-.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/QpidBoxPlot.
-pdf>])
+ [15 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/EMSEv3/Hadoop
+BoxPlot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/EMSEv
+3/HBaseBoxPlot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv
+3/EMSEv3/QpidBoxPlot.pdf>])
 
 LaTeX Warning: \oval, \circle, or \line size unavailable on input line 71.
 
-) ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\RQ3.tex"
-[16] <MethodologyOLS.pdf, id=92, 804.00375pt x 356.33125pt>
+) ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\RQ3.tex"
+[16] [17] <MethodologyOLS.pdf, id=95, 804.00375pt x 356.33125pt>
 File: MethodologyOLS.pdf Graphic file (type pdf)
 
 <use MethodologyOLS.pdf>
 Package pdftex.def Info: MethodologyOLS.pdf used on input line 33.
 (pdftex.def)             Requested size: 278.83708pt x 123.57599pt.
- [17] [18 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/Methodol
-ogyOLS.pdf>]
+ [18 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/EMSEv3/Method
+ologyOLS.pdf>]
 <QpidSpearman.png, id=102, 602.25pt x 567.11874pt>
 File: QpidSpearman.png Graphic file (type png)
  <use QpidSpearman.png>
 Package pdftex.def Info: QpidSpearman.png used on input line 68.
 (pdftex.def)             Requested size: 219.02417pt x 206.2481pt.
 
-[19 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/QpidSpearman.p
-ng>] <QpidDF.png, id=108, 603.25375pt x 567.11874pt>
+[19] <QpidDF.png, id=107, 603.25375pt x 567.11874pt>
 File: QpidDF.png Graphic file (type png)
  <use QpidDF.png>
 Package pdftex.def Info: QpidDF.png used on input line 89.
 (pdftex.def)             Requested size: 189.27989pt x 177.94241pt.
 
-<HadoopDirectionPlot.pdf, id=109, 450.68375pt x 424.58624pt>
+<HadoopDirectionPlot.pdf, id=108, 450.68375pt x 424.58624pt>
 File: HadoopDirectionPlot.pdf Graphic file (type pdf)
 
 <use HadoopDirectionPlot.pdf>
 Package pdftex.def Info: HadoopDirectionPlot.pdf used on input line 105.
 (pdftex.def)             Requested size: 160.54948pt x 151.2507pt.
 
-<QpidDirectionPlot.pdf, id=110, 451.6875pt x 424.58624pt>
+<QpidDirectionPlot.pdf, id=109, 450.68375pt x 424.58624pt>
 File: QpidDirectionPlot.pdf Graphic file (type pdf)
 
 <use QpidDirectionPlot.pdf>
 Package pdftex.def Info: QpidDirectionPlot.pdf used on input line 111.
-(pdftex.def)             Requested size: 160.54948pt x 150.92029pt.
+(pdftex.def)             Requested size: 160.54948pt x 151.2507pt.
 
 Overfull \hbox (1.88892pt too wide) in paragraph at lines 102--114
 []$[]$ $[]$ 
  []
 
-<HbaseDirectionPlot.pdf, id=111, 722.7pt x 722.7pt>
+<HbaseDirectionPlot.pdf, id=110, 722.7pt x 722.7pt>
 File: HbaseDirectionPlot.pdf Graphic file (type pdf)
 
 <use HbaseDirectionPlot.pdf>
 Package pdftex.def Info: HbaseDirectionPlot.pdf used on input line 118.
-(pdftex.def)             Requested size: 233.22083pt x 233.22058pt.
- [20 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/QpidDF.png>]
-Underfull \vbox (badness 4291) has occurred while \output is active []
+(pdftex.def)             Requested size: 160.54948pt x 160.54936pt.
 
- [21 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/HadoopDirecti
-onPlot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/QpidDi
-rectionPlot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/H
-baseDirectionPlot.pdf>]
+Overfull \hbox (107.24942pt too wide) in paragraph at lines 118--120
+[]|  [] 
+ []
 
-LaTeX Warning: \oval, \circle, or \line size unavailable on input line 160.
+
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 121--121
+[] [] 
+ []
+
+[20 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/EMSEv3/QpidSpe
+arman.png>] [21 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/EM
+SEv3/QpidDF.png>]
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 162.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22])
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\Relatedwork.tex"
-[23]) ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\Threats.tex
-"
+ [22 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/EMSEv3/Hadoop
+DirectionPlot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3
+/EMSEv3/QpidDirectionPlot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Com
+ments/EMSEv3/EMSEv3/HbaseDirectionPlot.pdf>])
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\Relatedwor
+k.tex" [23])
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\Threats.te
+x"
 Underfull \vbox (badness 2376) has occurred while \output is active []
 
  [24]
 [25])
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\Conclusion.tex")
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEDraft1.bbl"
-[26]
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\Conclusion
+.tex")
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\EMSEDraft1
+.bbl" [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
@@ -677,35 +700,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28])
 [29]
-("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEDraft1.aux") 
-) 
+("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\EMSEDraft1
+.aux") ) 
 Here is how much of TeX's memory you used:
- 6335 strings out of 493921
- 92377 string characters out of 3146880
+ 6336 strings out of 493921
+ 92650 string characters out of 3146880
  163295 words of memory out of 3000000
- 9486 multiletter control sequences out of 15000+200000
+ 9487 multiletter control sequences out of 15000+200000
  14724 words of font info for 54 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,20n,38p,1695b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/P
-rogram Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
-Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (
-x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files (x86)/Lat
-ex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files (x86)/Latex/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/Latex/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/Latex/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/c
-mr10.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-<C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Progr
-am Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files 
-(x86)/Latex/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/L
-atex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Latex/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/Latex/fonts/type
-1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/Latex/fonts/type1/publi
-c/amsfonts/cm/cmtt8.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfon
-ts/latxfont/lcirclew.pfb>
-Output written on EMSEDraft1.pdf (29 pages, 590294 bytes).
+ 43i,20n,38p,1690b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbsy10.pf
+b><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/P
+rogram Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program 
+Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files (x
+86)/Latex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files (x86)/L
+atex/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/Latex/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/Latex/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/Latex/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cm
+r6.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr7.pfb><C
+:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
+ Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files 
+(x86)/Latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/L
+atex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/Latex/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/Latex/fonts/type
+1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files (x86)/Latex/fonts/type1/public
+/amsfonts/latxfont/lcirclew.pfb>
+Output written on EMSEDraft1.pdf (29 pages, 593508 bytes).
 PDF statistics:
  219 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
