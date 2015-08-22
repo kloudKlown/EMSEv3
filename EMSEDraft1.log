@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.24)  22 AUG 2015 13:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.24)  22 AUG 2015 15:15
 entering extended mode
 **EMSEDraft1.tex
 
@@ -15,12 +15,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\Program Files (x86)\Latex\tex\latex\base\fix-cm.sty"
-Package: fix-cm 2014/09/29 v1.1s fixes to LaTeX
 
-("C:\Program Files (x86)\Latex\tex\latex\base\ts1enc.def"
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-))
 ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\svjour3.cl
 s"
 Document Class: svjour3 2010/11/25 v3.3 
@@ -392,8 +387,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
 
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
@@ -429,6 +422,10 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count141
 SVJour3 warning: Missing \journalname
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13> not available
+(Font)              size <12> substituted on input line 88.
+
 LaTeX Font Info:    Try loading font information for U+msa on input line 88.
 ("C:\Program Files (x86)\Latex\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -461,12 +458,6 @@ LaTeX Warning: \oval, \circle, or \line size unavailable on input line 3.
 y.tex"
 Overfull \hbox (2.71027pt too wide) in paragraph at lines 11--30
  [][] 
- []
-
-
-Overfull \hbox (2.44511pt too wide) in paragraph at lines 33--34
-\OT1/cmr/m/n/10 have been ex-ten-sively stud-ied in prior re-search [21, 30, 39
-]. We study the changes
  []
 
 [3] <MethdologyICESEM.pdf, id=23, 904.37875pt x 306.14375pt>
@@ -693,44 +684,55 @@ Underfull \vbox (badness 2376) has occurred while \output is active []
 .tex")
 ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\EMSEDraft1
 .bbl" [26]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27]
+ [27])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28])
-[29]
+ [28]
 ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\EMSEDraft1
-.aux") ) 
+.aux")
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6336 strings out of 493921
- 92650 string characters out of 3146880
- 163295 words of memory out of 3000000
- 9487 multiletter control sequences out of 15000+200000
- 14724 words of font info for 54 fonts, out of 3000000 for 9000
+ 5958 strings out of 493921
+ 84459 string characters out of 3146880
+ 162265 words of memory out of 3000000
+ 9115 multiletter control sequences out of 15000+200000
+ 14908 words of font info for 54 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  43i,20n,38p,1690b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbsy10.pf
-b><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/P
-rogram Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program 
-Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files (x
-86)/Latex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files (x86)/L
-atex/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/Latex/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/Latex/fonts/typ
-e1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/Latex/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cm
-r6.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr7.pfb><C
-:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
- Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files 
-(x86)/Latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/L
-atex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/Latex/fon
-ts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/Latex/fonts/type
-1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files (x86)/Latex/fonts/type1/public
-/amsfonts/latxfont/lcirclew.pfb>
-Output written on EMSEDraft1.pdf (29 pages, 593508 bytes).
+<C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/
+Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program
+ Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files 
+(x86)/Latex/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files (x86)/La
+tex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files (x86)/Latex/f
+onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/Latex/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/Latex/fonts/type1/pub
+lic/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr6.pfb
+><C:/Program Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Prog
+ram Files (x86)/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
+ (x86)/Latex/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/
+Latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Latex/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/Latex/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/Latex/fonts/type1/publ
+ic/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfo
+nts/latxfont/lcirclew.pfb>
+Output written on EMSEDraft1.pdf (28 pages, 610116 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
+ 216 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
