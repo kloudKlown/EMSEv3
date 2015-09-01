@@ -1,15 +1,19 @@
-Platform software provides an infrastructure for a variety of applications that run on top of it. Platform software often relies on output logs to monitor the applications that run over it. Such output logs are generated through simple \textsl{printf} statements or through logs in the source code. Such logs in the source code contain a static textual part that provides information about the event,  a variable part that contains context of the events, and a logging verbosity level that indicates when the log should be output. We use the term `log' to refer to logs in the source code in our paper. An example of a log is shown below where \emph{info} is the logging verbosity level, \emph{Connected to} is the event and the variable \emph{host} contains the information about the logged event. 
+Platform software provides an infrastructure for a variety of applications that run on top of it. Platform software often relies on logs to monitor the applications that run over it. Such logs are generated through simple \textsl{printf} statements or logging statement in the source code. Such logging statements contain a static textual part that provides information about the event,  a variable part that contains context of the events, and a logging verbosity level that indicates when the log should be output. An example of a logging statement is shown below where \emph{info} is the logging verbosity level, \emph{Connected to} is the event and the variable \emph{host} contains the information about the logged event. 
 
 \hypobox{ \hspace{25pt} LOG.info( ``Connected to " + host);}
 %
 % In our paper we use `log' to refer to the logging statements in the source code, and use `output log' to refer to the logs generated during system execution. We use the term `bug fix' to refer to the commits made to fix a bug, and `non-bug fix' refers to commits made during improvements, tests, new features and other tasks.
 % 
 
-Research has shown that logs in source code are used by developers extensively during the development of software systems~\cite{Characterizinglogs}. Output logs are leveraged for anomaly detection~\cite{XUanomalies,ConsoleLogs,Marksyer}, system monitoring~\cite{Bitperformance}, capacity planning~\cite{IanWCRE} and large-scale system testing~\cite{markTesting}. The valuable information in logs has created a new market for log maintenance platforms such as Splunk~\cite{Bitperformance}, XpoLog~\cite{Xpolog}, and Logstash~\cite{Logstash}, which assist developers in analyzing both output logs and logs in source code.
+Research has shown that logs are used by developers extensively during the development of software systems~\cite{Characterizinglogs}. Logs are leveraged for anomaly detection~\cite{XUanomalies,ConsoleLogs,Marksyer}, system monitoring~\cite{Bitperformance}, capacity planning~\cite{IanWCRE} and large-scale system testing~\cite{markTesting}. The valuable information in logs has created a new market for log analysis platforms such as Splunk~\cite{Bitperformance}, XpoLog~\cite{Xpolog}, and Logstash~\cite{Logstash}, which assist developers in analyzing both logs and logging statements.
 
  
 Logs are extensively used to help developers fix bugs in platform software. For example, in the JIRA issue HBASE-3403\footnote{https://issues.apache.org/jira/browse/HBASE-3403}, a bug was reported due to a system failure in the field because of server crash. Developers leveraged logs to identify the point of failure. After fixing the bug, the logs were updated to prevent similar bugs from re-occurring. A recent study shows that changes to logs have a strong relationship with code quality and that 16-32\%
-of logs changes are made during field debugging~\cite{EMSEIAN}. However, there exists no large scale study that investigates how logs are changed during bug fixes. By bridging this gap in knowledge, we can better understand what type of development knowledge is leveraged by developers in debugging, if the leveraged information is useful for debugging and if the information speeds up the debugging process. This knowledge can be used by tools like `Log Enhancer'~\cite{Yuan}, `Salsa'~\cite{TanSalsa} and also developers to add better logs in the source code. 
+of log changes are made during field debugging~\cite{EMSEIAN}. However, there exists no large scale study that investigates how logs are changed during bug fixes. Such knowledge can provide guidance on the practitioners who often use or change logs. Moreover, the log analysis platform may be improved to better serve the use of logs in practice.
+
+
+
+%By bridging this gap in knowledge, we can better understand what type of development knowledge is leveraged by developers in debugging, if the leveraged information is useful for debugging and if the information speeds up the debugging process. This knowledge can be used by tools like `Log Enhancer'~\cite{Yuan}, `Salsa'~\cite{TanSalsa} and also developers to add better logs in the source code. 
 
 %
 %This suggests that logs are used by developers during debugging and the log changes can affect the quality of the code.
@@ -17,7 +21,7 @@ of logs changes are made during field debugging~\cite{EMSEIAN}. However, there e
 %
 % However, there exists no large scale study that investigates how logs are changed during bug fixes.  This information is necessary as previous research shows that 16-32\% of logs changes are made during field debugging~\cite{EMSEIAN}, but how these changes are made is not understood. 
 
-In this paper, we perform an empirical study on the changes that occur to logs during bug fixes in three open source platform software, i.e., \emph{Hadoop}, \emph{HBase} and \emph{Qpid}. In particular, we sought to answer the following research questions. 
+In this paper, we perform an empirical study on the log changes during bug fixes in three open source platform software, i.e., \emph{Hadoop}, \emph{HBase} and \emph{Qpid}. We consider the log changeIn particular, we sought to answer the following research questions. 
 
 \begin{description}
 \item[\textbf{RQ1:}]\textbf{Are logs changed more often during bug fixes?} 
