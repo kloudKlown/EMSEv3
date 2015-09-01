@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.24)  22 AUG 2015 15:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.24)  1 SEP 2015 16:13
 entering extended mode
 **EMSEDraft1.tex
 
@@ -623,7 +623,11 @@ Package pdftex.def Info: QpidSpearman.png used on input line 68.
 File: QpidDF.png Graphic file (type png)
  <use QpidDF.png>
 Package pdftex.def Info: QpidDF.png used on input line 89.
-(pdftex.def)             Requested size: 189.27989pt x 177.94241pt.
+(pdftex.def)             Requested size: 236.59897pt x 222.42152pt.
+
+Overfull \hbox (30.34166pt too wide) in paragraph at lines 89--90
+ []|  [] 
+ []
 
 <HadoopDirectionPlot.pdf, id=108, 450.68375pt x 424.58624pt>
 File: HadoopDirectionPlot.pdf Graphic file (type pdf)
@@ -643,43 +647,39 @@ Overfull \hbox (1.88892pt too wide) in paragraph at lines 102--114
 []$[]$ $[]$ 
  []
 
-<HbaseDirectionPlot.pdf, id=110, 722.7pt x 722.7pt>
+<HbaseDirectionPlot.pdf, id=110, 650.43pt x 424.58624pt>
 File: HbaseDirectionPlot.pdf Graphic file (type pdf)
 
 <use HbaseDirectionPlot.pdf>
-Package pdftex.def Info: HbaseDirectionPlot.pdf used on input line 118.
-(pdftex.def)             Requested size: 160.54948pt x 160.54936pt.
+Package pdftex.def Info: HbaseDirectionPlot.pdf used on input line 116.
+(pdftex.def)             Requested size: 245.04948pt x 159.95801pt.
 
-Overfull \hbox (107.24942pt too wide) in paragraph at lines 118--120
+Overfull \hbox (131.99846pt too wide) in paragraph at lines 116--118
 []|  [] 
  []
 
 
-Overfull \hbox (71.13188pt too wide) in paragraph at lines 121--121
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 119--119
 [] [] 
  []
 
 [20 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/EMSEv3/QpidSpe
 arman.png>] [21 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/EM
 SEv3/QpidDF.png>]
-
-LaTeX Warning: \oval, \circle, or \line size unavailable on input line 162.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2617) has occurred while \output is active []
 
  [22 <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3/EMSEv3/Hadoop
 DirectionPlot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Comments/EMSEv3
 /EMSEv3/QpidDirectionPlot.pdf> <C:/Users/Suhas/Dropbox/Queen's/ICSME-Review Com
-ments/EMSEv3/EMSEv3/HbaseDirectionPlot.pdf>])
+ments/EMSEv3/EMSEv3/HbaseDirectionPlot.pdf>]
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 160.
+
+)
 ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\Relatedwor
 k.tex" [23])
 ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\Threats.te
-x"
-Underfull \vbox (badness 2376) has occurred while \output is active []
-
- [24]
-[25])
+x" [24] [25])
 ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\Conclusion
 .tex")
 ("C:\Users\Suhas\Dropbox\Queen's\ICSME-Review Comments\EMSEv3\EMSEv3\EMSEDraft1
@@ -707,7 +707,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  5958 strings out of 493921
  84459 string characters out of 3146880
- 162265 words of memory out of 3000000
+ 162267 words of memory out of 3000000
  9115 multiletter control sequences out of 15000+200000
  14908 words of font info for 54 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -730,7 +730,7 @@ onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/Latex/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/Latex/fonts/type1/publ
 ic/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/Latex/fonts/type1/public/amsfo
 nts/latxfont/lcirclew.pfb>
-Output written on EMSEDraft1.pdf (28 pages, 610116 bytes).
+Output written on EMSEDraft1.pdf (28 pages, 612106 bytes).
 PDF statistics:
  216 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

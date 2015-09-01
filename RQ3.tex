@@ -23,7 +23,7 @@ During predictive modeling, a major concern is over-fitting. An over-fit model i
 
 \subsubsection*{(C-2) Correlation and redundancy analysis}
 
-Correlation analysis is necessary to remove the highly correlated metrics from our dataset. We use Spearman rank correlation to assess the correlation between the metrics in our dataset. We use Spearman rank instead of Pearson correlation because Spearman rank correlation is resilient to data that is not normally distributed. We use the function \textsl{varclus} in R to perform the correlation analysis. From the hierarchical overview of explanatory metrics constructed by the \emph{varclus} function, we exclude one metric from the sub-hierarchies which have correlation $|\rho| > 0.7 $.
+Correlation analysis is necessary to remove the highly correlated metrics from our dataset. We use   rank correlation to assess the correlation between the metrics in our dataset. We use Spearman rank instead of Pearson correlation because Spearman rank correlation is resilient to data that is not normally distributed. We use the function \textsl{varclus} in R to perform the correlation analysis. From the hierarchical overview of explanatory metrics constructed by the \emph{varclus} function, we exclude one metric from the sub-hierarchies which have correlation $|\rho| > 0.7 $.
 % \ian{what's your cutoff and how do you decide which metrics to remove, check what shane wrote.}
 
 Correlation analysis does not indicate redundant metrics, i.e, metrics that can be explained by other explanatory metrics. The redundant metrics can interfere with the one another and the relation between the explanatory and dependent metrics is distorted. We perform redundancy analysis to remove such metrics. We use the \textsl{redun} function that is provided in the \textsl{rms} package to perform the redundancy analysis.
@@ -86,7 +86,7 @@ In this subsection, we describe the outcome of the model construction and analys
 \begin{figure}[t]
 	\begin{minipage}[b]{.7\columnwidth}
 			\centering 
-		\includegraphics[width=.8\columnwidth]{QpidDF}	
+		\hspace*{1cm}	\includegraphics[width=1\columnwidth]{QpidDF}	
 		
 	\end{minipage}
 	\captionsetup{labelsep = colon}
@@ -110,13 +110,11 @@ In this subsection, we describe the outcome of the model construction and analys
 			
 			\includegraphics[width=.95\textwidth]{QpidDirectionPlot}	
 			\subcaption{Qpid}
-		\end{minipage}	
-	
+		\end{minipage}
+			
 	\begin{minipage}{0.5\columnwidth}
-	
-
-		\hspace*{4cm}	\includegraphics[width=.95\textwidth]{HbaseDirectionPlot}
-  \captionsetup[subfigure]{oneside,margin={4.5cm,-2.5cm}}
+		\hspace*{1.9cm}	\includegraphics[width=1.45\textwidth]{HbaseDirectionPlot}
+  \captionsetup[subfigure]{oneside,margin={3.5cm,-2.5cm}}
 
 	\subcaption{HBase}
 	\end{minipage}
