@@ -60,21 +60,75 @@ where $\bar{x}_1$ and $\bar{x}_2$ are the mean of two populations, $s$ is the po
 
 
 
+%\begin{table}[t]
+%	\protect\caption{Comparing the mean log density between bug fixes and non-bug fixes (the value of 1.9 for Hadoop means logs are modified 1.9 times more during bug fixes compared to non-bug fixes).}
+%	\begin{tabular}{|l|lll|}
+%		\hline 
+%		\multirow{1}{*}{Projects} & \multicolumn{1}{c}{Modified log density ratio} & \multicolumn{1}{c}{New log density ratio} & \multicolumn{1}{c|}{Deleted log density}\tabularnewline
+%		\hline 
+%		\multirow{1}{*}{Hadoop} & 1.9 & 1.4 & 1.6\tabularnewline
+%		%		\hline 
+%		\multirow{1}{*}{HBase} & 3.5 & 1.2 & 2.4\tabularnewline
+%		%		\hline 
+%		\multirow{1}{*}{Qpid} & 4.1 & 1.2 & 0.5\tabularnewline
+%		\hline 
+%	\end{tabular}
+%	\label{tba:logdensityNewLogs}
+%\end{table}
+
 \begin{table}[t]
 	\protect\caption{Comparing the mean log density between bug fixes and non-bug fixes (the value of 1.9 for Hadoop means logs are modified 1.9 times more during bug fixes compared to non-bug fixes).}
+	\centering
 	\begin{tabular}{|l|lll|}
 		\hline 
-		\multirow{1}{*}{Projects} & \multicolumn{1}{c}{Modified log density ratio} & \multicolumn{1}{c}{New log density ratio} & \multicolumn{1}{c|}{Deleted log density}\tabularnewline
+		\multirow{1}{*}{Projects} & \multicolumn{1}{c}{Hadoop} & \multicolumn{1}{c}{HBase} & \multicolumn{1}{c|}{Qpid}\tabularnewline
 		\hline 
-		\multirow{1}{*}{Hadoop} & 1.9 & 1.4 & 1.6\tabularnewline
+		\multirow{1}{.3\textwidth}{Modified log density ratio} & 1.9 & 3.5 & 4.1\tabularnewline
 		%		\hline 
-		\multirow{1}{*}{HBase} & 3.5 & 1.2 & 2.4\tabularnewline
+		\multirow{1}{*}{New log density ratio} & 1.4 & 1.2 & 1.2\tabularnewline
 		%		\hline 
-		\multirow{1}{*}{Qpid} & 4.1 & 1.2 & 0.5\tabularnewline
-		\hline 
+		\multirow{1}{*}{Deleted log density} & 1.6 & 2.5 & 0.5\tabularnewline
+
+		\multirow{1}{*} {Log relocation density ratio} & 2.0 & 3.3 & 4.9\tabularnewline
+
+		\multirow{1}{*}{Text modification density ratio} & 2.5 & 6.5 & 11.1\tabularnewline
+	 			
+		\multirow{1}{*}{Variable modification density ratio} & 2.0 & 1.7 & 4.4\tabularnewline
+
+		\multirow{1}{*}{Logging level density ratio} & 4.0 & 7.5 & 15.8\tabularnewline
+
+		\multirow{1}{*}{Variable addition density ratio} & 2.7 & 1.3 & 25.5\tabularnewline
+
+		\multirow{1}{*}{Variable deletion density ratio} & 2.6 & 1.6 & 4.6\tabularnewline
+
+		\multirow{1}{*}{Variable modification density ratio} & 2.9 & 0.8 & 4.7\tabularnewline
+			\hline 				
 	\end{tabular}
 	\label{tba:logdensityNewLogs}
 \end{table}
+
+
+
+
+
+%\begin{table}[t]
+%	\protect\caption{Comparing the mean log density between bug fixes and non-bug fixes. }
+%	
+%	\centering
+%	\begin{tabular}{|>{\centering}p{.15\textwidth}|>{\centering}p{.15\textwidth}|>{\centering}p{.15\textwidth}|>{\centering}p{.15\textwidth}|>{\centering}p{.15\textwidth}|}
+%		\hline 
+%		\multirow{1}{*}{Projects} & Log relocation density ratio & Text modification density ratio & Variable modification density ratio & Logging level density ratio\tabularnewline
+%		\hline 
+%		\multirow{1}{*}{Hadoop} & 2.0 & 2.5 & 2.0 & 4.0\tabularnewline
+%		%		\hline 
+%		\multirow{1}{*}{HBase} & 3.3 & 6.5 & 1.7 & 7.5\tabularnewline
+%		%		\hline 
+%		\multirow{1}{*}{Qpid} & 4.9 & 11.1 & 4.4 & 15.8\tabularnewline
+%		\hline 
+%	\end{tabular}
+%\end{table}
+%
+
 
 
 \begin{table}[tbh]
@@ -141,22 +195,6 @@ We manually look at the different modifications to logs and categorize the modif
 
 
 \textbf{Developers modify logged variables during bug fixes}. From Table~\ref{tba:logdensityNewLogs} we find that variables in logs are 1.7-4.4 times more likely to be modified during bug fixes. We find that changes to the logged variables is higher in bug fixes and non-bug fixes as seen in Table~\ref{tab:logmod} (statistically significant with medium or small effect sizes). This suggests that developers change the logged variables in order to provide useful information in the log outputs. Prior research also shows that 16-32\% of log changes are made during field debugging~\cite{EMSEIAN}. Therefore, to better understand how developers change logged variables during bug fixes, we categorize the changes into three types: a) variable addition, b) variable deletion and c) variable modification.
-\begin{table}[t]
-	\protect\caption{Comparing the mean log density between bug fixes and non-bug fixes. }
-	
-	\centering
-	\begin{tabular}{|>{\centering}p{.15\textwidth}|>{\centering}p{.15\textwidth}|>{\centering}p{.15\textwidth}|>{\centering}p{.15\textwidth}|>{\centering}p{.15\textwidth}|}
-		\hline 
-		\multirow{1}{*}{Projects} & Log relocation density ratio & Text modification density ratio & Variable modification density ratio & Logging level density ratio\tabularnewline
-		\hline 
-		\multirow{1}{*}{Hadoop} & 2.0 & 2.5 & 2.0 & 4.0\tabularnewline
-%		\hline 
-		\multirow{1}{*}{HBase} & 3.3 & 6.5 & 1.7 & 7.5\tabularnewline
-%		\hline 
-		\multirow{1}{*}{Qpid} & 4.9 & 11.1 & 4.4 & 15.8\tabularnewline
-		\hline 
-	\end{tabular}
-\end{table}
 
 
 \begin{table}[t]
@@ -196,23 +234,6 @@ We manually look at the different modifications to logs and categorize the modif
 		\hline Variable modification & \textbf{4.11e-05} & 1.045 (medium)  & 0.568 & - & \textbf{0.0016}& 0.949 (medium)   \\ 
 		\hline 
 	\end{tabular} 
-\end{table}
-
-\begin{table}[t]
-	\protect\caption{Comparing the log density between bug fixes and non-bug fixes. }
-	
-	\centering
-	\begin{tabular}{|>{\centering}p{.15\textwidth}|>{\centering}p{.15\textwidth}|>{\centering}p{.15\textwidth}|>{\centering}p{.15\textwidth}|}
-		\hline 
-		\multirow{1}{*}{Projects} & Variable addition density ratio & Variable deletion density ratio & Variable modification density ratio \tabularnewline
-		\hline 
-		\multirow{1}{*}{Hadoop} & 2.7 & 2.6 & 2.9 \tabularnewline
-		%		\hline 
-		\multirow{1}{*}{HBase} & 1.3 & 1.6 & 0.8 \tabularnewline
-		%		\hline 
-		\multirow{1}{*}{Qpid} & 25.2 & 4.6 & 4.7 \tabularnewline
-		\hline 
-	\end{tabular}
 \end{table}
 
 Table~\ref{tab:varmod} shows that developers modify the logged variables more in bug fixes than non-bug fixes(statistically significant with medium effect sizes). This modification may be because developers need different information in the output logs, than provided by existing logs. For example, when manually exploring the patch notes for bug QPID-2370\footnote{https://issues.apache.org/jira/browse/QPID-2370}, we find that developers modify the existing log to capture the newly defined variable. The other reason may be that developers change the name of the existing variable to a more meaningful name. For example, in bug MAPREDUCE-2264\footnote{https://issues.apache.org/jira/browse/MAPREDUCE-2264}, we find that developers rename variables and modify the logs accordingly. %Prior research also find that developers often have after-thoughts on logs~\cite{Characterizinglogs}.
