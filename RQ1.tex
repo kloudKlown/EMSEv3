@@ -1,11 +1,11 @@
-	In this section, we present our case study results by answering our three research questions. For each question, we discuss the motivation behind it, the approach to answering the research question and finally the results.
+	In this section, we present our case study results by answering our three research questions. For each research question, we discuss the motivation behind it, the approach to answering the research question and finally the results.
 
-\subsection*{\textbf{RQ1: Are logs changed more often during bug fixes?}}
+\subsection*{RQ1: Are logs changed more often during bug fixes?}
 
 
 \subsubsection*{\textbf{Motivation}}
 
-Prior research finds that up to 32\% of the changes to logs, is due to field debugging~\cite{EMSEIAN}. During debugging, developers change logs to gain more run-time information about their system. These log changes may also assist developers in resolving future occurrences of a similar bug. However, to the best of our knowledge, there exists no large scale empirical study to show whether logs are changed more often during bug fixes than other development activities. In addition, we want to investigate how logs are changed during the bug fixes. These findings would provide more insight into what developers consider as important knowledge during bug fixes.
+Prior research finds that up to 32\% of the changes to logs are due to field debugging~\cite{EMSEIAN}. During debugging, developers may change logs to gain more run-time information about their system. These log changes may also assist developers in resolving future occurrences of a similar bug. However, to the best of our knowledge, there exists no large scale empirical study to show whether logs are changed more often during bug fixes than other development activities. In addition, we want to investigate how logs are changed during the bug fixes. These findings would provide more insight into what developers consider as important knowledge during bug fixes.
 
 \subsubsection*{\textbf{Approach}}
 
@@ -14,7 +14,7 @@ Prior research finds that up to 32\% of the changes to logs, is due to field deb
 %that has been modified continually, has higher chance
 %of having bugs than modules which have not been modified \cite{Khosh}.
 %So,
-We compare the number of changes to logs between bug fixes and non bug fixes. In previous section, we identified three categories logs changes in a commit, i.e., modified, new and deleted logs. Therefore, we compare the number changes to logs within the three types in bug fixes and non-bug fixes. Since commits with higher total code churn may have a higher number of changes to logs, we calculate total code churn for every commit and use it to normalize \emph{\# modified, \# new} and \emph{\# deleted logs}. The three new metrics are:
+We compare the number of changes to logs between bug fixes and non-bug fixes. In previous section, we identified three categories\ian{or types, choose one word across the paper} of logs changes in a commit, i.e., modified, new and deleted logs. Therefore, we compare the number changes to logs within the three types in bug fixes and non-bug fixes. Since commits with higher total code churn may have a higher number of changes to logs, we calculate total code churn for every commit and use it to normalize \emph{\# modified, \# new} and \emph{\# deleted logs}, similar to prior study~\cite{Characterizinglogs}. The three new metrics are:
 \begin{equation}
 Modified\ log\ ratio = \frac{\#\ of modified\ logs}{\ code\ churn } 
 \label{eq1}
@@ -24,26 +24,25 @@ New\ log\  ratio = \frac{\#\ of new\ logs}{\ code\ churn }
 \label{eq2}
 \end{equation}
 \begin{equation}
-Deleted\ logs\ ratio = \frac{\#\ of deleted\ logs}{\ code\ churn }
+Deleted\ log\ ratio = \frac{\#\ of deleted\ logs}{\ code\ churn }
 \label{eq3} 
 \end{equation}
 
-We compare the density of each type of log change (i.e., modified, new and deleted logs) in bug fixes and non-bug fixes, as we are trying to find how much more logs are changed during bug fixes. Log density is defined as the ratio of total log churn over total code churn across all commits, as used in prior research~\cite{Characterizinglogs}. We follow the same approach and find log density of each type of log change for bug fixes and non-bug fixes.
-
+ %Log density is defined as the ratio of total log churn over total code churn across all commits, as used in prior research. We follow the same approach and find log density of each type of log change for bug fixes and non-bug fixes.
 
 To future understand how logs are modified during bug fixes, we perform a manual analysis on the modified logs to identify the different types of log modifications. We first collect all the commits that modify logs. We select a random sample of 357 commits. The size of our random sample achieves a 95\% confidence level and 5\% confidence interval. We follow an iterative process, similar to prior research~\cite{seaman1999qualitative}, to identify the different types of log modifications, until we cannot find any new types of modifications. 
 
-After we identify the types of log modifications, we create an automated tool to label log modifications into the identified types. We calculate the number of log modifications of every type in each commit and normalize the normalize by {\em code churn}, similar to Equation~\ref{eq1} to \ref{eq3}.
+After we identify the types of log modifications, we create an automated tool to label log modifications into the identified types. We calculate the number of log modifications of every type in each commit and normalize the normalize by {\em code churn}, similar to Equation~\ref{eq1} to \ref{eq3}. We call such metrics of log changes, i.e., modified, new, deleted log ratio and the ratios of each type of log modifications, as log churn metrics.
 %used  as the controlling measure 
 
-To identify the type of log change developers favor during bug fixes, we find whether there is a statistically significant difference in the log churn metrics, between bug fixes and non-bug fixes. To do this we use the \textsl{MannWhitney U test} (Wilcoxon rank-sum test)~\cite{Gehan1965}, as our metrics are highly skewed. Since the {\em MannWhitney U test} is a non-parametric test, it does not have any assumptions about the distribution of the sample population. A p-value of \ensuremath{\le} 0.05 means that the difference of the metrics between the bug fixes and non-bug fixes is statistically significant and we may reject the null hypothesis. By rejecting the null hypothesis, we can accept the alternative hypothesis, which tells us that there is a statistically significant difference for our metrics between bug fixes and non-bug fixes.
+We would like to find out whether logs are changed more during bug fixes than non-bug fixes and to identify the type of log change that developers favor during bug fixes. We first compare the mean value of each log churn metric in bug fixes and non-bug fixes by calculating the ratio between the mean value of each log churn metric in bug fixes and non-bug fixes for every studied project. We further compare the log churn metrics by studying whether there is a statistically significant difference in these metrics, between bug fixes and non-bug fixes. We leverage the \textsl{MannWhitney U test} (Wilcoxon rank-sum test)~\cite{Gehan1965}, since our metrics are highly skewed. The {\em MannWhitney U test} is a non-parametric test, such that it does not have any assumptions about the distribution of the sample population. A p-value of \ensuremath{\le} 0.05 means that the difference of the log churn metrics between the bug fixes and non-bug fixes is statistically significant and we may reject the null hypothesis. By rejecting the null hypothesis, we can accept the alternative hypothesis, which tells us that there is a statistically significant difference for our metrics between bug fixes and non-bug fixes.
 
 %and if we use standard T-test the
 %resulting p-value will be wrong. {\em Wilcoxon test} is a non-parametric
 %test, meaning the distribution of the population does not factor into
 %the results.
 
-We also calculate the {\em effect sizes} in order to quantify the differences in our metrics between the bug fixes and non-bug fixes. Unlike the {\em MannWhitney U test}, which only tells us whether the difference between the two distributions is statistically significant, the effect size quantifies the difference between the two distributions. Researchers have shown that reporting only the statistical significance may lead to erroneous results (i.e., if the sample size is very large, the p-value are likely to be small even if the difference is trivial). We use {\em Cohen's d} to quantify the effect size~\cite{cohenUsage1,cohenUsage2}. {\em Cohen's d} is defined as:
+We also calculate the {\em effect sizes} in order to quantify the differences in log churn metrics between the bug fixes and non-bug fixes. Unlike the {\em MannWhitney U test}, which only tells us whether the difference between the two distributions is statistically significant, the effect size quantifies the difference between the two distributions. Researchers have shown that reporting only the statistical significance may lead to erroneous results (i.e., if the sample size is very large, the p-value are likely to be small even if the difference is trivial). We use {\em Cohen's d} to quantify the effect size~\cite{cohenUsage1,cohenUsage2}. {\em Cohen's d} is defined as:
 \begin{equation} \text{{\em d}} = \frac{\bar{x}_1 - \bar{x}_2}{s},
 \label{eq:cohensd}
 \end{equation}
@@ -63,8 +62,6 @@ where $\bar{x}_1$ and $\bar{x}_2$ are the mean of two populations, $s$ is the po
 
 \begin{table}[t]
 	\protect\caption{Comparing the mean log density between bug fixes and non-bug fixes (the value of 1.9 for Hadoop means logs are modified 1.9 times more during bug fixes compared to non-bug fixes).}
-	
-	
 	\begin{tabular}{|l|lll|}
 		\hline 
 		\multirow{1}{*}{Projects} & \multicolumn{1}{c}{Modified log density ratio} & \multicolumn{1}{c}{New log density ratio} & \multicolumn{1}{c|}{Deleted log density}\tabularnewline
