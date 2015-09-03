@@ -1,9 +1,9 @@
 Logs are used by developers for fixing bugs. This paper is a first attempt (to our best knowledge) to understand whether logs are changed more during bug fixes and how these changes occur. The highlights of our findings are:
 
 \begin{itemize}
-	\item We find that logs are changed more during bug fixes than non-bug fixes. In particular, we find that logs are modified more frequently during bug fixes. Variables and textual information in the logs are more frequently modified during bug fixes. 
-	\item We find that logs are changed more during complex bug fixes. However, bug fixes that change logs are fixed faster, need fewer developers and have less discussion.
-	\item We find that log churn metrics can complement the traditional metrics such as the number of comments and the number of developers in modeling the resolution time of bugs.
+	\item We find that logs are more likely to be changed during bug fixes than non-bug fixes. In particular, we find that logs are modified more likely during bug fixes than non-bug fixes. Variables and textual information in the logs are more likely to be modified during bug fixes than non-bug fixes. 
+	\item We find that logs are more likely to be changed during fixing more complex bug fixes. However, bug fixes that change logs are fixed faster, need fewer developers and have less discussion.
+	\item We find that log churn metrics can complement the traditional metrics such as the number of comments and the number of developers in modeling the resolution time of bugs. 
 \end{itemize} 
 
-Our findings show that logs are changed by developers in bug fixes and there is a relationship between changing logs and the resolution time of bugs. We find that developers modify the text or variables in logs frequently as after-thoughts during bug fixes. This suggests that software developers should allocate more effort for considering the text, the printed variables in the logs when developers first add logs to the source code. Hence, bugs can be fixed faster without the necessity to change logs during the fix of bugs. 
+Our findings show that logs are changed more in bug fixes and there is a relationship between changing logs and the resolution time of bugs. Developers should allocate more effort for considering the text, the logged variables and the verbosity levels in the logs the logs are added into the source code. Hence, bugs can be fixed faster without the necessity to change logs during the fix of bugs. 
