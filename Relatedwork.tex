@@ -3,89 +3,26 @@ In this section, we present the prior research that performs log analysis on lar
 
 \subsection{Log Analysis}
 
-% The purpose of this section is to highlight the research that shows
-%logs are used in debugging process. This is related to our work because
-%(1) we show that logs are used in all the processes of a software
-%life cycle, (2) how logs are useful in the improving the quality of
-%the software. 
-%\ian{some names are textsl, some are not. I think just keep the name as regular font and put et al. as italic, sometimes you miss the . in et al. and you should put dollar signs before and after the .}
-Prior work leverage logs for testing and detecting anomalies in large software systems. Shang\textsl{ et al$.$}~\cite{IanContextinformation} propose an approach to leverage logs in verifying the deployment of Big Data Analytic applications. Their approach analyzes logs in order to find differences between running in a small testing environment and a large field environment. Lou \textsl{et al}$.$~\cite{JGLouMining} propose an approach to use the variable values printed in logs to detect anomalies in large systems. Based on the variable values in logs, their approach creates invariants (e.g., equations). Any new logs that violates the invariant are considered to be a sign of anomalies. Fu \textsl{et al}$.$~\cite{QFuanomaly} built a Finite State Automaton (FSA) using unstructured logs and to detect performance bugs in distributed systems. 
+Prior work leverage logs for detecting anomalies and bugs in large software systems. Lou \textsl{et al}$.$~\cite{JGLouMining} propose an approach to use the variable values printed in logs to detect anomalies in large systems. Based on the variable values in logs, their approach creates invariants (e.g., equations). Any new logs that violates the invariant are considered to be a sign of anomalies. Fu \textsl{et al}$.$~\cite{QFuanomaly} built a Finite State Automaton (FSA) using unstructured logs and to detect performance bugs in distributed systems. Xu \textsl{et al$.$}~\cite{ConsoleLogs} link logs to logs in source code to recover the text and and the variable parts of output logs. They applied Principal Component Analysis (PCA) to detect system anomalies. To assist in fixing bugs using logs, Yuan \emph{et al$.$}~\cite{Yuan:2010:SED:1736020.1736038} propose an approach to automatically infer the failure scenarios when a log is printed during a failed run of a system. Jiang \textsl{et al}$.$~\cite{Jiang:2009:UCP:1525908.1525912} study the leverage of logs in troubleshooting issues from storage systems. They find that logs assist in a faster resolution of issues (i.e., bugs and anomalies) in storage systems. Beschastnikh \textsl{et al}$.$~\cite{Beschastnikh:2011:LEI:2025113.2025151} designed automated tools that infers execution models from logs. These models can be used by developers to understand the behaviors of concurrent systems. Moreover, the models also assist in verifying the correctness of the system and fixing bugs.
 
-Xu \textsl{et al$.$}~\cite{ConsoleLogs} link logs to logs in source code to recover the text and and the variable parts of output logs. They applied Principal Component Analysis (PCA) to detect system anomalies. Tan \textsl{et al}$.$~\cite{TanSalsa} propose a tool named SALSA, which constructs state-machines from logs. The state-machines are further used to detect anomalies in distributed computing platforms. Jiang \textsl{et al}$.$~\cite{Jiang:2009:UCP:1525908.1525912} study the leverage of logs in troubleshooting issues from storage systems. They find that logs assist in a faster resolution of issues in storage systems. Beschastnikh \textsl{et al}$.$~\cite{Beschastnikh:2011:LEI:2025113.2025151} designed automated tools that infers execution models from logs. These models can be used by developers to understand the behaviours of concurrent systems. Moreover, the models also assist in verifying the correctness of the system and fixing bugs.
+Logs are also used testing large scale systems. Shang\textsl{ et al$.$}~\cite{IanContextinformation} propose an approach to leverage logs in verifying the deployment of Big Data Analytic applications. Their approach analyzes logs in order to find differences between running in a small testing environment and a large field environment. Jiang \textsl{et al$.$}~\cite{Jiang:2008:AAA:1400155.1400158,JiangICSM2008,JiangICSM20092,Jiang:2010:ICS:1850000.1850068} proposed log analysis approaches to assist in automatically verifying results from load tests. Their log analysis approach automatically abstracts logs into system events. Based on the such events, they identified both functional anomalies~\cite{JiangICSM2008} and performance degradations~\cite{JiangICSM20092} in load test results. In addition, they proposed an approach that leverage logs to reduce the load test that are performed in user environment~\cite{Jiang:2010:ICS:1850000.1850068}.
 
-To assist in fixing bugs using logs, Yuan \emph{et al$.$}~\cite{Yuan:2010:SED:1736020.1736038} propose an approach to automatically infer the failure scenarios when a log is printed during a failed run of a system.
-
-
-Jiang \textsl{et al$.$}~\cite{Jiang:2008:AAA:1400155.1400158,JiangICSM2008,JiangICSM20092,Jiang:2010:ICS:1850000.1850068} proposed log analysis approaches to assist in automatically verifying results from load tests. Their log analysis approaches first automatically abstract logs into system events~\cite{Jiang:2008:AAA:1400155.1400158}. Based on the such events, they identified both functional anomalies~\cite{JiangICSM2008} and performance degradations~\cite{JiangICSM20092} in load test results. In addition, they proposed an approach that leverage logs to reduce the load test that are performed in user environment~\cite{Jiang:2010:ICS:1850000.1850068}.
-
-\ian{Not sure how did you decide on the break of paragraphs. Can you group papers into several groups and each group in one paragraph. You can do understanding/anomaly/performance.}
-
+%\ian{Not sure how did you decide on the break of paragraphs. Can you group papers into several groups and each group in one paragraph. You can do understanding/anomaly/performance.}
 
 The extensive prior research of log analysis motivate our paper to study how logs are leveraged during bug fixes. As a first step, we study the changes to log during bug fixes. Our findings show that logs are change more during bug fixes than other types of code changes. The changes to logs have a relationship with the resolution time of bugs.
 
 
 
-% This is similar to our work
-%because, we also use source code parsing in finding the logs. But
-%instead of trying to build structured logs we try to classify them
-%using levenshtein distances.
-
-% Similar work has been done to show how mining execution logs in large systems can help  detect anomalies and ensure good load tests  \textsl{Malik et al}\cite{Automatic}. This paper  \textsl{Lou et al}\cite{JGLouMining} discuss how invariants, mined from console logs can help to detect anomalies in large systems. \textsl{Fu et al}\cite{QFuanomaly} shows analysis of unstructured logs helps in detecting performance bugs in Distributed systems. Tools have also been developed to diagnose failures by mining execution logs \textsl{Tan et al}\cite{TanSalsa}. 
-
-%Work has been done on mining execution logs in Big Data Analytic (BDA)
-%applications to find difference in behavior of the system, when tests
-%are run on small testing data and actual real world data \cite{IanContextinformation}.
-%Similar work has been done to show how mining execution logs in large
-%systems can help in detecting anomalies and ensure good load tests
-%\cite{Automatic}. In the paper execution logs are mined and event
-%pair are formed. By finding patterns in these event pairs dominant
-%behavior of the system is identified. Any event which does not follow
-%this is tagged as anomaly and can be reported to the developers. These
-%papers show that logs are not used only for the purpose of debugging
-%but can assist a developer in a variety of tasks. 
-%
-%Research has been to detect anomalies by invariant mining\cite{JGLouMining}.
-%This paper focuses on constructing structured logs from console logs.
-%After construction and grouping of log messages, invariants are mined.
-%Any log which violates a invariant is considered to be an anomaly.
-%Unstructured log analysis has shown to be useful in detecting in even
-%Distributed Systems Several \cite{QFuanomaly}. In the paper a finite
-%state automaton is built and trained to automatically detect performance
-%bugs in the system. These papers consider print messages and other
-%unstructured logs to extract information. Then they cluster or categorize
-%the logging messages into groups and logs which fall into this cluster
-%are treated as anomalies. Tools have also been developed to analyze
-%system logs to obtain state-machine view, control and data flow models
-%and other related statistics. SALSA\cite{TanSalsa} helps in deriving
-%failure diagnosis techniques and visualization for different workloads
-%in Hadoop project by mining execution logs. In our study, though we
-%use the same system software (Hadoop),we try to understand how logs
-%can be useful in debugging and not on trying to find the bug itself. 
-
-
-
 \subsection{Empirical studies on logs}
 
-%In this section we try and find out how developers log. Is it done
-%manually or do developers use established logging libraries. From
-%our work on studying logging libraries in the Apache foundation we
-%know that Slf4j, Log4j and Jakarta common logging are the most used
-%libraries for logging. This helps us to find the logs
-%in our case studies. Additionally there are many tools which help
-%developers in logging \cite{Yuan}. The authors conduct a manual analysis and find that logs help in understanding the control and data flow in bug fixes but do not contain all the information to conclusively answer why the bug occurs. The paper addresses this issue through a tool called 'Log Enhancer' to enhance existing logs by providing additional details in the logs. This was tested with earlier version
-%of the software and it was observed that 95\% of logs added by the
-%tool were added by developer\textquoteright s overtime. This paper
-%highlighted that do not log all the details in the first deployment
-%and modify the logs in later revisions. This conforms to our findings
-%as well, as we found that developers modify logs during debugging
-%than other software process. 
+
 
 Prior research performs an empirical study on the characteristics of logs. Yuan \textsl{et al$.$}~\cite{Characterizinglogs} studies the logging characteristics in four open source systems. They find that over 33\% of all log changes are after thoughts and logs are changed 1.8 times more than entire code. Fu \textsl{et al$.$}~\cite{Fu1} performed an empirical study on where developer put logs. They find that logs are used for assertion checks, return value checks, exceptions, logic-branching and observing key points. The results of the analysis were evaluated by professionals from the industry and F-score of over 95\% was achieved. 
 
 
 Shang \textsl{et al$.$}~\cite{IanGap} signify the fact that there is gap between operators and developers of software systems, especially in the leverage of logs. They performed an empirical study on the evolution both static logs and logs outputted during run time~\cite{EMSEIAN,PaperIanCIIII}. They find that logs are co-evolving with the software systems. However, logs are often modified by developers without considering the needs of operators. Furthermore, Shang\textsl{ et al$.$}~\cite{IanIcesm} find that understanding logs is challenging. They examine user mailing lists from three large open-source projects and find that users of these systems have various issues in understanding logs outputted by the system. Shang\textsl{ et al$.$} propose to leverage different types of development knowledge, such as issue reports, to assist in understanding logs. 
 
-Prior research by Yuan\textsl{ et al$.$}~\cite{Yuan} shows that logs need to be improved by providing additional information. Their tool named \emph{Log Enhancer} can automatically provide additional control and data flow parameters in the logs thereby improving the output logs. Log Advisor is another tool by Zhu \emph{et al$.$}~\cite{zhu2015learning} which helps in logging by learning where developers log through existing logging instances. 
+Prior research by Yuan\textsl{ et al$.$}~\cite{Yuan} shows that logs need to be improved by providing additional information. Their tool named \emph{Log Enhancer} can automatically provide additional control and data flow parameters in the logs thereby improving the output logs. Log Advisor is another tool by Zhu \emph{et al$.$}~\cite{zhu2015learning} which helps in logging by learning where developers log through existing logging instances. Tan \textsl{et al}$.$~\cite{TanSalsa} propose a tool named SALSA, which constructs state-machines from logs. The state-machines are further used to detect anomalies in distributed computing platforms. 
 
 The most related prior research by Shang \emph{et al$.$}~\cite{EMSEIAN} empirically study the relationship of logging practice and code quality. Their manual analysis sheds light on the fact that some logs are changed due to field debugging. They also show that there is a strong relationship between logging practice and code quality. Our paper focused on understanding how logs are changed during bug fixes. Our results show that logs are leveraged extensively during bug fixes and have a relationship with the resolution time of bugs. 
 

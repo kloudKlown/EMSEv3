@@ -14,7 +14,7 @@ Prior research finds that up to 32\% of the changes to logs are due to field deb
 %that has been modified continually, has higher chance
 %of having bugs than modules which have not been modified \cite{Khosh}.
 %So,
-We compare the number of changes to logs between bug fixes and non-bug fixes. In previous section, we identified three categories\ian{or types, choose one word across the paper} of logs changes in a commit, i.e., modified, new and deleted logs. Therefore, we compare the number changes to logs within the three types in bug fixes and non-bug fixes. Since commits with higher total code churn may have a higher number of changes to logs, we calculate total code churn for every commit and use it to normalize \emph{\# modified, \# new} and \emph{\# deleted logs}, similar to prior study~\cite{Characterizinglogs}. The three new metrics are:\ian{I rename all the log churn metrics as densities, check across the paper to make sure the naming is consistent.}
+We compare the number of changes to logs between bug fixes and non-bug fixes. In previous section, we identified three categories of logs changes in a commit, i.e., modified, new and deleted logs. Therefore, we compare the number changes to logs within the three types in bug fixes and non-bug fixes. Since commits with higher total code churn may have a higher number of changes to logs, we calculate total code churn for every commit and use it to normalize \emph{\# modified, \# new} and \emph{\# deleted logs}, similar to prior study~\cite{Characterizinglogs}. The three new metrics are:
 \begin{equation}
 Modified\ logs\ density = \frac{\#\ of modified\ logs}{\ code\ churn } 
 \label{eq1}
@@ -90,13 +90,13 @@ where $\bar{x}_1$ and $\bar{x}_2$ are the mean of two populations, $s$ is the po
 		%		\hline 
 		\multirow{1}{*}{Deleted logs density} & 1.6 & 2.5 & 0.5\tabularnewline
 
-		\multirow{1}{*} {Log relocation density} & 2.0 & 3.3 & 4.9\tabularnewline
+		\multirow{1}{*} {Relocation log density} & 2.0 & 3.3 & 4.9\tabularnewline
 
-		\multirow{1}{*}{Text modification density} & 2.5 & 6.5 & 11.1\tabularnewline
+		\multirow{1}{*}{Modified log text density} & 2.5 & 6.5 & 11.1\tabularnewline
 	 			
-		\multirow{1}{*}{Variable modification density} & 2.0 & 1.7 & 4.4\tabularnewline
+		\multirow{1}{*}{Modified log variable density} & 2.0 & 1.7 & 4.4\tabularnewline
 
-		\multirow{1}{*}{Logging level change density} & 4.0 & 7.5 & 15.8\tabularnewline
+		\multirow{1}{*}{Modified log level density} & 4.0 & 7.5 & 15.8\tabularnewline
 
 		\multirow{1}{*}{Variable addition density} & 2.7 & 1.3 & 25.5\tabularnewline
 
@@ -133,7 +133,7 @@ where $\bar{x}_1$ and $\bar{x}_2$ are the mean of two populations, $s$ is the po
 
 
 \begin{table}[tbh]
-	\caption{Comparing log churn metrics between the bug fixes and non-bug fixes. The p-value is from MannWhitney U tests and the effect sizes are calculated using Cohen's d. A positive effect size shows that the log changes are more frequent during bug fixes.\ian{no need to bold p-value if all of them are bold.}}
+	\caption{Comparing log churn metrics between the bug fixes and non-bug fixes. The p-value is from MannWhitney U tests and the effect sizes are calculated using Cohen's d. A positive effect size shows that the log changes are more frequent during bug fixes.}
 	\label{tab:logchange} 
 	\centering{}%
 	\begin{tabular}{|>{\centering}p{.13\textwidth}|>{\centering}p{.1\textwidth}|>{\centering}p{.1\textwidth}|>{\centering}p{.12\textwidth}|>{\centering}p{.1\textwidth}|>{\centering}p{.1\textwidth}|>{\centering}p{.1\textwidth}|}
@@ -143,23 +143,24 @@ where $\bar{x}_1$ and $\bar{x}_2$ are the mean of two populations, $s$ is the po
 		
 		& P-values & Effect size & P-values & Effect size & P-values & Effect size\tabularnewline
 		\hline 
-		Modified log density & \textbf{2.0e-12} & 0.246 (small) & \textbf{1.9e-15} & 0.273 (small) & \textbf{1.6e-11} &  0.432 (small)\tabularnewline
+		Modified log density & 2.0e-12 & 0.246 (small) & 1.9e-15 & 0.273 (small) & 1.6e-11 &  0.432 (small)\tabularnewline
 		\hline 
-		New log density& \textbf{ 4.7e-16} &  0.265 (small) & \textbf{$<$2.2e-16} & 0.215 (small) & \textbf{ 2.1e-11} & 0.474 (small)\tabularnewline
+		New log density&  4.7e-16 &  0.265 (small) & $<$2.2e-16 & 0.215 (small) &  2.1e-11 & 0.474 (small)\tabularnewline
 		\hline 
-		Deleted log density& \textbf{8.1e-07} & 0.336 (small) & \textbf{4.9e-07} & 0.150 & \textbf{0.041} & -0.193 (small)\tabularnewline
+		Deleted log density& 8.1e-07 & 0.336 (small) & 4.9e-07 & 0.150 & 0.041 & -0.193 (small)\tabularnewline
 		\hline 
 	\end{tabular}
 	
 \end{table}
 
 \subsubsection*{Results}
-\ian{PLEASE.... make sure the metric names are exactly the same across the paper, in figures, in text and in tables. I corrected some, but please double check them.}
-\textbf{Developers are more likely to add new logs when fixing bugs.} From Table~\ref{tba:logdensityNewLogs}, we find that the mean of new log density is 1.2-1.4 times in bug fixes to non-bug fixes. This shows that new logs are 20\%-40\% more likely to occur in bug fixes that non-bug fixes. Table~\ref{tab:logchange} shows that $new\ log\ density$ in bug fixes is higher than non-bug fixes in all studied systems (statistically significant with non-trivial effect sizes). This suggest that developers may need additional information during bug fixes and they add new logs to help fix bugs.
+%\ian{PLEASE.... make sure the metric names are exactly the same across the paper, in figures, in text and in tables. I corrected some, but please double check them.}
+
+\textbf{Developers are more likely to add new logs when fixing bugs.} From Table~\ref{tba:logdensityNewLogs}, we find that the mean of new log density is 1.2-1.4 times in bug fixes to non-bug fixes. This shows that new logs are 20\%-40\% more likely to occur in bug fixes that non-bug fixes. Table~\ref{tab:logchange} shows that $new\ log\ density$ in bug fixes is higher than non-bug fixes in all studied projects (statistically significant with non-trivial effect sizes). This suggest that developers may need additional information during bug fixes and they add new logs to help fix bugs.
 %
 %This suggests that developers add new logs during bug fixes than non bug fixes. We find that effect size of new log ratio is higher in \emph{Qpid} than \emph{Hadoop} and \emph{HBase}. This may be because the new log ratio of bug fixes, is three times that of non-bug fixes in \emph{Qpid}. In \emph{Hadoop} and \emph{HBase} we find new log ratio of bug fixes to be only twice that of non-bug fixes. This may be because \emph{Qpid} being a relatively newer system, some important source code may not be well logged. Therefore, developers may have to add additional logs to assist in bug fixes and improve code quality~\cite{EMSEIAN}.
 
-\textbf{Developers are less likely to remove logs during bug fixes.} We find that although the difference of $deleted\ log\ density$ between bug fixes and non-bug fixes is statistically significant in all projects, the effect sizes is trivial for \emph{HBase} and negative for \emph{Qpid} (see Table~\ref{tab:logchange}). Moreover, we find that the log density varies between $0.5$ and $2.4$. This suggests \ian{that... you misses the word ``that'' a lot as grammar issues. please check across the paper.} developers are more likely to remove logs during bug fixes in \emph{Qpid}. Such results confirm the findings from prior research that deleted logs do not have a strong relationship with code quality~\cite{EMSEIAN}. 
+\textbf{Developers are less likely to remove logs during bug fixes.} We find that although the difference of $deleted\ log\ density$ between bug fixes and non-bug fixes is statistically significant in all projects, the effect sizes is trivial for \emph{HBase} and negative for \emph{Qpid} (see Table~\ref{tab:logchange}). Moreover, we find that the log density varies between $0.5$ and $2.4$. This suggests that developers are more likely to remove logs during bug fixes in \emph{Qpid}. Such results confirm the findings from prior research that deleted logs do not have a strong relationship with code quality~\cite{EMSEIAN}. 
 
 
 \begin{table}[t]
@@ -170,36 +171,36 @@ where $\bar{x}_1$ and $\bar{x}_2$ are the mean of two populations, $s$ is the po
 		\hline 
 		Projects & \multicolumn{1}{c|}{Hadoop (\%)} & \multicolumn{1}{c|}{HBase (\%)} & \multicolumn{1}{c|}{Qpid (\%)}\tabularnewline
 		\hline 
-		Log relocation density  & 73.1 & 70.7 & 47.4\tabularnewline
+		Relocation log density  & 73.1 & 70.7 & 47.4\tabularnewline
 		\hline 
-		Text modification density & 10.5 & 13.4 & 16.8\tabularnewline
+		Modified log text density & 10.5 & 13.4 & 16.8\tabularnewline
 		\hline 
-		Variable modification density & 9.9  & 10.1 & 18.9\tabularnewline
+		Modified log variable density & 9.9  & 10.1 & 18.9\tabularnewline
 		\hline 
-		Logging level change density& 6.5 & 5.8  & 16.8\tabularnewline
+		Modified log level density& 6.5 & 5.8  & 16.8\tabularnewline
 		\hline 
 	\end{tabular}
 \end{table}
 
-\ian{also check whether you still say logging statements somewhere (except in intro)}
 \textbf{Logs are more likely to be modified in bug fixes and non-bug fixes}. From Table~\ref{tba:logdensityNewLogs} we find that on average logs are $1.9$ to $4.1$ times more likely to be modified during bug fixes than non bug fixes. Table~\ref{tab:logchange} shows that $modified\ log\ $ 
-$density$ in bug fixes is higher than non-bug fixes in all studied systems (statistically significantly with non-trivial effect sizes). Such results show that developers often modify the information provided by logs to assist in bug fixes. Developers may need different information to the information that is provided by the logs to fix bugs. Prior research find that 66 \% of the logs are modified when 1) the condition that the log depends on is changed, 2) the logged variable is changed or 3) the function name that is also referred in static text of log is modified~\cite{Characterizinglogs}. Therefore, we further explore the different types of modifications to logs.
+$density$ in bug fixes is higher than non-bug fixes in all studied projects (statistically significantly with non-trivial effect sizes). Such results show that developers often modify the information provided by logs to assist in bug fixes. Developers may need different information to the information that is provided by the logs to fix bugs. Prior research find that 66 \% of the logs are modified when 1) the condition that the log depends on is changed, 2) the logged variable is changed or 3) the function name that is also referred in static text of log is modified~\cite{Characterizinglogs}. Therefore, we further explore the different types of modifications to logs.
 
 We manually examine the different modifications to logs and categorize the modifications into four types as follows:
 \begin{enumerate}
-	\item \textbf{Log relocation:} The log is not changed but moved to a different place in the file.
-	\item \textbf{Text modification:} The text that is printed in the logs is modified.
-	\item \textbf{Variable change:} One or more variables in the logs are changed (added, deleted or modified).
-	\item \textbf{Logging level change:} The verbosity level of logs are changed.
+	\item \textbf{Relocation of log:} The log is not changed but moved to a different place in the file.
+	\item \textbf{Modified log text:} The text that is printed in the logs is modified.
+	\item \textbf{Modified log variable:} One or more variables in the logs are changed (added, deleted or modified).
+	\item \textbf{Modified logging level:} The verbosity level of logs are changed.
 \end{enumerate}
-Table~\ref{tab:dist} shows the distribution of each type in our studied systems. When there is co-occurrence of different types of log modifications in a single log, we consider that as new log because it is difficult to categorize all the different types of co-occurrences. \ian{but your new log was defined by levenstain, so did you treat both as new log or what? this is very hard to convince people. I mean, technically, a log modification can be in different types at the same time.}
+Table~\ref{tab:dist} shows the distribution of each type in our studied projects. When there is co-occurrence of text and variable modifications, we add the change for both text and variable modification category. But, when there is co-occurrence of all three types of changes, it is not possible to determine without manual inspection if it is new log being added or modification of existing log. Hence, we categorize such logs as new logs being added. 
+% When there is co-occurrence of different types of log modifications in a single log, we consider that as new log because it is difficult to categorize all the different types of co-occurrences. \ian{but your new log was defined by levenstain, so did you treat both as new log or what? this is very hard to convince people. I mean, technically, a log modification can be in different types at the same time.}
+
 
 
 \textbf{Developers modify logged variables during bug fixes}. From Table~\ref{tba:logdensityNewLogs} we find that variables in logs are $1.7$ to $4.4$ times more likely to be modified during bug fixes. We find that changes to the logged variables are more likely to happen in bug fixes than non-bug fixes (statistically significant with medium or small effect sizes, see Table~\ref{tab:logmod}). This suggests that developers change the logged variables in order to provide useful information in the logs. Prior research also shows that 16-32\% of log changes are made during field debugging~\cite{EMSEIAN}. Therefore, to better understand how developers change logged variables during bug fixes, we categorize the changes into three types: a) variable addition, b) variable deletion and c) variable modification.
 
-
 \begin{table}[t]
-	\protect\caption{Comparing metrics about different types of log modification between bug fixes and non-bug fixes. The p-value are calculated from MannWhitney U tests and the effect sizes are calculated using Cohen's d. A positive effect size shows that the log changes are more frequent during bug fixes. P-values that are smaller than 0.05 are in bold font.\ian{metric names don't match}}
+	\protect\caption{Comparing metrics about different types of log modification between bug fixes and non-bug fixes. The p-value are calculated from MannWhitney U tests and the effect sizes are calculated using Cohen's d. A positive effect size shows that the log changes are more frequent during bug fixes. P-values that are smaller than 0.05 are in bold font. }
 	\label{tab:logmod}
 	\centering{}%
 	\begin{tabular}{|>{\centering}p{.13\textwidth}|c|>{\centering}p{.1\textwidth}|c|>{\centering}p{.1\textwidth}|c|>{\centering}p{.1\textwidth}|}
@@ -208,13 +209,13 @@ Table~\ref{tab:dist} shows the distribution of each type in our studied systems.
 		\cline{2-7} 
 		& P-values  & Effect sizes & P-values  & Effect sizes & P-values  & Effect sizes\tabularnewline
 		\hline 
-		Relocation of log & \textbf{1.1e-10} & 0.330 (small) & \textbf{3.0e-11} & 0.170 (small) & \textbf{1.8e-08} & 0.700 (medium)\tabularnewline
+		Relocation log density & \textbf{1.1e-10} & 0.330 (small) & \textbf{3.0e-11} & 0.170 (small) & \textbf{1.8e-08} & 0.700 (medium)\tabularnewline
 		\hline 
-		Modification to logging text & 0.344 & - & \textbf{0.0075} & 0.525 (small) & \textbf{4.5e-06} & 0.976 (medium)\tabularnewline
+		Modified log text density & 0.344 & - & \textbf{0.0075} & 0.525 (small) & \textbf{4.5e-06} & 0.976 (medium)\tabularnewline
 		\hline 
-		Modification of logged variable  & \textbf{1.3e-04} &0.351 (small) & \textbf{0.0010} & 0.420 (small) & \textbf{1.2e-04} &  1.17 (medium)\tabularnewline
+	Modified log variable density & \textbf{1.3e-04} &0.351 (small) & \textbf{0.0010} & 0.420 (small) & \textbf{1.2e-04} &  1.17 (medium)\tabularnewline
 		\hline 
-		Modification to logging level &  0.108 & - & 0.503 & - & 0.399 & - \tabularnewline
+	Modified log level density&  0.108 & - & 0.503 & - & 0.399 & - \tabularnewline
 		\hline 
 	\end{tabular}
 \end{table}
@@ -222,7 +223,7 @@ Table~\ref{tab:dist} shows the distribution of each type in our studied systems.
 
 
 \begin{table}[t]
-	\caption{Comparing the different types of changes to variables between the bug fixes and non-bug fixes. A positive effect size shows that the log changes are more frequent during bug fixes. P-values that are smaller than 0.05 are in bold font.\ian{metric names don't match}}
+	\caption{Comparing the different types of changes to variables between the bug fixes and non-bug fixes. A positive effect size shows that the log changes are more frequent during bug fixes. P-values that are smaller than 0.05 are in bold font.}
 	\label{tab:varmod}
 	\centering
 	\begin{tabular}{|>{\centering}p{.13\textwidth}|c|>{\centering}p{.1\textwidth}|c|>{\centering}p{.1\textwidth}|>{\centering}p{.1\textwidth}|p{0.1\textwidth} |}
@@ -230,16 +231,16 @@ Table~\ref{tab:dist} shows the distribution of each type in our studied systems.
 		\multirow{2}{*}{Metrics}& \multicolumn{2}{c|}{Hadoop} & \multicolumn{2}{c|}{HBase} & \multicolumn{2}{c|}{Qpid}\tabularnewline
 		\cline{2-7} 
 		& P-values  & Effect sizes & P-values  & Effect sizes & P-values  & Effect sizes\tabularnewline
-		\hline  Variable addition & 0.099  & -  & \textbf{0.00049}& 0.659 (medium) & \textbf{0.005}& 1.40 (large) \\ 
-		\hline  Variable deletion & 0.098 &   - & 0.355 & -  & 0.193 & -  \\ 
-		\hline Variable modification & \textbf{4.11e-05} & 1.045 (medium)  & 0.568 & - & \textbf{0.0016}& 0.949 (medium)   \\ 
+		\hline  Variable addition density& 0.099  & -  & \textbf{0.00049}& 0.659 (medium) & \textbf{0.005}& 1.40 (large) \\ 
+		\hline  Variable deletion density & 0.098 &   - & 0.355 & -  & 0.193 & -  \\ 
+		\hline Variable modification density& \textbf{4.11e-05} & 1.045 (medium)  & 0.568 & - & \textbf{0.0016}& 0.949 (medium)   \\ 
 		\hline 
 	\end{tabular} 
 \end{table}
 
 Table~\ref{tab:varmod} shows that developers modify the logged variables more in bug fixes than non-bug fixes (statistically significant with medium effect sizes). This modification may be because developers need different information rather than the information provided by existing logs. For example, when manually exploring the patch notes for bug QPID-2370\footnote{https://issues.apache.org/jira/browse/QPID-2370}, we find that developers modify the existing log to capture a newly defined variable. The other reason may be that developers change the name of the existing variable to a more meaningful name. For example, in bug MAPREDUCE-2264\footnote{https://issues.apache.org/jira/browse/MAPREDUCE-2264}, we find that developers rename variables and modify the logs accordingly. %Prior research also find that developers often have after-thoughts on logs~\cite{Characterizinglogs}.
 
-From Table~\ref{tab:varmod}, we observe that the developers add variables more in bug fixes than non-bug fixes (statistically significant with medium effect size in \emph{HBase} and large effect size in \emph{Qpid}). We find from Table~\ref{tba:logdensityNewLogs} that developers are $1.3$ to $25.2$ times more likely to add new variables during bug fixes than non-bug fixes. This addition of variables suggests that existing variables may not have all the needed information in the logs and developers have to add new variables during bug fixes. We also find that developers do not delete variables in logs. Deleting variables in logs may change the format of logs. There may be log processing tools\ian{tools or applications make consistent across} that rely on these logs. Deleting variables may impact the correctness of these log processing applications\ian{applications or tools}~\cite{IanWCRE}. Therefore, developer may be aware of the such impact and try to avoid deleting variables from logs.
+From Table~\ref{tab:varmod}, we observe that the developers add variables more in bug fixes than non-bug fixes (statistically significant with medium effect size in \emph{HBase} and large effect size in \emph{Qpid}). We find from Table~\ref{tba:logdensityNewLogs} that developers are $1.3$ to $25.2$ times more likely to add new variables during bug fixes than non-bug fixes. This addition of variables suggests that existing variables may not have all the needed information in the logs and developers have to add new variables during bug fixes. We also find that developers do not delete variables in logs. Deleting variables in logs may change the format of logs. There may be log processing applications that rely on these logs. Deleting variables may impact the correctness of these log processing applications~\cite{IanWCRE}. Therefore, developer may be aware of the such impact and try to avoid deleting variables from logs.
  
  
 \textbf{Developers modify logged text more during bug fixes.} We find that modification of logged text is more likely to happen in bug fixes than non-bug fixes with non-trivial effect sizes (see Table~\ref{tab:logmod}). In some cases, the text description in logs is not clear and developers need to improve the text. For example, to fix bug HBASE-6665\footnote{https://issues.apache.org/jira/browse/HBASE-6665} developers modify a log to provide a better description of the operation. Prior research shows that up to 39\% of modifications to logged text is due to inconsistency between the execution event and the message conveyed by logs~\cite{Characterizinglogs}. Our results suggest that developers may have faced such challenges during bug fixes and may modify the text in logs for better description. 
@@ -248,9 +249,9 @@ From Table~\ref{tab:varmod}, we observe that the developers add variables more i
 %that developers value more in providing contextual data to an existing
 %log rather than writing new logs. 
 
-\textbf{Log relocation occurs more in bug fixes.} Table~\ref{tab:dist}, shows that there are a large number of log changes that only relocate logs. Table~\ref{tab:logmod} shows that such relocation of logs is statistically significantly more in bug fixes than non-bug fixes ($2.0$ to $4.9$ times more likely in bug fixes as shown in Table~\ref{tba:logdensityNewLogs}). We manually examine such commits and find that developers often forget to leverage exception handling or using proper condition statements in the code. After fixing the bugs, developers often move existing logs into the \emph{try/catch} blocks or after condition statements. For example, to fix bug YARN-289 \footnote{https://issues.apache.org/jira/browse/YARN-289} from Hadoop, logs are placed into a proper \emph{if-else} block.
+\textbf{Relocation of log occurs more in bug fixes.} Table~\ref{tab:dist}, shows that there are a large number of log changes that only relocate logs. Table~\ref{tab:logmod} shows that such relocation of logs is statistically significantly more in bug fixes than non-bug fixes ($2.0$ to $4.9$ times more likely in bug fixes as shown in Table~\ref{tba:logdensityNewLogs}). We manually examine such commits and find that developers often forget to leverage exception handling or using proper condition statements in the code. After fixing the bugs, developers often move existing logs into the \emph{try/catch} blocks or after condition statements. For example, to fix bug YARN-289 \footnote{https://issues.apache.org/jira/browse/YARN-289} from Hadoop, logs are placed into a proper \emph{if-else} block.
 
-\textbf{Logging levels are not modified often during bug fixes.} We find that logging level changes are statistically indistinguishable between bug fixes and non-bug fixes in all the studied systems. The reason may be that developers are able to enable all the logs during bug fixes, despite of what level a log has. In addition, prior research shows that developers do not have a good knowledge about how to choose a correct logging level~\cite{Characterizinglogs}. 
+\textbf{Logging levels are not modified often during bug fixes.} We find that logging level changes are statistically indistinguishable between bug fixes and non-bug fixes in all the studied projects. The reason may be that developers are able to enable all the logs during bug fixes, despite of what level a log has. In addition, prior research shows that developers do not have a good knowledge about how to choose a correct logging level~\cite{Characterizinglogs}. 
 
 
 \hypobox{Developers change logs statistically significantly more in bug fixes than non-bug fixes. In particular, developers modify logs to add or change the variables in logs during bug fixes. This suggests that developers often realize the needed information to be logged as after-thoughts and change the variables in log to assist in fixing bugs.}

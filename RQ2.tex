@@ -10,7 +10,9 @@ In RQ1, we find that logs are more likely to be changed in bug fixes. However, w
 
 To answer the research question, 
 
-To study whether there is a relationship between effort spent on bug fixes and changing logs during bug fixes, we collect all JIRA issues with type \emph{bug} from the three studied systems\ian{studied projects or systems, make consistent across the paper}. We obtained the code commits for each of these JIRA issues by searching for the issue id from commit messages. We then separate the JIRA issues into (1) bugs that are fixed with log churn and (2) bugs that are fixed without log churn. We calculate the log churn metrics for each bug. \ian{what if an issue has many commits, you need to say how do you calculate the log churn metrics then.} We then measure effort of bug fixes using the time taken to resolve a bug, the number of developers involved during the resolution of a bug and the number of discussion posts about the bug on JIRA, as follows:\ian{check the paper that you cite to build a model to predict resolution time to see whether there is any thing you can back up for the choice of these three metrics}
+To study whether there is a relationship between effort spent on bug fixes and changing logs during bug fixes, we collect all JIRA issues with type \emph{bug} from the three studied systems. We obtained the code commits for each of these JIRA issues by searching for the issue id from commit messages. We then separate the JIRA issues into (1) bugs that are fixed with log churn and (2) bugs that are fixed without log churn. We calculate the log churn metrics for each bug. If a issue has multiple commits we calculate the log churn metrics for each commit individually. We then measure effort of bug fixes using the time taken to resolve a bug, the number of developers involved during the resolution of a bug and the number of discussion posts about the bug on JIRA. Prior research has shown that such metrics are good estimates of developer effort~\cite{amor2006effort}. 
+
+%:\ian{check the paper that you cite to build a model to predict resolution time to see whether there is any thing you can back up for the choice of these three metrics}
 \begin{enumerate}
 	\item \textbf{Resolution time:} This metric measures how fast the bug is fixed. This metric is defined as the time taken from when the bug is opened until it is resolved. For example, if a bug was opened on 1$ ^{st}$ February 2015 and closed on 5$ ^{th}$ February 2015, the resolution time of the bug is four days. 
 	
@@ -28,9 +30,8 @@ Intuitively, a complex bug fix might have more code churn and in turn takes long
 %Prior research has shown that complexity of software can be measured using different metrics, including source lines of code change~\cite{complexity}. 
 
 
-
 \begin{table*}
-	\caption{Comparing code and developer metrics between the bug fixes with log churn and bug fixes without log churn. The p-value is from MannWhitney U tests and the effect sizes are calculated using Cohen's d. P-values are smaller than 0.05 and negative effect size implies that metrics for bug fixes without log churn have higher values.\ian{change this title to follow the same as the table titles in RQ1. no need to bold pvalue if all of them are significant}}
+	\caption{Comparing code and developer metrics between the bug fixes with log churn and bug fixes without log churn.The p-value is from MannWhitney U tests and the effect sizes are calculated using Cohen's d. A positive effect size shows that the code changes are more frequent during bug fixes log churn.}
 	\label{tab:bugfixes}
 	\centering{}%
 	\begin{tabular}{|>{\centering}p{.12\textwidth}|c|>{\centering}p{.1\textwidth}|c|>{\centering}p{.1\textwidth}|c|>{\centering}p{.1\textwidth}|}
@@ -40,13 +41,13 @@ Intuitively, a complex bug fix might have more code churn and in turn takes long
 		
 		& p-values  & Effect size & p-values  & Effect Size & p-values  & Effect size\tabularnewline
 		\hline 
-		Code churn & \textbf{ $<$2.2e-16} & 0.178 (small) & \textbf{$<$2.2e-16} & 0.023 &  \textbf{$<$2.2e-16} & 0.155\tabularnewline
+		Code churn &  $<$2.2e-16 & 0.178 (small) & $<$2.2e-16 & 0.023 &  $<$2.2e-16 & 0.155\tabularnewline
 		\hline 
-		Resolution time & \textbf{4.7e-14} &  -0.095 & \textbf{$<$2.2e-16} & -0.188 (small) & \textbf{ 7.7e-08} & -0.276 (small)\tabularnewline
+		Resolution time & 4.7e-14 &  -0.095 & $<$2.2e-16 & -0.188 (small) &  7.7e-08 & -0.276 (small)\tabularnewline
 		\hline 
-		\# of comments & \textbf{2.2e-16} & -0.573 (small) &  \textbf{$<$2.2e-16} &-0.436 (small) & \textbf{$<$2.2e-16} & -0.304 (small)\tabularnewline
+		\# of comments & 2.2e-16 & -0.573 (small) &  $<$2.2e-16 &-0.436 (small) & $<$2.2e-16 & -0.304 (small)\tabularnewline
 		\hline 
-		\# of developers & \textbf{ $<$2.2e-16} & -0.539 (small) & \textbf{$<$2.2e-16}& -0.617 (medium) & \textbf{$<$2.2e-16} & -0.440 (small)\tabularnewline
+		\# of developers &  $<$2.2e-16 & -0.539 (small) & $<$2.2e-16 & -0.617 (medium) & $<$2.2e-16 & -0.440 (small)\tabularnewline
 		\hline 
 	\end{tabular}
 \end{table*}

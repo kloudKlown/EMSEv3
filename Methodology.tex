@@ -37,7 +37,7 @@ The aim of this paper is to understand how logs are changed during bug fixes and
 {\textbf{Qpid}\footnote[3]{https://qpid.apache.org}}: \emph{Qpid} is an open source messaging platform that implements an Advanced Message Queuing Protocol (AMQP). We study \emph{Qpid} release $0.10$ to release $0.30$ that are from 2011 till 2014.
 
 
-Figure~\ref{tba:Overview} shows a general overview of our approach, which consists of four steps: (1) We mine the git repository of each studied system to extract all commits, and identify bug-fixing commits (bug fixes) non-bug-fixing commits (non-bug fixes). (2) We identify log changes in both bug fixes and non-bug fixes. (3) We categorize the log changes into \textsl{`New logs', `Modified Logs'} and \textsl{`Deleted logs'}. (4) We calculate churn metrics for each category and use a statistical tool R~\cite{ihaka1996r}, to perform experiments on the data to answer our research questions.  In the reminder of this section we describe the first three steps.
+Figure~\ref{tba:Overview} shows a general overview of our approach, which consists of four steps: (1) We mine the git repository of each studied system to extract all commits, and identify bug-fixing commits (bug fixes) non-bug-fixing commits (non-bug fixes). (2) We identify log changes in both bug fixes and non-bug fixes. (3) We categorize the log changes into three types, \textsl{`New logs', `Modified Logs'} and \textsl{`Deleted logs'}. (4) We calculate churn metrics for each type and use a statistical tool R~\cite{ihaka1996r}, to perform experiments on the data to answer our research questions.  In the reminder of this section we describe the first three steps.
 
 %We used Apache software versioning system, SVN to collect the commit
 %history for all the projects in our case study. We used JIRA to collect
@@ -60,7 +60,7 @@ In this section, we present the first three steps of our study approach.
 
 \subsubsection{Extracting bug fixes and non-bug fixes}
 
-The first step in our approach is to extract commits that are associated with bug fixes and the ones that are not associated with bug fixes. First, we extract a list of all commits from the git repository of each project. To avoid the branching and merging commits, we enable the `no-merges' option in the git \textsl{log} command. This flattens all the changes that are made to file in different branches but only exclude the merge between branch and trunk. We also filter out the changes to non-Java files or the test files from the commits. 
+The first step in our approach is to extract commits that are associated with bug fixes and the ones that are not associated with bug fixes. First, we extract a list of all commits from the git repository of each project. To avoid the branching and merging commits, we enable the `no-merges' option in the git \textsl{log} command. This flattens all the changes that are made to file in different branches and excludes the final merge between branch and trunk. We also filter out the changes to non-Java files or the test files from the commits. 
 
 Next, we extract a list of all the JIRA issues that have the type \emph{bug}. Developers often mention the JIRA issue ID's in the commit messages. We search JIRA issue IDs in the commit messages to identify all the bug fixes. We exclude commits that do not contain any JIRA ID since we cannot identify if the commit is a bug fix or not. 
 
@@ -83,5 +83,5 @@ Since git \textsl{diff} does not track modification to the code, modifications t
 \hypobox{+      LOG.debug(``Call: " +method.getName()+`` took "+ callTime + ``ms");\\ 
 	-        LOG.debug(``Call: " +method.getName()+ `` " + callTime);} 
 
-If an added log has a Levenshtein ratio higher than 0.6 with more than one deleted log, we consider the pair of added and deleted logs with the highest Levenshtein ratio as a log modification. After identifying all log modifications, we identify three categories of log changes in a commit namely `new logs', `deleted logs' and `modified logs'.
+If an added log has a Levenshtein ratio higher than 0.6 with more than one deleted log, we consider the pair of added and deleted logs with the highest Levenshtein ratio as a log modification. After identifying all log modifications, we identify three types of log changes in a commit namely `new logs', `deleted logs' and `modified logs'.
 
