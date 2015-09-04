@@ -171,13 +171,13 @@ where $\bar{x}_1$ and $\bar{x}_2$ are the mean of two populations, $s$ is the po
 		\hline 
 		Projects & \multicolumn{1}{c|}{Hadoop (\%)} & \multicolumn{1}{c|}{HBase (\%)} & \multicolumn{1}{c|}{Qpid (\%)}\tabularnewline
 		\hline 
-		Relocation log density  & 73.1 & 70.7 & 47.4\tabularnewline
+		Relocation log density  & 49.8 & 48.5 & 62.5\tabularnewline
 		\hline 
-		Modified log text density & 10.5 & 13.4 & 16.8\tabularnewline
+			Modified log text density & 29.1 & 32.4 & 37.5\tabularnewline
 		\hline 
-		Modified log variable density & 9.9  & 10.1 & 18.9\tabularnewline
+		Modified log variable density & 43.3 & 41.2 & 33.6\tabularnewline
 		\hline 
-		Modified log level density& 6.5 & 5.8  & 16.8\tabularnewline
+		Modified log level density& 9.0 & 7.2  & 4.8\tabularnewline
 		\hline 
 	\end{tabular}
 \end{table}
@@ -192,9 +192,7 @@ We manually examine the different modifications to logs and categorize the modif
 	\item \textbf{Modified log variable:} One or more variables in the logs are changed (added, deleted or modified).
 	\item \textbf{Modified logging level:} The verbosity level of logs are changed.
 \end{enumerate}
-Table~\ref{tab:dist} shows the distribution of each type in our studied projects. When there is co-occurrence of text and variable modifications, we add the change for both text and variable modification category. But, when there is co-occurrence of all three types of changes, it is not possible to determine without manual inspection if it is new log being added or modification of existing log. Hence, we categorize such logs as new logs being added. 
-% When there is co-occurrence of different types of log modifications in a single log, we consider that as new log because it is difficult to categorize all the different types of co-occurrences. \ian{but your new log was defined by levenstain, so did you treat both as new log or what? this is very hard to convince people. I mean, technically, a log modification can be in different types at the same time.}
-
+Table~\ref{tab:dist} shows the distribution of each type in our studied projects. When there is co-occurrence of different types of log modifications, we manually identify which type of change it falls under. When there are multiple types of modifications to precisely determine which category it belongs to, we exclude such logs and categorize them as new logs being added. This is seen in Table~\ref{tab:dist} where the total percentage is over 100\% as there is co-occurrence of multiple changes in single log. 
 
 
 \textbf{Developers modify logged variables during bug fixes}. From Table~\ref{tba:logdensityNewLogs} we find that variables in logs are $1.7$ to $4.4$ times more likely to be modified during bug fixes. We find that changes to the logged variables are more likely to happen in bug fixes than non-bug fixes (statistically significant with medium or small effect sizes, see Table~\ref{tab:logmod}). This suggests that developers change the logged variables in order to provide useful information in the logs. Prior research also shows that 16-32\% of log changes are made during field debugging~\cite{EMSEIAN}. Therefore, to better understand how developers change logged variables during bug fixes, we categorize the changes into three types: a) variable addition, b) variable deletion and c) variable modification.
