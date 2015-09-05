@@ -35,7 +35,11 @@ To future understand how logs are modified during bug fixes, we perform a manual
 After we identify the types of log modifications, we create an automated tool to label log modifications into the identified types. We calculate the number of log modifications of every type in each commit and normalize the normalize by {\em code churn}, similar to Equation~\ref{eq1} to \ref{eq3}. We call such metrics of log changes, i.e., modified, new, deleted logs density and the densities of each type of log modifications, as log churn metrics.
 %used  as the controlling measure 
 
-We would like to find out whether logs are changed more during bug fixes than non-bug fixes and to identify the type of log change that developers favor during bug fixes. We first compare the mean value of each log churn metric in bug fixes and non-bug fixes by calculating the ratio between the mean value of each log churn metric in bug fixes and non-bug fixes for every studied project. We further compare the log churn metrics by studying whether there is a statistically significant difference in these metrics, between bug fixes and non-bug fixes. We leverage the \textsl{MannWhitney U test} (Wilcoxon rank-sum test)~\cite{Gehan1965}, since our metrics are highly skewed. The {\em MannWhitney U test} is a non-parametric test, such that it does not have any assumptions about the distribution of the sample population. A p-value of \ensuremath{\le} 0.05 means that the difference of the log churn metrics between the bug fixes and non-bug fixes is statistically significant and we may reject the null hypothesis. By rejecting the null hypothesis, we can accept the alternative hypothesis, which tells us that there is a statistically significant difference for our metrics between bug fixes and non-bug fixes.
+
+
+%We first compare the mean value of each log churn metric in bug fixes and non-bug fixes by calculating the ratio between the mean value of each log churn metric in bug fixes and non-bug fixes for every studied project.
+
+We would like to find out whether logs are changed more during bug fixes than non-bug fixes and to identify the type of log change that developers favor during bug fixes. We compare the mean densities of log churn metric in bug fixes and non-bug fixes. We further compare the log churn metrics by studying whether there is a statistically significant difference in these metrics, between bug fixes and non-bug fixes. We leverage the \textsl{MannWhitney U test} (Wilcoxon rank-sum test)~\cite{Gehan1965}, since our metrics are highly skewed. The {\em MannWhitney U test} is a non-parametric test, such that it does not have any assumptions about the distribution of the sample population. A p-value of \ensuremath{\le} 0.05 means that the difference of the log churn metrics between the bug fixes and non-bug fixes is statistically significant and we may reject the null hypothesis. By rejecting the null hypothesis, we can accept the alternative hypothesis, which tells us that there is a statistically significant difference for our metrics between bug fixes and non-bug fixes.
 
 %and if we use standard T-test the
 %resulting p-value will be wrong. {\em Wilcoxon test} is a non-parametric
@@ -94,7 +98,7 @@ where $\bar{x}_1$ and $\bar{x}_2$ are the mean of two populations, $s$ is the po
 
 		\multirow{1}{*}{Modified log text density} & 2.5 & 6.5 & 11.1\tabularnewline
 	 			
-		\multirow{1}{*}{Modified log variable density} & 2.0 & 1.7 & 4.4\tabularnewline
+		\multirow{1}{*}{Modified logged variable density} & 2.0 & 1.7 & 4.4\tabularnewline
 
 		\multirow{1}{*}{Modified log level density} & 4.0 & 7.5 & 15.8\tabularnewline
 
@@ -175,7 +179,7 @@ where $\bar{x}_1$ and $\bar{x}_2$ are the mean of two populations, $s$ is the po
 		\hline 
 			Modified log text density & 29.1 & 32.4 & 37.5\tabularnewline
 		\hline 
-		Modified log variable density & 43.3 & 41.2 & 33.6\tabularnewline
+		Modified logged variable density & 43.3 & 41.2 & 33.6\tabularnewline
 		\hline 
 		Modified log level density& 9.0 & 7.2  & 4.8\tabularnewline
 		\hline 
@@ -189,13 +193,13 @@ We manually examine the different modifications to logs and categorize the modif
 \begin{enumerate}
 	\item \textbf{Relocation of log:} The log is not changed but moved to a different place in the file.
 	\item \textbf{Modified log text:} The text that is printed in the logs is modified.
-	\item \textbf{Modified log variable:} One or more variables in the logs are changed (added, deleted or modified).
+	\item \textbf{Modified logged variable:} One or more variables in the logs are changed (added, deleted or modified).
 	\item \textbf{Modified logging level:} The verbosity level of logs are changed.
 \end{enumerate}
-Table~\ref{tab:dist} shows the distribution of each type in our studied projects. When there is co-occurrence of different types of log modifications, we manually identify which type of change it falls under. When there are multiple types of modifications to precisely determine which category it belongs to, we exclude such logs and categorize them as new logs being added. This is seen in Table~\ref{tab:dist} where the total percentage is over 100\% as there is co-occurrence of multiple changes in single log. 
+Table~\ref{tab:dist} shows the distribution of each type in our studied projects. When there is co-occurrence of different types of log modifications, we manually identify which type of modification it falls under. When there are multiple types of modifications to precisely determine which category it belongs to, we exclude such logs and categorize them as new logs being added. This is seen in Table~\ref{tab:dist} where the total percentage is over 100\% as there is co-occurrence of multiple changes in single log. 
 
 
-\textbf{Developers modify logged variables during bug fixes}. From Table~\ref{tba:logdensityNewLogs} we find that variables in logs are $1.7$ to $4.4$ times more likely to be modified during bug fixes. We find that changes to the logged variables are more likely to happen in bug fixes than non-bug fixes (statistically significant with medium or small effect sizes, see Table~\ref{tab:logmod}). This suggests that developers change the logged variables in order to provide useful information in the logs. Prior research also shows that 16-32\% of log changes are made during field debugging~\cite{EMSEIAN}. Therefore, to better understand how developers change logged variables during bug fixes, we categorize the changes into three types: a) variable addition, b) variable deletion and c) variable modification.
+\textbf{Developers modify logged variables during bug fixes}. From Table~\ref{tba:logdensityNewLogs} we find that variables in logs are $1.7$ to $4.4$ times more likely to be modified during bug fixes. We find that modifications to the logged variables are more likely to happen in bug fixes than non-bug fixes (statistically significant with medium or small effect sizes, see Table~\ref{tab:logmod}). This suggests that developers modify the logged variables in order to provide useful information in the logs. Prior research also shows that 16-32\% of log changes are made during field debugging~\cite{EMSEIAN}. Therefore, to better understand how developers modify logged variables during bug fixes, we categorize the modifications into three types: a) variable addition, b) variable deletion and c) variable modification.
 
 \begin{table}[t]
 	\protect\caption{Comparing metrics about different types of log modification between bug fixes and non-bug fixes. The p-value are calculated from MannWhitney U tests and the effect sizes are calculated using Cohen's d. A positive effect size shows that the log changes are more frequent during bug fixes. P-values that are smaller than 0.05 are in bold font. }
@@ -249,7 +253,7 @@ From Table~\ref{tab:varmod}, we observe that the developers add variables more i
 
 \textbf{Relocation of log occurs more in bug fixes.} Table~\ref{tab:dist}, shows that there are a large number of log changes that only relocate logs. Table~\ref{tab:logmod} shows that such relocation of logs is statistically significantly more in bug fixes than non-bug fixes ($2.0$ to $4.9$ times more likely in bug fixes as shown in Table~\ref{tba:logdensityNewLogs}). We manually examine such commits and find that developers often forget to leverage exception handling or using proper condition statements in the code. After fixing the bugs, developers often move existing logs into the \emph{try/catch} blocks or after condition statements. For example, to fix bug YARN-289 \footnote{https://issues.apache.org/jira/browse/YARN-289} from Hadoop, logs are placed into a proper \emph{if-else} block.
 
-\textbf{Logging levels are not modified often during bug fixes.} We find that logging level changes are statistically indistinguishable between bug fixes and non-bug fixes in all the studied projects. The reason may be that developers are able to enable all the logs during bug fixes, despite of what level a log has. In addition, prior research shows that developers do not have a good knowledge about how to choose a correct logging level~\cite{Characterizinglogs}. 
+\textbf{Logging levels are not modified often during bug fixes.} We find that logging level modifications are statistically indistinguishable between bug fixes and non-bug fixes in all the studied projects. The reason may be that developers are able to enable all the logs during bug fixes, despite of what level a log has. In addition, prior research shows that developers do not have a good knowledge about how to choose a correct logging level~\cite{Characterizinglogs}. 
 
 
 \hypobox{Developers change logs statistically significantly more in bug fixes than non-bug fixes. In particular, developers modify logs to add or change the variables in logs during bug fixes. This suggests that developers often realize the needed information to be logged as after-thoughts and change the variables in log to assist in fixing bugs.}
