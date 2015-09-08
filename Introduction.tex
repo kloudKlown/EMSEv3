@@ -21,12 +21,11 @@ We find that logs are changed more often during bug fixes than non-bug-fixing co
 
 \item[\textbf{RQ2:}]\textbf{Is there a relationship between log changes and effort spent on bug fixes?}
 
-We find that bug fixes with log churn have higher total code churn than bug fixes without log churn. After normalizing the code churn, bug fixes with log churn take less time to get resolved, involve fewer developers and have less discussions during the bug fixing process. This suggests that given two metrics of similar complexity the one with log churn is more likely to be resolved faster and involve fewer developers and less discussion. \ian{TODO}
-
+We find that bug fixes with log changes have statistically significantly higher code churn than bug fixes without log changes. After normalizing by the code churn, bug fixes with log changes have a statistically significantly less time to get resolved, involving fewer developers and less discussions. This suggests that given two bugs of similar complexity the one with log changes is more likely to be resolved faster and involve fewer developers and less discussion. 
 
 \item[\textbf{RQ3:}]\textbf{Can log churn metrics help in explaining the resolution time of bugs?}
 
-Using log churn metrics (e.g., new logs added, deleted logs) and traditional metrics (i.e., \# comments and \# developers) we trained regression models for the resolution time of bug fixes. We find that modifications to logged variables and modifications to log level are statistically significant in the models and have negative impact on resolution time. This suggests that there is a relationship between these metrics and resolution time of bugs. The relationship shows the impact of log churn on resolution time of bugs which should be further studied. 
+Using log churn metrics (e.g., new logs added, deleted logs) and traditional metrics (i.e., \# comments and \# developers) we trained regression models for the resolution time of bug fixes. We find that modifications to logged variables and modifications to log level are statistically significant in the models and have negative impact on resolution time. This suggests that there is a relationship between these metrics and resolution time of bugs. The relationship shows that the impact of log changes on resolution time of bugs should be further studied. 
 
 \end{description}
 
