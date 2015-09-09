@@ -10,7 +10,7 @@ In RQ1, we find that logs are more likely to be changed in bug fixes. However, w
 
 %To answer the research question, 
 
-To study whether there is a relationship between effort spent on bug fixes and changing logs during bug fixes, we collect all JIRA issues with type \emph{bug} from the three studied systems. We obtained the code commits for each of these JIRA issues by searching for the issue id from commit messages. We then separate the JIRA issues into (1) bugs that are fixed with log changes and (2) bugs that are fixed without log changes. We calculate the log churn metrics for each bug. If a issue has multiple commits we calculate the log churn metrics for each commit individually. We then measure effort of bug fixes using the time taken to resolve a bug, the number of developers involved during the resolution of a bug and the number of discussion posts about the bug on JIRA. Prior research has shown that such metrics are good estimates of developer effort~\cite{amor2006effort}. 
+To study whether there is a relationship between effort spent on bug fixes and changing logs during bug fixes, we collect all JIRA issues with type \emph{bug} from the three studied systems. We obtained the code commits for each of these JIRA issues by searching for the issue id from commit messages. We then separate the JIRA issues into (1) bugs that are fixed with log changes and (2) bugs that are fixed without log changes. We calculate the log churn metrics for each bug. If an issue has multiple commits we consider the code and log changes in all the related commits. We then measure effort of bug fixes using the time taken to resolve a bug, the number of developers involved during the resolution of a bug and the number of discussion posts about the bug on JIRA. Prior research has shown that such metrics are good estimates of developer effort~\cite{amor2006effort}. 
 
 %:\ian{check the paper that you cite to build a model to predict resolution time to see whether there is any thing you can back up for the choice of these three metrics}
 \begin{enumerate}
@@ -31,7 +31,7 @@ Intuitively, a complex bug fix might have more code churn and in turn takes long
 
 
 \begin{table*}
-	\caption{Comparing code and developer metrics between the bug fixes with log changes and bug fixes without log changes.The p-value is from MannWhitney U tests and the effect sizes are calculated using Cohen's d. A positive effect size shows that the code changes are more frequent during bug fixes with log changes.}
+	\caption{Comparing code and developer metrics between the bug fixes with log changes and bug fixes without log changes. The p-value is from MannWhitney U tests and the effect sizes are calculated using Cohen's d. A positive effect size shows that the code changes are more frequent during bug fixes with log changes.}
 	\label{tab:bugfixes}
 	\centering{}%
 	\begin{tabular}{|>{\centering}p{.12\textwidth}|c|>{\centering}p{.1\textwidth}|c|>{\centering}p{.1\textwidth}|c|>{\centering}p{.1\textwidth}|}
