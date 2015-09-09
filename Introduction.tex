@@ -15,13 +15,14 @@ In this paper, we perform an empirical study on the log changes during bug fixes
 \begin{description}
 \item[\textbf{RQ1:}]\textbf{Are logs changed more often during bug fixes?} 
 
-We find that logs are changed more often during bug fixes than non-bug-fixing code changes. In particular, we find that adding and modifying logs occurs more often in bug fixes than non-bug-fixing code changes (statistically significant with non-trivial effect size). We identified four types of modifications to logs, including \emph{modification to logging level}, \emph{modification to logging text}, \emph{modification to logged variable} and \emph{relocation of log}. We find that \emph{modification to logging text}, \emph{modification to logged variable} and \emph{relocation of log} occur more often in bug fixes than non-bug-fixing code changes (statistically significant with medium to high effect sizes). 
+We find that logs are changed more often during bug fixes than non-bug fixes. In particular, we find that adding and modifying logs occurs more often in bug fixes than non-bug fixes (statistically significant with non-trivial effect size). We identified four types of modifications to logs, including \emph{modification to logging level}, \emph{modification to logging text}, \emph{modification to logged variable} and \emph{relocation of log}. We find that \emph{modification to logging text}, \emph{modification of logged variable} and \emph{relocation of log} occur more often in bug fixes than non-bug fixes (statistically significant with medium to high effect sizes). 
+
 
 
 
 \item[\textbf{RQ2:}]\textbf{Is there a relationship between log changes and effort spent on bug fixes?}
 
-We find that bug fixes with log changes have statistically significantly higher code churn than bug fixes without log changes. After normalizing by the code churn, bug fixes with log changes have a statistically significantly less time to get resolved, involving fewer developers and less discussions. This suggests that given two bugs of similar complexity the one with log changes is more likely to be resolved faster and involve fewer developers and less discussion. 
+We find that bug fixes with log changes have statistically significantly higher code churn than bug fixes without log changes. After normalizing by the code churn, bug fixes with log changes have a statistically significantly less time to get resolved, involving fewer developers and less discussion. This suggests that given two bugs of similar complexity the one with log changes is more likely to be resolved faster and involve fewer developers and less discussion. 
 
 \item[\textbf{RQ3:}]\textbf{Can log churn metrics help in explaining the resolution time of bugs?}
 
