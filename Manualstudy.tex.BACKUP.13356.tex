@@ -1,0 +1,47 @@
+To further understand how developers change logs during bug fixes, we conduct a manual analysis. We collected all the bug fixes with log churn for our studied systems. We selected a 5\% random sample (266 for \textsl{HBase}, 268 for \textsl{Hadoop} and 83 for \textsl{Qpid}) from all the commits. For the sampled commits, we manually examine the code changes and the corresponding JIRA issue reports to find the reasons of changing logs during bug fixes. We follow an iterative process, similar to prior research~\cite{seaman1999qualitative}, until we cannot find any new reasons. We find three reasons of changing logs during bug fixes as shown in Table~\ref{tba:LogUsage}. These three reasons may co-occur within a single commit. 
+
+% The code changes are analyzed to identify common patters of log usage during debugging and JIRA issue reports are analyzed to understand the extent of log usage by developers.
+\begin{table}[tbh]
+	\protect\caption{Log change reasons during bug fix}
+	\label{tba:LogUsage}	
+	\begin{centering}
+		\begin{tabular}{|>{\centering}p{2.5cm}|>{\centering}p{1.3cm}|>{\centering}p{1.3cm}|>{\centering}p{1.3cm}|}
+			\hline 
+			Projects & Hadoop & HBase & Qpid\tabularnewline
+			\hline 
+			\hline 
+			Bug diagnosis & 157 & 175 & 49\tabularnewline
+			\hline 
+			Future bugs prevention & 156 & 170 & 42\tabularnewline
+			\hline 
+			Code quality assurance for bug fixes & 93 & 78 & 18\tabularnewline
+			\hline 
+		\end{tabular}
+		\par\end{centering}
+	
+\end{table}
+\begin{itemize}
+	
+
+<<<<<<< HEAD
+\item \subsubsection*{Bug diagnosis} Developers use logs to detect runtime defects. Developers change log to print extra or different information into logs during the execution of the system. The log changes in this type, have added and deleted code prior to log changes (i.e., code block is changed). For example, to fix HADOOP-2725 \footnote{https://issues.apache.org/jira/browse/HADOOP-2725} we observe that developers notice a discrepancy when a 100TB file is copied across two clusters. To help in debugging we observe that developers modify the logged variable which outputs the sizes of the files into human readable format instead of bytes. These log changes are committed along with bug fix, as it clarifies the log output and helps in understanding the logging context.
+
+ %These findings are consistent with prior findings where majority of log changes are made during debugging~\cite{EMSEIAN}.
+
+\item \subsubsection*{Future bugs prevention} After fixing a bug, developers may insert log into the code. Such logs monitor the execution of the system to track for similar bugs in the future. Log changes in this type have addition of new blocks (i.e., if, if-else, try-catch and exception) with higher code addition than deletion. For example in HADOOP-2890\footnote{https://issues.apache.org/jira/browse/HADOOP-2890}, we see that developers leverage logs to identify the reason behind blocks getting corrupted. In the commit, we observe that the developers fix this bug by adding new conditionals (i.e., if-else, try-catch, throw) to verify where the block gets corrupted and they add\textsl{try catch} block with new logs to catch these exceptions. The log will notify developers with useful information to diagnose the bug if a similar bug appears.
+
+\item \subsubsection*{Code quality assurance for bug fixes} Sometime, developers need to introduce a large amounts of code to fix a bug with no code deletion. The introduction of new code, may introduce new bugs into the system. To ensure the quality of these bug fixes, developers insert logs into the bug-fixing code. For example in HBASE-3787\footnote{https://issues.apache.org/jira/browse/3787}, where developers encounter a non-idempotent operation (i.e., running the operation more than produces different results) which causes an error in the application. This fix involves over 13 developers and 112 discussions over the two years. The developers add several new files and functions during the bug fix and new logs to assure the code quality of the fix. 
+=======
+\item \textbf{Bug diagnosis.} Developers change logs to print extra or different information into logs during the execution of the system. Such information is printed for to ease bug diagnosis.
+%The log changes in the category have added and deleted code prior to log changes (i.e., code block is changed). 
+For example, HADOOP-2725\footnote{https://issues.apache.org/jira/browse/HADOOP-2725} is reported when users find that after copying a 100TB file across two clusters, the file sizes has a discrepancy of 6GB. However, the existing logs do not have proper format to show the size of the copied data. To help diagnose the bug, developers modify the logged variable to print the sizes of the copied data into a better format. %These log changes are committed along with bug fix, as it clarifies the log output and helps in understanding the logging context.
+
+ %These findings are consistent with prior findings where majority of log changes are made during debugging~\cite{EMSEIAN}.
+
+\item \textbf{Similar bugs detection.} After fixing a bug, developers may insert log into the code in order to monitor the execution of the system to detect similar bugs in the future. During the bug fixes, developers identify root-causes of the bug. After fixing the bug, developers change logs to capture the run-time event that may correspond to the root-cause of the bug, in order to identify future occurrence of a similar bug. The changed information in logs is not leveraged to fix the bug, but rather monitoring the systems for detecting a similar bug in the future.
+%Log changes in this category have addition of new blocks (i.e., if, if-else, try-catch and exception) with higher code addition than deletion. 
+For example, to fix HADOOP-2890\footnote{https://issues.apache.org/jira/browse/HADOOP-2890}, developers identify the reason behind blocks getting corrupted as an run-time exception. In the commit, we observe that the developers fix this bug and add \textsl{try catch} block with new logs to catch these exceptions. Such log will notify developers if a similar bug appears.
+>>>>>>> eb86de759bd274031f9c8b5e410ffe7a17c32046
+
+\item \textbf{Code quality assurance for bug fixes.} Sometime, developers need to introduce a large amounts of code to fix a bug. The introduction of bug-fixing code, may also introduce new bugs into the system. To ensure the quality of these bug fixes, developers insert logs into the bug-fixing code. For example, in HBASE-3787\footnote{https://issues.apache.org/jira/browse/HBASE-3787}, developers encounter a non-idempotent operation (i.e., running the operation more than once produces different results) that causes an error in the application. The fix of this bug involves over 13 developers and 112 discussions over the two years. The developers add several new files and functions during the bug fix, and added logs to assure the code quality of the fix. 
+\end{itemize}
